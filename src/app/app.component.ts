@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import datos from './assets/json/datos.json';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PWMProject';
+
+  //categorias: any = datos.categorias;
+  //eventos: any = datos.eventos;
+
 }
