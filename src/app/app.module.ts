@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import { MatCarouselModule } from '@ngmodule/material-carousel';
 //import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HomePageCategoriesComponent } from './home-page-categories/home-page-ca
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     //FormsModule,
     //ReactiveFormsModule,
     //MatCarouselModule.forRoot()
