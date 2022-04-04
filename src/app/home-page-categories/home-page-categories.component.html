@@ -1,8 +1,8 @@
-<article class="apartadoCategorias" *ngFor="let categoria of categorias | async">
+<article class="apartadoCategorias">
   <h2 class="tituloCategorias">CATEGORÍAS</h2>
   <section class="imagenesCategorias">
-    <div class="conjuntoImagenDescripcion">
-      <img  src= "{{ categoria.url }}" />
+    <div class="conjuntoImagenDescripcion" *ngFor="let categoria of categorias | async">
+      <img  class="categoryImage" src="{{ categoria.url }}" alt="{{ categoria.alt }}"/>
       <!--<a href="CategoryPage.html">-->
         <div class="descripcion">
           <div class="textoDescripcion">
