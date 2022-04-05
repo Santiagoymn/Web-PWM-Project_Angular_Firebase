@@ -1,17 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Categoria } from './objetos';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriaService {
 
-
+  @Input() categoria!: Categoria;
   constructor(private http: HttpClient) {
   }
 
   getCategorias() {
-    alert("Entra");
-    return this.http.get<{titulo: string, descripcion: string, url: string, alt: string }[]>('/assets/categorias.json');
+    return this.http.get<Categoria[]>('/assets/categorias.json');
   }
 }
