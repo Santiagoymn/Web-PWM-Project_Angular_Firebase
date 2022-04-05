@@ -13,6 +13,8 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './carousel-basic.html'}
 )*/
 
+
+
 export class CarruselComponent implements OnInit {
 
   constructor() { }
@@ -25,3 +27,4 @@ export class CarruselComponent implements OnInit {
 export class NgbdCarouselBasic {
   images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 }
+

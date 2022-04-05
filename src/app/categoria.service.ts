@@ -11,6 +11,7 @@ export class CategoriaService {
   }
 
   getCategorias() {
+    alert("Entra");
     return this.http.get<{titulo: string, descripcion: string, url: string, alt: string }[]>('/assets/categorias.json');
   }
 }
