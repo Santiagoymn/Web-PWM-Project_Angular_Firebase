@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; //Habría que añadir Input
 import { CategoriaService } from '../categoria.service';
+//import { Categoria } from '../objetos';
 
 @Component({
   selector: 'app-home-page-categories',
@@ -9,7 +10,7 @@ import { CategoriaService } from '../categoria.service';
 export class HomePageCategoriesComponent implements OnInit {
 
   categorias = this.categoriaService.getCategorias();
-
+  //@Input() categoria!: Categoria;
   constructor(private categoriaService: CategoriaService) {
   }
 
