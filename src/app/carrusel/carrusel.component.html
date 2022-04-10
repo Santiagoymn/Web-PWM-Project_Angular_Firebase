@@ -1,22 +1,7 @@
-<!--
-<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).webp" alt="First slide">
-      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let image of imagenes">
+    <div class="wrapper">
+      <img src="{{ image.url }}" alt="{{ image.alt }}">
     </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).webp" alt="Second slide">
-      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp" alt="Third slide">
-      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-    </div>
-  </mdb-carousel-item>
-</mdb-carousel>
--->
+  </ng-template>
+</ngb-carousel>

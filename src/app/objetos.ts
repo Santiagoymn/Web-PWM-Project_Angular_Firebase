@@ -18,3 +18,7 @@ export interface Empresa {
   number: string;
   web: string;
 }
+export interface Carrusel {
+  url: string;
+  alt: string;
+}

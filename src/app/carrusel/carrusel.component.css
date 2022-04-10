@@ -1,60 +1,23 @@
-/*////////// CARRUSEL DE IMÁGENES //////////*/
-.item img{
+.wrapper img{
   width:100%;
   object-fit: cover;
 }
 
-/*////////// MEDIA QUERY //////////*/
-/*
-  ##Device = Desktops
-  ##Screen = 960px to higher resolution desktops
-*/
-
 @media (min-width: 960px) {
-  /*////////// CARRUSEL DE IMÁGENES //////////*/
-  .carousel-inner{
-    height: 48.5rem;
-  }
-
-  /*////////// FOOTER //////////*/
-  .footer{
-    margin-top: 18rem;
+  .wrapper img {
+    height: 32rem;
   }
 }
-
-/*
-  ##Device = Tablets
-  ##Screen = 640px to 960px
-*/
 
 @media (min-width: 640px) and (max-width: 959px) {
-  /*////////// CARRUSEL DE IMÁGENES //////////*/
-  .carousel-inner{
-    height: 25rem;
-  }
-
-  /*////////// FOOTER //////////*/
-  .footer{
-    margin-top: 12rem;
+  .wrapper img {
+    height: 16.5rem;
   }
 }
-
-/*
-  ##Device = Mobiles
-  ##Screen = 640px to minimal resolution
-*/
 
 @media (max-width: 640px) {
-  /*////////// CARRUSEL DE IMÁGENES //////////*/
-  .carousel-inner{
-    margin-top: 1rem;
-    height: 15em;
-  }
-  #carousel{
-    height:15em;
-  }
-  /*////////// FOOTER //////////*/
-  .footer{
-    margin-top: 9rem;
+  .wrapper img {
+    height: 10em;
   }
 }
+
