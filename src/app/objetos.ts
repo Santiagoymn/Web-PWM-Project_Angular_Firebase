@@ -27,3 +27,9 @@ export interface Carrusel {
   url: string;
   alt: string;
 }
+export interface Persona {
+  foto: string;
+  alt: string;
+  descripcion: string;
+}
+

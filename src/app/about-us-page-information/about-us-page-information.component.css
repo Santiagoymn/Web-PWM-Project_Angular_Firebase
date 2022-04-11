@@ -1,0 +1,20 @@
+.apartadoInformacion{
+  display: flex;
+
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+}
+.imgNosotros{
+  float:left;
+  vertical-align: center;
+  align-self: center;
+
+  margin-right: 2rem;
+  height: 14.06rem;
+}
+.textoPresentacion{
+  text-align: justify;
+  width: 100%;
+
+  top:-1.75rem;
+}

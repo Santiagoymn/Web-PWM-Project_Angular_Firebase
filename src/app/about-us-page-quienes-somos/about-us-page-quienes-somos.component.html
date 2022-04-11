@@ -1,0 +1,13 @@
+<div class="apartadoQuienesSomos">
+  <h3 class="tituloQuienesSomos">¿Quiénes Somos?</h3>
+  <div class="imagenesPersonas">
+    <div *ngFor="let persona of quienesSomos | async">
+      <div class="conjuntoImagen">
+        <img src="{{persona.foto}}"  alt="{{persona.alt}}">
+        <p>{{persona.descripcion}}</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>

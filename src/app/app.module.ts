@@ -11,13 +11,17 @@ import { HomePageCategoriesComponent } from './home-page-categories/home-page-ca
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsPageInformationComponent } from './about-us-page-information/about-us-page-information.component';
+import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/about-us-page-quienes-somos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarruselComponent,
     HomePageCategoriesComponent,
-    HomePageAboutUsComponent
+    HomePageAboutUsComponent,
+    AboutUsPageInformationComponent,
+    AboutUsPageQuienesSomosComponent
   ],
   imports: [
     BrowserModule,
