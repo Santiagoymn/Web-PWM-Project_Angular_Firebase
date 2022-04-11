@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CarruselComponent,
-    HomePageCategoriesComponent
+    HomePageCategoriesComponent,
+    HomePageAboutUsComponent
   ],
   imports: [
     BrowserModule,
