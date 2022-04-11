@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core'; //Habría que añadir Input
+import { Component, OnInit, Input } from '@angular/core'; //Habría que añadir Input
 import { CategoriaService } from '../categoria.service';
-//import { Categoria } from '../objetos';
+import { Categoria } from '../objetos';
+import { Actividad } from "../objetos";
+import { Empresa} from "../objetos";
+import {tap} from "rxjs";
 
 @Component({
   selector: 'app-home-page-categories',
@@ -9,12 +12,17 @@ import { CategoriaService } from '../categoria.service';
 })
 export class HomePageCategoriesComponent implements OnInit {
 
-  categorias = this.categoriaService.getCategorias();
-  //@Input() categoria!: Categoria;
+  data : any;
+  categorias!: Categoria[];
+  @Input() categoria!: Categoria;
   constructor(private categoriaService: CategoriaService) {
   }
 
   ngOnInit(): void {
+    this.categoriaService.getCategorias()
+      .pipe(
+        tap((categories: Categoria[]) => this.categorias = categories)
+      )
+      .subscribe();
   }
-
 }

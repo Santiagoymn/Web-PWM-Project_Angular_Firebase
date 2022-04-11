@@ -9,15 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { GalleryComponent } from './gallery/gallery.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarruselComponent,
     HomePageCategoriesComponent,
+    GalleryComponent,
+    HomePageAboutUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

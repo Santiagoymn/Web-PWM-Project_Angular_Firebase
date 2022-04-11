@@ -18,7 +18,16 @@ export interface Empresa {
   number: string;
   web: string;
 }
+export interface SobreNosotrosGeneral{
+  logo: string;
+  alt: string;
+  descripcion: string;
+}
 export interface Carrusel {
   url: string;
   alt: string;
+}
+export interface Galeria {
+  url: string;
+  descripcion: string;
 }
