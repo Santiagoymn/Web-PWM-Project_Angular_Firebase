@@ -17,7 +17,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     CarruselComponent,
-    HomePageCategoriesComponent
+    HomePageCategoriesComponent,
   ],
   imports: [
     BrowserModule,

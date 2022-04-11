@@ -3,13 +3,13 @@ export interface Categoria {
   descripcion: string;
   url: string;
   alt: string;
-  actividades: Actividad;
+  actividades: Actividad[];
 }
 export interface Actividad {
   name: string;
   url: string;
   description: string;
-  empresas: Empresa;
+  empresas: Empresa[];
 }
 export interface Empresa {
   name: string;
