@@ -1,0 +1,250 @@
+/*////////// FOOTER //////////*/
+footer{
+  background-color: black;
+  position: relative;
+  justify-content: center;
+}
+.divFooter{
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.datoContacto{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+/*////Texto////*/
+.datoContacto span{
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFFFFF;
+}
+.copyright{
+  position: relative;
+  text-align: right;
+  display: block;
+}
+
+/*////Imágenes////*/
+.datoContacto img{
+  position: relative;
+}
+
+.redesSociales{
+  position: relative;
+}
+
+.imagenInstagram{
+  position: relative;
+}
+.imagenFacebook{
+  position: relative;
+}
+
+.imagenYouTube{
+  position: relative;
+}
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px) {
+  /*////////// FOOTER //////////*/
+  footer{
+    height: 28rem;
+  }
+
+  .divFooter{
+    top: 3rem;
+    gap: 10rem;
+  }
+  .datoContacto{
+    line-height: 6.25rem;
+  }
+
+  /*////Texto////*/
+  .datoContacto span{
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+  }
+  .copyright{
+    height: 1rem;
+    bottom: -4rem;
+    margin-right: 1rem;
+
+    font-size: 1.475rem;
+    line-height: 2.1875rem;
+  }
+
+  /*////Imágenes////*/
+  .datoContacto img{
+    width: 3.75rem;
+    height: 3.25rem;
+    margin-right: 1rem;
+    top: 1rem;
+  }
+  .redesSociales{
+    bottom: -2.5rem;
+  }
+  .imagenInstagram{
+    width: 3.0875rem;
+    height: 3.0875rem;
+  }
+  .imagenFacebook{
+    width: 3.8875rem;
+    height: 3.5375rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .imagenYouTube{
+    width: 4.1rem;
+    height: 3.3em;
+  }
+
+  .localizacionImagenCorreo{
+    margin-top: -2rem;
+  }
+
+  .localizacionImagenTelefono{
+    margin-top: -1.3rem;
+  }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+  /*////////// FOOTER //////////*/
+  footer{
+    height: 25rem;
+  }
+
+  .divFooter{
+    top: 3rem;
+    gap: 8rem;
+  }
+  .datoContacto{
+    line-height: 4.9rem;
+  }
+
+  /*////Texto////*/
+  .datoContacto span{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .copyright{
+    height: 0.9rem;
+    bottom: -5rem;
+    margin-right: 0.9rem;
+
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  /*////Imágenes////*/
+  .datoContacto img{
+    width: 2.3rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    top: 0.56rem;
+  }
+  .redesSociales{
+    bottom: -3rem;
+  }
+  .imagenInstagram{
+    width: 2rem;
+    height: 2rem;
+  }
+  .imagenFacebook{
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .imagenYouTube{
+    width: 3.1rem;
+    height: 2.1em;
+  }
+
+  .localizacionImagenCorreo{
+    margin-top: -1.5rem;
+  }
+
+  .localizacionImagenTelefono{
+    margin-top: -0.8rem;
+  }
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+  /*////////// FOOTER //////////*/
+  footer{
+    height: 18rem;
+  }
+
+  .divFooter{
+    top: 2rem;
+    gap: 7rem;
+  }
+
+  .datoContacto{
+    line-height: 1.99rem;
+  }
+
+  /*////Texto////*/
+  .datoContacto span{
+    font-size: 0.95rem;
+    line-height: 1.75rem;
+  }
+  .copyright{
+    height: 0.78rem;
+    bottom: -4rem;
+    margin-right: 1rem;
+
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  /*////Imágenes////*/
+  .datoContacto img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.4rem;
+    top: 0.9rem;
+  }
+  .redesSociales{
+    bottom: -2rem;
+  }
+  .imagenInstagram{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .imagenFacebook{
+    width: 1.65rem;
+    height: 1.65rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  .imagenYouTube{
+    width: 2rem;
+    height: 1.5em;
+  }
+
+  .localizacionImagenCorreo{
+    margin-top: -2rem;
+  }
+
+  .localizacionImagenTelefono{
+    margin-top: -1.3rem;
+  }
+}
