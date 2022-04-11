@@ -1,0 +1,6 @@
+<div class="apartadoInformacion" *ngFor="let aboutUs of aboutUs | async">
+        <p class="textoPresentacion">
+          <img class="imgNosotros" src="{{aboutUs.logo}}" alt="{{aboutUs.alt}}" >
+          {{aboutUs.descripcion}}
+        </p>
+</div>

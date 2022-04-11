@@ -11,6 +11,8 @@ import { HomePageCategoriesComponent } from './home-page-categories/home-page-ca
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutUsPageInformationComponent } from './about-us-page-information/about-us-page-information.component';
+import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/about-us-page-quienes-somos.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -19,6 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     CarruselComponent,
     HomePageCategoriesComponent,
+    HomePageAboutUsComponent,
+    AboutUsPageInformationComponent,
+    AboutUsPageQuienesSomosComponent
     GalleryComponent,
     HomePageAboutUsComponent,
     FooterComponent
