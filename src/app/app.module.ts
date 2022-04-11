@@ -13,6 +13,8 @@ import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-u
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsPageInformationComponent } from './about-us-page-information/about-us-page-information.component';
 import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/about-us-page-quienes-somos.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,9 @@ import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/
     HomePageAboutUsComponent,
     AboutUsPageInformationComponent,
     AboutUsPageQuienesSomosComponent
+    GalleryComponent,
+    HomePageAboutUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
