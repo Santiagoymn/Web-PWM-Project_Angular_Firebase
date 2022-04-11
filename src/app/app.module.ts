@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     CarruselComponent,
-    HomePageCategoriesComponent
+    HomePageCategoriesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
