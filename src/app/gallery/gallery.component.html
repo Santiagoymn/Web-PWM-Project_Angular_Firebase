@@ -1,0 +1,15 @@
+<div class="contenedorGaleria">
+  <script>alert("Entra 1")</script>
+  <div class="galeria">
+    <div class="row">
+      <div class="col-sm-6 col-md-4" *ngFor="let image of imagenes">
+        <a class="lightbox">
+          <img src="{{ image.url }}" alt="{{ image.descripcion }}">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

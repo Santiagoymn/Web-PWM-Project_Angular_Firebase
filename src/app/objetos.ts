@@ -27,3 +27,7 @@ export interface Carrusel {
   url: string;
   alt: string;
 }
+export interface Galeria {
+  url: string;
+  descripcion: string;
+}
