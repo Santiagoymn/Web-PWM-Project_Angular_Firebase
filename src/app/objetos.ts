@@ -23,3 +23,7 @@ export interface SobreNosotrosGeneral{
   alt: string;
   descripcion: string;
 }
+export interface Carrusel {
+  url: string;
+  alt: string;
+}

@@ -1,0 +1,23 @@
+.wrapper img{
+  width:100%;
+  object-fit: cover;
+}
+
+@media (min-width: 960px) {
+  .wrapper img {
+    height: 32rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+  .wrapper img {
+    height: 16.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper img {
+    height: 10em;
+  }
+}
+

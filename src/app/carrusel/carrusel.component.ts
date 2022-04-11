@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
+import { Carrusel } from '../objetos';
+import { CarruselService } from '../carrusel.service';
+import {tap} from "rxjs";
 
 
 @Component({
@@ -6,22 +10,25 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.css']
 })
-/*import { Component } from '@angular/core';
 
-@Component(
-  {selector: 'ngbd-carousel-basic',
-    templateUrl: './carousel-basic.html'}
-)*/
 
 export class CarruselComponent implements OnInit {
 
-  constructor() { }
+  data : any;
+  imagenes!: Carrusel[];
+  @Input() carrusel!: Carrusel;
 
-  ngOnInit(): void {
+  constructor(config: NgbCarouselConfig, private carruselService: CarruselService) {
+    config.interval = 2000;
+    config.keyboard = true;
+    config.pauseOnHover = true;
   }
 
-}
-
-export class NgbdCarouselBasic {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  ngOnInit(): void {
+    this.carruselService.getImagesCarrusel()
+      .pipe(
+        tap((image: Carrusel[]) => this.imagenes = image)
+      )
+      .subscribe();
+  }
 }

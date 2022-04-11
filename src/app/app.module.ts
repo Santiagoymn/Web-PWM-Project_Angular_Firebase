@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-u
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgbModule,
     //FormsModule,
     //ReactiveFormsModule,
     //MatCarouselModule.forRoot()
@@ -32,3 +33,6 @@ import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-u
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
