@@ -1,0 +1,232 @@
+/*////////// MUNICIPIOS //////////*/
+.municipios {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.listaMunicipios{
+  display: block;
+}
+/*////////// MUNICIPIO //////////*/
+.conjuntoMunicipio {
+  position: relative;
+  width: 100%;
+}
+.municipio {
+  position: relative;
+  clear: both;
+}
+.imagenMunicipio {
+  width: 100%;
+  object-fit: cover;
+}
+
+.nombreMunicipio {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  transform: translate(0, -60%);
+
+  text-transform: uppercase;
+  font-family: "Helvetica", serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.colorFondo{
+  display: inline-block;
+  text-align:center;
+  background: #424242;
+}
+/*////////// Botón //////////*/
+.flechaAbajoMunicipio {
+  position: relative;
+  align-items: center;
+  background-color: rgba(196, 196, 197, 0.7);
+  border-radius:50%;
+}
+.btn {
+  position: relative;
+  border: none;
+  float: right;
+  background: transparent;
+}
+
+/*////////// DROPDOWN MUNICIPIO //////////*/
+.descripcionMunicipio {
+  height: auto;
+}
+.imagenDropdownMunicipio {
+  float:right;
+  vertical-align: center;
+  align-self: center;
+
+}
+
+
+@media (min-width: 960px) {
+  /*////////// MUNICIPIOS //////////*/
+  .municipios {
+    margin-top: 6rem;
+  }
+
+  /*////////// MUNICIPIO //////////*/
+  .conjuntoMunicipio {
+    margin-top: 3rem;
+  }
+  .imagenMunicipio {
+    height: 20rem;
+  }
+  .nombreMunicipio {
+    line-height: 4rem;
+    top: 55%;
+    font-size: 3rem;
+  }
+  /*////////// Botón //////////*/
+  .flechaAbajoMunicipio {
+    width: 6rem;
+    height: 6rem;
+    right: 1rem;
+    margin-top: -2rem;
+  }
+  .btn {
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+  /*////////// DROPDOWN MUNICIPIO //////////*/
+
+  .paginaMunicipio {
+    margin-top:3rem;
+    margin-right: 6.25rem;
+    margin-left: 6.25rem;
+  }
+  .imagenDropdownMunicipio {
+    margin-left: 2rem;
+    height: 24rem;
+    margin-bottom:2rem;
+  }
+
+  .colorFondo{
+    height: 3.5rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer { /* Posicionamiento del footer en la página*/
+    margin-top: 16rem;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 640px) and (max-width: 960px) {
+  /*////////// MUNICIPIOS //////////*/
+  .municipios {
+    margin-top: 6rem;
+  }
+  .municipio{
+  }
+
+  /*////////// MUNICIPIO //////////*/
+  .conjuntoMunicipio {
+    margin-top: 3rem;
+  }
+  .imagenMunicipio {
+    height: 20rem;
+  }
+  .nombreMunicipio {
+    line-height: 4rem;
+    top: 60%;
+    font-size: 2.5rem;
+  }
+  /*////////// Botón //////////*/
+  .flechaAbajoMunicipio {
+    width: 4rem;
+    height: 4rem;
+    right: 1rem;
+    margin-top: -0.6rem;
+  }
+  .btn {
+    padding: 1rem;
+    margin-right: 3rem;
+  }
+  /*////////// DROPDOWN MUNICIPIO //////////*/
+  .paginaMunicipio {
+    margin-top:3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .imagenDropdownMunicipio {
+    margin-left: 2rem;
+    height: 24rem;
+    margin-bottom:2rem;
+  }
+
+  .colorFondo{
+    height: 3.5rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer { /* Posicionamiento del footer en la página*/
+    margin-top: 16rem;
+  }
+
+}
+
+
+
+
+@media (max-width: 640px) {
+  /*////////// MUNICIPIOS //////////*/
+  .municipios {
+    margin-top: 6rem;
+  }
+
+  /*////////// MUNICIPIO //////////*/
+  .conjuntoMunicipio {
+    margin-top: 3rem;
+  }
+  .imagenMunicipio {
+    height: 15rem;
+  }
+  .nombreMunicipio {
+    line-height: 4rem;
+    top: 55%;
+    font-size: 2.5rem;
+  }
+  .descripcionMunicipio {
+    display: none;
+    margin-top: 1.5rem;
+  }
+  /*////////// Botón //////////*/
+  .flechaAbajoMunicipio {
+    width: 3rem;
+    height: 3rem;
+    right: 1rem;
+  }
+  .btn {
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+  /*////////// DROPDOWN MUNICIPIO //////////*/
+  .paginaMunicipio {
+    margin-top:3rem;
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+  }
+  .imagenDropdownMunicipio {
+    margin-left: 2rem;
+    margin-right: 1.75rem;
+    height: 24rem;
+  }
+  .colorFondo{
+    height: 4rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer { /* Posicionamiento del footer en la página*/
+    margin-top: 10rem;
+  }
+
+}

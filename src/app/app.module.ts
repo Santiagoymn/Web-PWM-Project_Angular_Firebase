@@ -15,6 +15,7 @@ import { AboutUsPageInformationComponent } from './about-us-page-information/abo
 import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/about-us-page-quienes-somos.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,11 @@ import { FooterComponent } from './footer/footer.component';
     HomePageCategoriesComponent,
     HomePageAboutUsComponent,
     AboutUsPageInformationComponent,
-    AboutUsPageQuienesSomosComponent
+    AboutUsPageQuienesSomosComponent,
     GalleryComponent,
     HomePageAboutUsComponent,
-    FooterComponent
+    FooterComponent,
+    DiscoverGCComponent
   ],
   imports: [
     BrowserModule,
