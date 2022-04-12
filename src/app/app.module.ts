@@ -1,4 +1,3 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -22,7 +21,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
 import { AgendaComponent } from './agenda/agenda.component';
-import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
+// import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
 @NgModule({
@@ -38,10 +37,10 @@ import { CategoryPageActividadesComponent } from './category-page-actividades/ca
     DiscoverGCComponent,
     HomePageComponent,
     AboutUsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
     // ActivityPageInformationComponent
     AgendaComponent,
-    CategoryPageActividadesComponent
+    // CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,
