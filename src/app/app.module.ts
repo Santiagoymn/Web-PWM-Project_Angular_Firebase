@@ -1,4 +1,5 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
 import {HomePageComponent} from "./home-page/home-page.component";
 // import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
 @NgModule({
@@ -33,6 +36,8 @@ import {HomePageComponent} from "./home-page/home-page.component";
     DiscoverGCComponent,
     HomePageComponent
     // ActivityPageInformationComponent
+    AgendaComponent,
+    CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,
