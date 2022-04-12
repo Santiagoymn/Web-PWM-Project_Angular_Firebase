@@ -1,3 +1,4 @@
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,8 @@ import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
+import {HomePageComponent} from "./home-page/home-page.component";
+// import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
@@ -29,9 +32,10 @@ import { CategoryPageActividadesComponent } from './category-page-actividades/ca
     AboutUsPageInformationComponent,
     AboutUsPageQuienesSomosComponent,
     GalleryComponent,
-    HomePageAboutUsComponent,
     FooterComponent,
     DiscoverGCComponent,
+    HomePageComponent
+    // ActivityPageInformationComponent
     AgendaComponent,
     CategoryPageActividadesComponent
   ],
