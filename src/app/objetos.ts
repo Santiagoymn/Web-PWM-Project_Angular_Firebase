@@ -36,3 +36,20 @@ export interface Galeria {
   url: string;
   descripcion: string;
 }
+export interface DiscoverGC {
+  municipio: string;
+  descripcion: string;
+  urlImagen: string;
+  imagenDropdown: string;
+}
+export interface Evento{
+  nombre: string;
+  fecha: string;
+  lugar: string;
+  municipio: string;
+  url: string;
+  descripcion: string;
+  dia: string;
+  mes: string;
+}
+
