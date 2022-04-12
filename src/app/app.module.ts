@@ -17,6 +17,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
 import {HomePageComponent} from "./home-page/home-page.component";
+import { AboutUsComponent } from './about-us/about-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
 
 
@@ -31,7 +33,9 @@ import {HomePageComponent} from "./home-page/home-page.component";
     GalleryComponent,
     FooterComponent,
     DiscoverGCComponent,
-    HomePageComponent
+    HomePageComponent,
+    AboutUsComponent,
+    PageNotFoundComponent
     // ActivityPageInformationComponent
   ],
   imports: [
