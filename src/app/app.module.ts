@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,9 @@ import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
+import {HomePageComponent} from "./home-page/home-page.component";
+// import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
+
 
 @NgModule({
   declarations: [
@@ -26,9 +29,10 @@ import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
     AboutUsPageInformationComponent,
     AboutUsPageQuienesSomosComponent,
     GalleryComponent,
-    HomePageAboutUsComponent,
     FooterComponent,
-    DiscoverGCComponent
+    DiscoverGCComponent,
+    HomePageComponent
+    // ActivityPageInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,8 @@ import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
     //MatCarouselModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
 
