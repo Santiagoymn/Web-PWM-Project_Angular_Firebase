@@ -1,0 +1,433 @@
+/*////////// EVENTOS //////////*/
+.evento { /* Contenedor de evento */
+  position: relative;
+  width: 100%;
+}
+
+.evento:active > ul {
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+  width: 100%;
+}
+.eventoInfo {
+  position: relative;
+  background: #C4C4C5;
+  vertical-align: middle;
+}
+/*////////// Imagen Calendario //////////*/
+.calendarioConFecha{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+}
+.imagenCalendario{
+  position: relative;
+  align-self: center;
+}
+.textoMes{
+  font-family: 'Helvetica', serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+
+  color: #000000;
+}
+.textoDia{
+  font-family: 'Helvetica',serif;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  position: absolute;
+
+  color: #000000;
+}
+.textoCalendario{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.calendarioInfo{
+  vertical-align: middle;
+  justify-items: center;
+  align-self: center;
+  display: flex;
+}
+/*////////// Texto del evento //////////*/
+.infoEvento{
+  position: relative;
+  text-align: center;
+  align-self: center;
+}
+.nombreEvento{
+  font-weight: bold;
+}
+/*////////// Botón //////////*/
+.btn {
+  position: relative;
+  border: none;
+  background: transparent;
+  float: right;
+}
+.flechaAbajoMunicipio { /* Desplega descripcion evento */
+  position: absolute;
+  align-items: center;
+}
+
+/*////////// Desplegable //////////*/
+.apartadoDescripcionEvento {
+  position: relative;
+  display: none;
+}
+
+.paginaEvento {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  object-fit: cover;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.textoDescripcionEvento {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  background-color: rgba(196, 196, 197, 0.7);
+  width:90%;
+  z-index: 5;
+}
+
+/*////////// No logged //////////*/
+.conjunto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cuadroGris {
+  position: relative;
+  background: #C4C4C4;
+  text-align: center;
+  border-radius: 3.75rem;
+}
+
+.mensajeNoRegistrado{
+  position: relative;
+  font-family: "Helvetica", serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.btnLogin{
+  position: relative;
+  font-family: "Helvetica", serif;
+  text-align: center;
+  background: #CEE0FC;
+  align-self: center;
+  padding: 1rem;
+  clear: none;
+  border-radius: 1rem;
+}
+
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px) {
+  /*////////// EVENTOS //////////*/
+  .listaEventos{
+    margin-top:2rem;
+  }
+  .evento { /* Contenedor de evento */
+    margin-bottom: 3rem;
+  }
+  .eventoInfo {
+    height: 15rem;
+  }
+  /*////////// Imagen Calendario //////////*/
+  .imagenCalendario{
+    width: 11.4rem;
+    height: 12.04rem;
+    margin-top:1rem;
+  }
+  .textoMes{
+    font-size: 2.75em;
+    line-height: 2rem;
+    top: 2.5rem;
+    left: -2rem;
+  }
+  .textoDia{
+    font-size: 4.31em;
+    line-height: 5rem;
+    top: -2rem;
+    left: -2.2rem;
+  }
+  .calendarioInfo{
+    margin-left: 6rem;
+  }
+  /*////////// Texto del evento //////////*/
+  .infoEvento{
+    margin-left:1rem;
+    margin-top:1.5rem;
+  }
+  .nombreEvento{
+    font-size: 2rem;
+  }
+  .textoEvento {
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+  }
+  /*////////// Botón //////////*/
+  .btn {
+    margin-right: 2rem;
+    top: -9rem;
+
+  }
+  .flechaAbajoMunicipio { /* Desplega descripcion evento */
+    width: 4.25rem;
+    height: 5.0rem;
+    right: 1rem;
+  }
+
+  /*////////// Desplegable //////////*/
+  .paginaEvento {
+    height: 35rem;
+  }
+
+  /*////////// No logged //////////*/
+  .cuadroGris {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 8rem;
+  }
+
+  .mensajeNoRegistrado {
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+  }
+
+  .btnLogin {
+    font-size: 2.8125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer { /* Posicionamiento del footer en la página*/
+    margin-top: 10rem;
+  }
+
+}
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+  /*////////// EVENTOS //////////*/
+  .evento { /* Contenedor de evento */
+    margin-bottom: 3rem;
+  }
+  .eventoInfo {
+    height: 12rem;
+  }
+  /*////////// Imagen Calendario //////////*/
+  .imagenCalendario{
+    width: 9.94rem;
+    height: 10.63rem;
+    margin-top:1rem;
+  }
+  .textoMes{
+    font-size: 2.5em;
+    line-height: 2rem;
+    top: 2.5rem;
+    left: -2rem;
+  }
+  .textoDia{
+    font-size: 4em;
+    line-height: 5rem;
+    top: -2rem;
+    left: -2.2rem;
+  }
+  .calendarioInfo{
+    margin-left: 2rem;
+  }
+  /*////////// Texto del evento //////////*/
+  .infoEvento{
+    margin-left:1rem;
+    margin-top:1.5rem;
+  }
+  .nombreEvento{
+    font-size: 2rem;
+  }
+  .textoEvento {
+    line-height: 1rem;
+    font-size: 1.25rem;
+  }
+  /*////////// Botón //////////*/
+  .btn {
+    padding: 1rem;
+    margin-right: 2rem;
+    top: -8rem;
+
+  }
+  .flechaAbajoMunicipio {
+    width: 3.93rem;
+    height: 4.32rem;
+    right: 1rem;
+  }
+
+  /*////////// Desplegable //////////*/
+  .paginaEvento {
+    height: 25rem;
+  }
+  .apartadoDescripcionEvento{
+    top: -0.5rem;
+  }
+
+  /*////////// No logged //////////*/
+  .cuadroGris {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .mensajeNoRegistrado {
+    font-size: 2.5rem;
+    line-height: 2.9375rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+  }
+
+  .btnLogin {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer {
+    margin-top: 9rem;
+  }
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+  /*////////// EVENTOS //////////*/
+  .evento { /* Contenedor de evento */
+    margin-bottom: 3rem;
+  }
+  .eventoInfo {
+    height: 12rem;
+  }
+  /*////////// Imagen Calendario //////////*/
+  .imagenCalendario{
+    width: 8.94rem;
+    height: 9.63rem;
+    margin-top:1rem;
+  }
+  .textoMes{
+    font-size: 2.2em;
+    line-height: 2rem;
+    top: 2.25rem;
+    left: -1.75rem;
+  }
+  .textoDia{
+    font-size: 4em;
+    line-height: 5rem;
+    top: -2rem;
+    left: -2.2rem;
+  }
+  .calendarioInfo{
+    margin-left: 2rem;
+  }
+  /*////////// Texto del evento //////////*/
+  .infoEvento{
+    margin-top:1.5rem;
+  }
+  .nombreEvento{
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+  .textoEvento {
+    line-height: 1rem;
+    font-size: 1.5rem;
+  }
+  /*////////// Botón //////////*/
+  .btn {
+    padding: 1rem;
+    margin-right: 2rem;
+    top: -8rem;
+
+  }
+  .flechaAbajoMunicipio {
+    width: 3.93rem;
+    height: 4.32rem;
+    right: 1rem;
+  }
+
+  /*////////// Desplegable //////////*/
+  .paginaEvento {
+    height: 27rem;
+  }
+  .apartadoDescripcionEvento{
+    top: -0.5rem;
+  }
+  .textoDescripcionEvento {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  /*////////// No logged //////////*/
+  .conjunto {
+    margin-top: 3rem;
+  }
+
+  .cuadroGris {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+
+  .mensajeNoRegistrado {
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+
+  .btnLogin {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /*////////// FOOTER //////////*/
+  .footer {
+    margin-top: 8rem;
+  }
+}

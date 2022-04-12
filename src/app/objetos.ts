@@ -42,4 +42,14 @@ export interface DiscoverGC {
   urlImagen: string;
   imagenDropdown: string;
 }
+export interface Evento{
+  nombre: string;
+  fecha: string;
+  lugar: string;
+  municipio: string;
+  url: string;
+  descripcion: string;
+  dia: string;
+  mes: string;
+}
 

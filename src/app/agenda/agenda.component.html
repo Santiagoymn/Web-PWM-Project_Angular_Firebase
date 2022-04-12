@@ -1,0 +1,29 @@
+<div class=listaEventos style="display: block">
+  <article class="evento" *ngFor="let evento of eventos; let i = index">
+    <div class="eventoInfo" id="evento{{i}}" >
+      <div class="calendarioInfo">
+        <div class="calendarioConFecha">
+          <img class="imagenCalendario" src="assets/images/calendario.png" alt="imagen calendario">
+          <div class="textoCalendario">
+            <div class="textoDia">  {{evento.dia}}  </div>
+            <div class="textoMes">  {{evento.mes}}  </div>
+          </div>
+        </div>
+        <div class="infoEvento">
+          <p class="nombreEvento">  {{evento.nombre}}  </p>
+          <p class="textoEvento">  {{evento.fecha}}  </p>
+          <p class="textoEvento">  {{evento.lugar}}  </p>
+          <p class="textoEvento">  {{evento.municipio}} </p>
+        </div>
+      </div>
+      <button (click)="cambiarEstadoDropDown(i)" type="button" class="btn"  id=evento data-toggle="dropdow">
+        <img src="assets/images/FlechaAbajo.png" class="flechaAbajoMunicipio" alt="Información Evento">
+      </button>
+    </div>
+    <div class='apartadoDescripcionEvento' id="apartadoevento{{i}}">
+      <div class="paginaEvento" [style.background-image]="'url(' + evento.url + ')'" >
+        <p class='textoDescripcionEvento'>  {{evento.descripcion}}  </p>
+      </div>
+    </div>
+  </article>
+</div>

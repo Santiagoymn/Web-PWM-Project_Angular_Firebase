@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Concierto Fito & Fitipaldis",
+    "fecha": "Sábado: 25-06 19:30",
+    "lugar": "Parque Santa Catalina",
+    "municipio": "Las Palmas de Gran Canaria",
+    "url": "https://www.laguiago.com/wp-content/uploads/2019/02/Fitoscopia-rinde-tributo-a-Fito-Fitipaldis-en-Sala-X-de-Sevilla.jpg",
+    "descripcion": "Fito & Fitipaldis recala con su gira de conciertos en Canarias\n\n\nFito y Fitiplados vuelven a Canarias con su gira. Las entardas acaban de salir a la venta al precio de 39.60 Euros y los conciertos se celebraran en Tenerife y Gran Canaria el 24 y 25 de Junio de 2022\n\n\nActualmente su web se encuentra en construccion, ya que van a grabar su nuevo disco para presentarlo e iniciar la gira 2020.\n\n\nTras 22 años de carrera, Fito & Fitipaldis afronta una des sus giras más exigentes e ilusionantes.\n\n\nSe anuncian dos nuevas paradas los días 24 y 25 de junio en Gran Canaria y Tenerife respectivamente.",
+    "dia": "25",
+    "mes": "JUN"
+  },
+  {
+    "nombre": "Granca Live Festival 2022",
+    "fecha": "Viernes: 08-07 15:00 - Sábado: 09-07 14:00",
+    "lugar": "Gran Canaria Arena",
+    "municipio": "Las Palmas de Gran Canaria",
+    "url": "https://static.tomaticket.es/img/artista_imagen/203751-granca.jpg",
+    "descripcion": "El Granca Live Fest es la gran cita con la música que todos estábamos esperando, el momento de reencontrarnos con los conciertos de nuestros artistas favoritos, de pasarlo bien en toda la experiencia festivalera que abarcará veintidós horas de diversión y de, por fin, bailar bajo el sol y las estrellas celebrando la mejor música en el gran evento del año. Los artistas que formaran parte de este gran festival son: Myke Towers, C. Tangana, Efecto Pasillo, Marc Anthony, Ni 1 Pelo de Tonto, Nil Moliner, SumeRR, Rayden, Camilo, Residente, Dani Martín, God Save the Queen y más artistas por confirmar.",
+    "dia": "08",
+    "mes": "JUL"
+  },
+  {
+    "nombre": "Concierto Melendi",
+    "fecha": "Viernes: 15-07 21:00",
+    "lugar": "Gran Canaria Arena",
+    "municipio": "Las Palmas de Gran Canaria",
+    "url": "https://cd1.taquilla.com/data/images/t/f3/melendi.jpg",
+    "descripcion": "Melendi anuncia su gira de conciertos de directos “Likes y Cicatrices”. Esta nueva gira de conciertos empezará en marzo en México y llegará a España en Mayo, exactamente el 7 de mayo en Murcia, recorriendo toda la geografía nacional y al que pronto se le unirán más fechas.",
+    "dia": "15",
+    "mes": "JUL"
+  }
+]
