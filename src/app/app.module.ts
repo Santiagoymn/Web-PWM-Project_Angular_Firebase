@@ -19,6 +19,7 @@ import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
