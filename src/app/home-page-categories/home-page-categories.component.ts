@@ -12,7 +12,6 @@ import {tap} from "rxjs";
 })
 export class HomePageCategoriesComponent implements OnInit {
 
-  data : any;
   categorias!: Categoria[];
   @Input() categoria!: Categoria;
   constructor(private categoriaService: CategoriaService) {

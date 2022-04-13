@@ -1,4 +1,4 @@
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,13 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
 import {CategoryPageActividadesComponent} from "./category-page-actividades/category-page-actividades.component";
+import {HomePageComponent} from "./home-page/home-page.component";
+import { AboutUsComponent } from './about-us/about-us.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+// import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
+import { AgendaComponent } from './agenda/agenda.component';
+// import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
+
 
 @NgModule({
   declarations: [
@@ -27,10 +34,15 @@ import {CategoryPageActividadesComponent} from "./category-page-actividades/cate
     AboutUsPageInformationComponent,
     AboutUsPageQuienesSomosComponent,
     GalleryComponent,
-    HomePageAboutUsComponent,
     FooterComponent,
     DiscoverGCComponent,
     CategoryPageActividadesComponent
+    HomePageComponent,
+    AboutUsComponent,
+    PageNotFoundComponent,
+    // ActivityPageInformationComponent
+    AgendaComponent,
+    // CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,
