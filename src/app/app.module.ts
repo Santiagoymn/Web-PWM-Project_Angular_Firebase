@@ -16,6 +16,7 @@ import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
+import {CategoryPageActividadesComponent} from "./category-page-actividades/category-page-actividades.component";
 import {HomePageComponent} from "./home-page/home-page.component";
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -35,6 +36,7 @@ import { AgendaComponent } from './agenda/agenda.component';
     GalleryComponent,
     FooterComponent,
     DiscoverGCComponent,
+    CategoryPageActividadesComponent
     HomePageComponent,
     AboutUsComponent,
     PageNotFoundComponent,
@@ -47,7 +49,7 @@ import { AgendaComponent } from './agenda/agenda.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgbModule,
+    NgbModule
     //FormsModule,
     //ReactiveFormsModule,
     //MatCarouselModule.forRoot()
