@@ -20,8 +20,9 @@ import {CategoryPageActividadesComponent} from "./category-page-actividades/cate
 import {HomePageComponent} from "./home-page/home-page.component";
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-// import { ActivityPageInformationComponent } from './activity-page-information/activity-page-information.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
+import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity-page-empresas.component';
 // import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
@@ -36,12 +37,13 @@ import { AgendaComponent } from './agenda/agenda.component';
     GalleryComponent,
     FooterComponent,
     DiscoverGCComponent,
-    CategoryPageActividadesComponent
+    CategoryPageActividadesComponent,
     HomePageComponent,
     AboutUsComponent,
     PageNotFoundComponent,
-    // ActivityPageInformationComponent
+    ActivityPageInformationComponent,
     AgendaComponent,
+    ActivityPageEmpresasComponent,
     // CategoryPageActividadesComponent
   ],
   imports: [
