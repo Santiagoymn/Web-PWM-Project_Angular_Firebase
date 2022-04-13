@@ -6,11 +6,13 @@ import {HomePageAboutUsComponent} from "./home-page-about-us/home-page-about-us.
 import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {AgendaMessageComponent} from "./agenda-message/agenda-message.component";
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
   { path: 'galeria', component: GalleryComponent},
   { path: 'aboutUs', component: AboutUsComponent},
+  { path: 'agendaMessage', component: AgendaMessageComponent},
   { path: '**', component: PageNotFoundComponent}
 ];
 

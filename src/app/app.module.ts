@@ -23,6 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AgendaComponent } from './agenda/agenda.component';
 import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
 import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity-page-empresas.component';
+import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
 // import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
@@ -44,6 +45,7 @@ import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity
     ActivityPageInformationComponent,
     AgendaComponent,
     ActivityPageEmpresasComponent,
+    AgendaMessageComponent,
     // CategoryPageActividadesComponent
   ],
   imports: [
