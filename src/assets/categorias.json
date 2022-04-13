@@ -1,11 +1,272 @@
-{
-
-    "categorias": [
+[
+  {
+    "titulo": "Actividades acuáticas",
+    "descripcion": "Disfruta del mar, la costa y de los paisajes de Gran Canaria. Estas son algunas de las actividades para disfrutar del sol y divertirte.",
+    "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
+    "alt": "Flyboard",
+    "actividades": [
       {
-        "titulo": "hola",
-        "url": "hola"
+        "name": "Flyboard",
+        "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
+        "description": "Guía de empresas para hacer flyboard Gran Canaria. Consulta precios y obtén las mejores ofertas del deporte de moda. Puedes Alquilar fly board en Gran Canaria a través de los distintos centros de flyboard en Gran Canaria. El fly board es una actividad perfecta para practicar en cumpleaños, eventos e incentivos de empresa, teambuilding, regalos originales y despedidas de soltero",
+        "empresas": [
+          {
+            "name": "Business Sports",
+            "place": "Las Palmas",
+            "price": "24.90€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports2",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports3",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          }
+        ]
+      },
+      {
+        "name": "Motos acuáticas",
+        "url": "https://cdn.getyourguide.com/img/tour/5ca36c9e4cfb9.jpeg/99.jpg",
+        "description": "Descubre las magníficas costas de Gran Canaria mientras conduces tu propio Jet Ski. Las motos de agua son fáciles de manejar y no requieren experiencia previa para su uso. Pueden conducir todas aquellas personas mayores de 16 años.",
+        "empresas": [
+          {
+            "name": "Business Sports",
+            "place": "Las Palmas",
+            "price": "24.90€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports2",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports3",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          }
+        ]
+      },
+      {
+        "name": "Parasailing",
+        "url": "https://cdn.getyourguide.com/img/tour/61784339969b5.jpeg/99.jpg",
+        "description": "  Vuela en paracaídas, hasta a 150 metros de altura, elevado desde un barco en el mar. Hacer parasailing en el sur de gran canaria Experimenta sensaciones intensas y contradictorias de paz, libertad, seguridad y vulnerabilidad al mismo tiempo. paracaidismo en el mar Disfruta del sol y la brisa marina.  Sorpréndete viendo las costas y barrancos de Gran Canaria desde un ángulo completamente distinto al que estás acostumbrado.",
+        "empresas": [
+          {
+            "name": "Business Sports",
+            "place": "Las Palmas",
+            "price": "24.90€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports2",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          },
+          {
+            "name": "Business Sports3",
+            "place": "Las Palmas",
+            "price": "50€",
+            "number": "123456789",
+            "web": "www.empresa.com"
+          }
+        ]
       }
     ]
+  },
+  {
+    "titulo": "Senderismo",
+    "descripcion": "Disfruta de la belleza que desprende Gran Canaria recorriendo cada uno de sus rincones, caminando por todo tipo de caminos",
+    "url": "https://www.lugaresdeaventura.com/sites/default/files/inline-images/senderismo-gran-canaria-roque-nublo-circular-foto-ivan-sanz-5.jpeg",
+    "alt": "Senderismo",
+    "actividades": [
+      {
+        "name": "Cueva de Roque Nublo",
+        "url": "https://www.caminantesdeaguere.com/wp-content/uploads/2019/10/ventanas-del-nublo.jpg",
+        "description": "Recorre el interior de la isla de Gran Canaria haciendo una circula saliendo desde los Llano de la Pez y recorriendo los alrededores del Rque Nublo hast llegar a su cueva, en donde se realizará un descansoo en el que tomar fotos y reponer fuerzas para la vuelta a   los Llanos de la Pez",
+        "empresas": [
+          {
+            "name": "Caminante SI hay camino",
+            "place": "Los Llanos de la Pez, Tejeda",
+            "price": "3€",
+            "number": "(+34)622785503",
+            "web": "www.caminantesihaycamino.com"
+          }
+        ]
+      },
+      {
+        "name": "Barranco de azuaje",
+        "url": "https://s1.wklcdn.com/image_1/40658/2117261/784327Master.jpg",
+        "description": "Azuaje es una espacio natural protegido de 61,1 ha, forma parte desde 1987 del parque rural de Doramas y ha sido reclasificado con la aprobación el 16 de noviembre de 1994 de la Ley de Espacios Naturales como reserva natural especial.1​ Es un tramo de uno de los barrancos más importantes y de mayor belleza paisajística del norte de Gran Canaria. Apúntate y descúbrelo",
+        "empresas": [
+          {
+            "name": "Trotamundos GC",
+            "place": "Barranco de Azuaje",
+            "price": "5€",
+            "number": "(+34)722485903",
+            "web": "www.trotamundosgc.es"
+          }
+        ]
+      },
+      {
+        "name": "Ruta de la sal",
+        "url": "https://4.bp.blogspot.com/-RTijvGGcN-g/Wo83NINqsZI/AAAAAAABDZw/1pkAP8sLG-sHTO6_vW66zuCwLSyp9tgTACK4BGAYYCw/w1200-h630-p-k-no-nu/13330%2BSan%2BBartolom%25C3%25A9-Santa%2BLuc%25C3%25ADa%2B%2528Rosiana%2529.JPG",
+        "description": "Esta es la antigua ruta que unía el casco con las Salinas de Tenefé, en la costa, y con los cultivos de tomates; se puede proseguir desde Sardina hasta Tenefé por el núcleo urbano de la orilla baja. En su primer tramo coincide con la ruta de Ansite, hasta llegar a la llamada casa de Mariquita Antonia, donde va subiendo hasta la presa de Cueva Blanca y los llanos de Guriete, zona de ganado caprino y ovino, para posteriormente bordear el pico Majabal y llegar hasta el Cardón. Desde aquí va bajando más suavemente hasta el punto de llegada en las Carboneras, cerca del Sardina. La vuelta, en casi constante subida, presenta lago más de dificultad.",
+        "empresas": [
+          {
+            "name": "Trotamundos GC",
+            "place": "Barranco de Azuaje",
+            "price": "5€",
+            "number": "(+34)722485903",
+            "web": "www.trotamundosgc.es"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Gastronomía",
+    "descripcion": "Deguste los mejores platos de la tierra de Gran Canaria, producto de KM0 que le hará viajarr",
+    "url": "https://www.viajes-carrefour.com/blog/wp-content/uploads/2018/06/papas-mojo-canario.jpg",
+    "alt": "Gastronomía",
+    "actividades": [
+      {
+        "name": "Tour guiado por viñedos y degustación de vinos",
+        "url": "https://cdn0.bodas.net/vendor/67993/3_2/960/jpg/-mg-1593-1_1_167993-160427199089829.jpeg",
+        "description": "Nuestra bodega dispone de un patrimonio histórico casi único en Canarias. Por ejemplo la prensa de Lyon de 1912 en perfecto estado de conservación, nuestros tres lagares, que no encontrarás en ningún otro sitio y por supuesto, nuestro museo del vino, con maquinaria antigua, como la estrujadora - despalilladora eléctrica, traída de Barcelona en 1915, libros de agricultura de principios del siglo XX y productos enológicos de la época, entre otras muchas otras cosas. Y por supuesto, nuestra bodega, con ese aroma inconfundible, además de nuestro santo San Juan, ubicado al fondo de la bodega en honor a nuestro fundador, Juan Rodríguez Quegles. Por supuesto, no podemos olvidarnos de nuestros viñedos, con ese suelo de picón, procedente del Volcán de Bandama, que le da unas características organolépticas excelentes a nuestro vino. Actualmente, nuestros viñedos se encuentran en conversión a ecológico, por lo que la visión del terreno es aún más encantadora.",
+        "empresas": [
+          {
+            "name": "Bodega San Juan",
+            "place": "Santa Brígida",
+            "price": "20€",
+            "number": "626911643",
+            "web": "www.bodega-sanjuan.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Cultura",
+    "descripcion": "Disfrute de este bello arte como es la cultura en una isla llena de cultura",
+    "url": "https://sense.hdhotels.com/cms/uploads/webp/cobi_media_hdhotels.com_storage_media_uploads_2019_06_05_teatro_perez_galdos-900-r3c1ru.webp",
+    "alt": "Teatro Pérez Galdós",
+    "actividades": [
+      {
+        "name": "Visita a la casa de Colón",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Las_Palmas_Casa_de_colon_aussen.jpg",
+        "description": "¡Hay muchas formas de visitar la Casa de Colón! Te ofrecemos la posibilidad de que seas tú quien elija cómo nos quieres conocer, escogiendo cómo quieres organizarla. Las visitas guiadas están adaptadas a tus necesidades, a las áreas temáticas del museo y a la variedad de públicos visitantes.\n\nConoce la historia de esta institución y descubre las piezas destacadas de nuestra colección durante el recorrido guiado por las 13 salas de exposición permanente, la arquitectura y patios de la Casa de Colón. Si lo prefieres puedes escoger un itinerario personalizado y visitar sólo una parte del museo, centrándonos en una o varias áreas temáticas de tu interés.",
+        "empresas": [
+          {
+            "name": "Cabildo de Gran Canaria",
+            "place": "Las Palmas de GC",
+            "price": "4€",
+            "number": "928312373/84/86",
+            "web": "casacolon@grancanaria.com "
+          }
+        ]
+      },
+      {
+        "name": "Cueva pintada de Gáldar",
+        "url": "https://i.pinimg.com/originals/df/7f/49/df7f498d0b21d63d87fb5fcdbd70266a.jpg",
+        "description": "El Museo y Parque Arqueológico Cueva Pintada es uno de los espacios arqueológicos más importantes de Gran Canaria. Situado en el centro histórico de la ciudad de Gáldar, tiene como objetivo garantizar la conservación, la investigación y la difusión de uno de los yacimientos más singulares del Archipiélago Canario. Este equipamiento permite no sólo la posibilidad de admirar este excepcional ejemplo de pintura mural, expresión artística y simbólica de los antiguos canarios, sino también la de contar con un centro de referencia a a hora de conocer el mundo prehispánico de Gran Canaria y los convulsos acontecimientos que culminaron en 1483 con la incorporación de la Isla a la Corona de Castilla.",
+        "empresas": [
+          {
+            "name": "Cabildo de Gran Canaria",
+            "place": "Gáldar",
+            "price": "6€",
+            "number": "(+34)928895489 ",
+            "web": "www.cuevapintada.com"
+          }
+        ]
+      },
+      {
+        "name": "Casa-Museo Pérez Galdós",
+        "url": "http://www.cronistasoficiales.com/wp-content/uploads/2020/03/1-109.jpg",
+        "description": "El barrio de Vegueta es el más importante de Las Palmas de Gran Canaria. Se trata del núcleo donde se fundó la ciudad, cuando el ejército del conquistador Juan Rejón levantó en el año 1478 el Real de las Palmas, llamado así por las palmeras que había alrededor. En este lugar se sitúa todo el casco histórico de la capital y está repleto de sitios por descubrir.\n\nEntre la plaza Mayor de Santa Ana, con la Catedral como clara protagonista, y espacios culturales como la Casa de Colón, Vegueta guarda entre sus calles más de un atractivo. En una de ellas, entre este barrio y el de Triana, nació uno de los novelistas más reconocidos de nuestro país, Benito Pérez Galdós. Hoy en día su casa natal se ha convertido en un museo para conservar la memoria del escritor y dar su figura a conocer. ¿Quieres adentrarte en el mundo del ciudadano más ilustre de Gran Canaria?",
+        "empresas": [
+          {
+            "name": "Cabildo de Gran Canaria",
+            "place": "Vegueta",
+            "price": "Gratuita",
+            "number": "928366976",
+            "web": "www.casamuseoperezgaldos.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Deportes extremos",
+    "descripcion": "Aventúrate a realizar deportes extremos en una isla de ensueño",
+    "url": "https://media.manawa.com/cache/activity_gallery_zoom_770x500/media/2020/03/06d358c3a52daae1a430f84b7ae71800.jpeg",
+    "alt": "Parepente",
+    "actividades": [
+      {
+        "name": "Buggy Tour Gran Canaria",
+        "url": "https://faroexcursiones.com/wp-content/uploads/2018/10/buggy-3578283_1920-e1539013127757.jpg",
+        "description": "Suba a un buggy para disfrutar de una aventura fuera de carretera y explore los paisajes en torno al parque natural de Fataga. Viajará en un convoy siguiendo a su guía y conduciendo un quad con el que se enfrentará fácilmente a las carreteras pavimentadas y las pistas de tierra. Tenga en cuenta que los grupos de hasta cinco pasajeros pueden montar en el mismo buggy; si todo el mundo quiere conducir, tendrá que hacer reservas por separado.\n\nLea más sobre Buggy Tour Gran Canaria - https://www.viator.com/es-ES/tours/Gran-Canaria/BUGGY-PIRATES-TOUR-GRAN-CANARIA-EL-ORIGINAL-No1-OFFROAD-FUN/d792-174191P2?mcid=56757",
+        "empresas": [
+          {
+            "name": "Buggy Pirates",
+            "place": "El Tablero",
+            "price": "60€",
+            "number": "928312373/84/86",
+            "web": "www.buggypirates.es"
+          }
+        ]
+      },
+      {
+        "name": "Escalada en Gran Canaria",
+        "url": "https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/07/16/60f15acccbffa.jpeg",
+        "description": "Con la variedad de paisajes montañosos que ofrece, usted encontrará las condiciones perfectas para escalar en Gran Canaria. Como principiante, participa en el curso de escalada de 2 días en Gran Canaria o explora la maravillosa naturaleza como escalador experimentado en uno de los tours de escalada diarios.",
+        "empresas": [
+          {
+            "name": "Climbo",
+            "place": "Teror",
+            "price": "130€",
+            "number": "(+34)636898493",
+            "web": "www.climbo.rocks"
+          }
+        ]
+      },
+      {
+        "name": "Buceo en GC",
+        "url": "https://www.dresseldivers.com/wp-content/uploads/buceo-recreativo-ppal.jpg",
+        "description": "Los amantes del buceo encontrarán un mundo de posibilidades para inmersiones de lujo en Gran Canaria.\n\nLa Isla es de origen volcánico y sorprende los buceadores con las riquezas de sus fondos marinos, su variedad y colores. Hay muchos lugares donde bucear alrededor de la isla y podrás encontrar centros de buceo para aprender bucear o participar en salidas organizadas. \n\nSi quieres saber por qué tanta gente está loco por sumergirse en el mar, no lo dudes: ven con nosotros y rélajate viendo las mil maravillas del mar de Gran Canaria.",
+        "empresas": [
+          {
+            "name": "Zeusteam",
+            "place": "Maspalomas",
+            "price": "60€",
+            "number": "(+34)689082298",
+            "web": "www.zeusdivecenter.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Carnaval",
+    "descripcion": "Disfruta de los carnavales de Gran Canaria, uno de los mejores del país.",
+    "url": "https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg",
+    "alt": "Carnaval"
   }
-
-
+]

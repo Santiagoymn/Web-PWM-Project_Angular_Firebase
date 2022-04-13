@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
+import {CategoryPageActividadesComponent} from "./category-page-actividades/category-page-actividades.component";
 
 @NgModule({
   declarations: [
@@ -28,20 +29,22 @@ import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
     GalleryComponent,
     HomePageAboutUsComponent,
     FooterComponent,
-    DiscoverGCComponent
+    DiscoverGCComponent,
+    CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgbModule,
+    NgbModule
     //FormsModule,
     //ReactiveFormsModule,
     //MatCarouselModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
 
