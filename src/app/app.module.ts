@@ -26,6 +26,7 @@ import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity
 import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
+import {HeaderComponent} from "./header/header.component";
 // import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
@@ -49,6 +50,8 @@ import {ReactiveFormsModule, FormsModule} from "@angular/forms";
     ActivityPageEmpresasComponent,
     AgendaMessageComponent,
     LoginComponent,
+    HeaderComponent
+    // CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,

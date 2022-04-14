@@ -1,13 +1,15 @@
 <div class="categoryWrapper">
   <div *ngFor="let categoria of categorias">
-    <h2>{{categoria.titulo}}</h2>
-    <a routerLink="">
-      <div class='actividad' id="actividad{{i}}" *ngFor="let actividad of categoria.actividades; let i = index">
-        <div class='centrado'>
-          <div class='nombreActividadImagen'>{{actividad.name}}</div>
+    <div *ngIf="sustituirEspacios(categoria.titulo) === comparacion()">
+      <h2>{{categoria.titulo}}</h2>
+      <a routerLink="">
+        <div class='actividad' id="actividad{{i}}" *ngFor="let actividad of categoria.actividades; let i = index">
+          <div class='centrado'>
+            <div class='nombreActividadImagen'>{{actividad.name}}</div>
+          </div>
+          <img class='imagenActividad' src="{{actividad.url}}" alt ="{{actividad.name}}" >
         </div>
-        <img class='imagenActividad' src="{{actividad.url}}" alt ="{{actividad.name}}" >
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </div>
