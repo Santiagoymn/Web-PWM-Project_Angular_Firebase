@@ -489,33 +489,26 @@
   ],
   "sobreNosotros": [
     {
-      "foto": "images/Logo.png",
-      "alt": "Imagen sobre nosotros",
+      "foto": "assets/images/Logo.png",
+      "alt": "Logo",
       "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
   ],
   "sobreNosotrosPersonas": [
     {
-      "foto": "images/trabajador1.jpeg",
+      "foto": "assets/images/trabajador1.jpeg",
       "alt": "Trabajador 1",
       "descripcion": "Melba Pérez Santana, ingeniera informática"
     },
     {
-      "foto": "images/trabajador2.jpeg",
+      "foto": "assets/images/trabajador2.jpeg",
       "alt": "Trabajador 2",
       "descripcion": "Samuel Rodríguez Hernández, ingeniero informático"
     },
     {
-      "foto": "images/trabajador3.jpeg",
+      "foto": "assets/images/trabajador3.jpeg",
       "alt": "Trabajador 3",
       "descripcion": "Santiago Adrián Yánez Martín, ingeniero informático"
-    }
-  ],
-  "sobreNosotrosGeneral": [
-    {
-      "logo": "images/Logo.png",
-      "alt": "Logo de la empresa",
-      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
   ],
   "imagenesCarrusel": [

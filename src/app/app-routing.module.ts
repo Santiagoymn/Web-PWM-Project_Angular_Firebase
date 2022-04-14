@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'conoceGC', component: DiscoverGCComponent},
   { path: 'aboutUs', component: AboutUsComponent},
   { path: 'agendaMessage', component: AgendaMessageComponent},
+  //{ path: 'register', component: RegisterComponent},
   { path: 'categoria', component: CategoryPageActividadesComponent},
   { path: '**', component: PageNotFoundComponent}
 ];

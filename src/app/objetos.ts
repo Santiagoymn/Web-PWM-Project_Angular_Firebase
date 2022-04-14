@@ -52,4 +52,13 @@ export interface Evento{
   dia: string;
   mes: string;
 }
+export interface Usuario{
+  usuario: string;
+  email: string;
+  nombre: string;
+  apellidos: string;
+  password: string;
+  id: number;
+}
+
 

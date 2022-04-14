@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +24,8 @@ import { AgendaComponent } from './agenda/agenda.component';
 import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
 import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity-page-empresas.component';
 import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
+import { LoginComponent } from './login/login.component';
+import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {HeaderComponent} from "./header/header.component";
 // import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
@@ -47,6 +49,7 @@ import {HeaderComponent} from "./header/header.component";
     AgendaComponent,
     ActivityPageEmpresasComponent,
     AgendaMessageComponent,
+    LoginComponent,
     HeaderComponent
     // CategoryPageActividadesComponent
   ],
@@ -55,14 +58,13 @@ import {HeaderComponent} from "./header/header.component";
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgbModule
-    //FormsModule,
-    //ReactiveFormsModule,
-    //MatCarouselModule.forRoot()
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
 
