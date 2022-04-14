@@ -1,0 +1,42 @@
+<div class="container-fluid login">
+  <div class="row">
+    <div class="col-1 col-sm-2 col-lg-3">
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div class="contenedorForm">
+        <h3 class="tituloInicioSesion">Inicio de Sesión</h3>
+
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" novalidate>
+          <label for="user"> Usuario </label>
+          <div class="conjuntoInput">
+            <img src="assets/images/icono-usuario.png" class="icono" alt="Usuario">
+            <input type="text" id="user" name="user" formControlName="user" required >
+          </div>
+
+          <label for="passwd">Contraseña</label>
+          <div class="conjuntoInput">
+            <img src="assets/images/icono-contraseña.png" class="icono" alt="Contraseña">
+            <input type="password" id="passwd" name="passwd" formControlName="password" required >
+          </div>
+          <div *ngIf="this.checkoutForm.get('password')?.errors?.['required'] || this.checkoutForm.get('user')?.errors?.['required']">
+            <div> Todos los campos deben rellenarse</div>
+          </div>
+
+          <div class="botonForm">
+            <button type="submit" value="Iniciar Sesión" id="inicio">
+              Iniciar Sesión
+            </button>
+          </div>
+
+        </form>
+
+
+        <p class="accesoRegistro">
+          ¿No tienes cuenta? <a routerLink='/register'>Regístrate</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-1 col-sm-2 col-lg-3">
+    </div>
+  </div>
+</div>

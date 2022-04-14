@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'galeria', component: GalleryComponent},
   { path: 'aboutUs', component: AboutUsComponent},
   { path: 'agendaMessage', component: AgendaMessageComponent},
+  //{ path: 'register', component: RegisterComponent},
   { path: '**', component: PageNotFoundComponent}
 ];
 
