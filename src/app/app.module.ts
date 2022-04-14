@@ -24,6 +24,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
 import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity-page-empresas.component';
 import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
+import {HeaderComponent} from "./header/header.component";
 // import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
 
 
@@ -46,6 +47,7 @@ import { AgendaMessageComponent } from './agenda-message/agenda-message.componen
     AgendaComponent,
     ActivityPageEmpresasComponent,
     AgendaMessageComponent,
+    HeaderComponent
     // CategoryPageActividadesComponent
   ],
   imports: [
