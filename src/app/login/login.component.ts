@@ -12,8 +12,10 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   checkoutForm: FormGroup;
+
   user: string = "";
   password: string = "";
+
   acceso: number = 0;
 
   usuarios!: Usuario[];
