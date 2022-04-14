@@ -23,4 +23,12 @@ export class CategoryPageActividadesComponent implements OnInit {
       .subscribe();
   }
 
+  comparacion(){
+    return localStorage.getItem("category");
+  }
+
+  sustituirEspacios(nombre: any){
+    return nombre.replaceAll(" ", "")
+  }
+
 }
