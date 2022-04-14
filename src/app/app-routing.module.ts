@@ -7,10 +7,14 @@ import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {AgendaMessageComponent} from "./agenda-message/agenda-message.component";
+import {AgendaComponent} from "./agenda/agenda.component";
+import {DiscoverGCComponent} from "./discover-gc/discover-gc.component";
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
+  { path: 'agenda', component: AgendaComponent},
   { path: 'galeria', component: GalleryComponent},
+  { path: 'conoceGC', component: DiscoverGCComponent},
   { path: 'aboutUs', component: AboutUsComponent},
   { path: 'agendaMessage', component: AgendaMessageComponent},
   { path: '**', component: PageNotFoundComponent}
