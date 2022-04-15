@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DiscoverGC} from "../objetos";
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
-import {DiscoverGCService} from "../discover-gc.service";
 import {tap} from "rxjs";
+import {GetterJsonService} from "../getter-json.service";
 
 @Component({
   selector: 'app-discover-gc',
@@ -15,11 +15,11 @@ export class DiscoverGCComponent implements OnInit {
   municipios!: DiscoverGC[];
   @Input() discoverGC!: DiscoverGC;
 
-  constructor(config: NgbCarouselConfig, private discoverGCservice: DiscoverGCService) {
+  constructor(config: NgbCarouselConfig, private getterJsonService: GetterJsonService) {
   }
 
   ngOnInit(): void {
-    this.discoverGCservice.getMunicipios()
+    this.getterJsonService.getMunicipios()
       .pipe(
         tap((municipio: DiscoverGC[]) => this.municipios = municipio)
       )
