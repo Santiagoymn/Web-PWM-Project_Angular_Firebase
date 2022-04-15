@@ -116,6 +116,9 @@ a{
     margin-top: 0.2rem;
   }
 
+  .btn-tablet{
+    display: none;
+  }
   .dropdown-menu {
     position: absolute;
     top: 70%;
@@ -138,6 +141,7 @@ a{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
   .banderaPrincipalActual{
     height: 1.55rem;
     margin-left: 5rem;
@@ -376,6 +380,7 @@ a{
     background-color: white;
 
   }
+
 
   .imagenFlechaAbajo{
     position:relative;
@@ -695,6 +700,7 @@ a{
   .botonBanderasDropLeft{
     display: none;
   }
+
 
   .tresRayas2{
     width: 1.5rem;

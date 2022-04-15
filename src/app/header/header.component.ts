@@ -50,4 +50,11 @@ export class HeaderComponent implements OnInit {
     // var id = $(this).attr("id");
     localStorage.setItem("category", identificador);
   }
+
+  getLogged(): boolean{
+    if (sessionStorage.getItem('logged') === 'true')
+      return true;
+    else
+      return false;
+  }
 }
