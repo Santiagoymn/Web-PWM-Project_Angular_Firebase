@@ -13,6 +13,7 @@ import {CategoryPageActividadesComponent} from "./category-page-actividades/cate
 import {RegisterFormComponent} from "./register-form/register-form.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterMessageComponent} from "./register-message/register-message.component";
+import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'categoria', component: CategoryPageActividadesComponent},
   { path: 'login', component: LoginComponent},
   { path: 'registeredSuccesful', component: RegisterMessageComponent},
+  { path: 'actividad', component: ActivityPageInformationComponent},
   { path: '**', component: PageNotFoundComponent}
 ];
 

@@ -80,8 +80,8 @@
           <li><p class="categoriasDropdown">Categorias</p>
             <ul class="submenuCategorias">
               <div *ngFor="let categoria of categorias">
-                <li id="{{categoria.titulo.replace(' ', '')}}">
-                  <a href="CategoryPage.html">
+                <li id="{{categoria.titulo.replace(' ', '')}}" (click)="puestaVariableLocal(categoria.titulo.replace(' ', ''))">
+                  <a routerLink="categoria">
                     <p class="fuenteCategorias">{{categoria.titulo}}</p>
                   </a>
                 </li>
