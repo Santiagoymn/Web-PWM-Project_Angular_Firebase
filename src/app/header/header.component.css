@@ -96,14 +96,11 @@ a{
 
   .lineaHeaderOculto{
     position: relative;
-    display: flex;
-    height: 5rem;
+    display: inline-flex;
+    height: auto;
+    margin-top: 0.7rem;
     vertical-align: middle;
     justify-content: center;
-    margin-top: 2.5rem;
-    margin-left: 1rem;
-    width: auto;
-
 
   }
 
@@ -199,7 +196,7 @@ a{
     position: relative;
     display: flex;
     top: 0rem;
-    width: 13rem;
+    width: auto;
   }
   #menu ul{ /* Quita los puntos de la lista del dropdown */
     list-style: none;
@@ -348,15 +345,14 @@ a{
     top: -7rem;
     font-size: 1.25rem;
     width: 3rem;
-    margin: 0;
-    margin-right: 2rem;
+    margin: 0 2rem 0 0;
   }
 
   .lineaHeaderOculto{
     position: relative;
     display: inline-flex;
     height: auto;
-    margin-top: 0.7rem;
+    margin-top: 2.3rem;
     vertical-align: middle;
     justify-content: center;
   }
@@ -496,7 +492,7 @@ a{
     position: relative;
     float: right;
     margin-right: 2rem;
-    margin-top: -2rem;
+    margin-top: 0rem;
   }
 
   .iconoLogueadoMovil{
