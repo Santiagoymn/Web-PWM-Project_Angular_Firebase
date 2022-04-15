@@ -25,6 +25,16 @@ export class ActivityPageInformationComponent implements OnInit {
       .subscribe();
   }
 
+  quitarEspacios(nombre: any){
+    return nombre.replaceAll(" ", "");
+  }
+
+  actividadClicada(){
+    // @ts-ignore
+    var s = localStorage.getItem("activityName").replace(" ", "");
+    return s;
+  }
+
   // product: Product | undefined;
   //
   // data : any;
