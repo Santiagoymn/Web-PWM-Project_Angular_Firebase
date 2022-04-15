@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutUsService } from '../about-us.service';
+import {GetterJsonService} from "../getter-json.service";
 
 //import {Breakpoints} from '@angular/cdk/layout';
 
@@ -14,8 +14,8 @@ export class HomePageAboutUsComponent implements OnInit {
   //isPhone = false;
   //isDesktop = false;
   //isTablet = false;
-  aboutUs = this.aboutUsService.getAboutUs();
-  constructor( private aboutUsService: AboutUsService) { } //private responsive: BreakpointObserver,
+  aboutUs = this.getterJsonService.getAboutUs();
+  constructor( private getterJsonService: GetterJsonService) { } //private responsive: BreakpointObserver,
 
   ngOnInit(): void {
     /*this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result: { matches: any; }) => {
