@@ -564,7 +564,8 @@ a{
     position: relative;
     width: 3rem;
     height: 3rem;
-    margin-left: 23%;
+    margin-left: 50%;
+    top: 5rem;
   }
 
   .rectanguloSeparacionDropdown {

@@ -13,9 +13,6 @@ export class HeaderComponent implements OnInit {
   categorias!: Categoria[];
 
   subMenu: boolean = false;
-
-  mas: boolean = true;
-  menos: boolean = false;
   constructor(private getterJsonService: GetterJsonService) { }
 
   ngOnInit(): void {
@@ -31,15 +28,18 @@ export class HeaderComponent implements OnInit {
   }
 
   showSubMenu(): void{
-    this.subMenu = true;
-    this.mas = !this.mas;
-    this.menos = !this.menos;
+    $("#subMenu").show();
+    this.toggleMasMenos();
   }
 
   hideSubMenu(): void{
-    this.subMenu = false;
-    this.mas = !this.mas;
-    this.menos = !this.menos;
+    $("#subMenu").hide();
+    this.toggleMasMenos();
+  }
+
+  toggleMasMenos(): void{
+    $("#mas").toggle();
+    $("#menos").toggle();
   }
 
   setCategory(id: string): void{
