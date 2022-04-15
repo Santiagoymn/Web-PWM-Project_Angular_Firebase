@@ -10,6 +10,9 @@ import {AgendaMessageComponent} from "./agenda-message/agenda-message.component"
 import {AgendaComponent} from "./agenda/agenda.component";
 import {DiscoverGCComponent} from "./discover-gc/discover-gc.component";
 import {CategoryPageActividadesComponent} from "./category-page-actividades/category-page-actividades.component";
+import {RegisterFormComponent} from "./register-form/register-form.component";
+import {LoginComponent} from "./login/login.component";
+import {RegisterMessageComponent} from "./register-message/register-message.component";
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
@@ -18,8 +21,10 @@ const routes: Routes = [
   { path: 'conoceGC', component: DiscoverGCComponent},
   { path: 'aboutUs', component: AboutUsComponent},
   { path: 'agendaMessage', component: AgendaMessageComponent},
-  //{ path: 'register', component: RegisterComponent},
+  { path: 'register', component: RegisterFormComponent},
   { path: 'categoria', component: CategoryPageActividadesComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'registeredSuccesful', component: RegisterMessageComponent},
   { path: '**', component: PageNotFoundComponent}
 ];
 

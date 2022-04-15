@@ -27,7 +27,9 @@ import { AgendaMessageComponent } from './agenda-message/agenda-message.componen
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {HeaderComponent} from "./header/header.component";
-// import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { RegisterMessageComponent } from './register-message/register-message.component';
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -50,7 +52,9 @@ import {HeaderComponent} from "./header/header.component";
     ActivityPageEmpresasComponent,
     AgendaMessageComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegisterFormComponent,
+    RegisterMessageComponent
     // CategoryPageActividadesComponent
   ],
   imports: [
@@ -62,7 +66,7 @@ import {HeaderComponent} from "./header/header.component";
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
 })
