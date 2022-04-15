@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {GalleryComponent} from "./gallery/gallery.component";
-import {CarruselComponent} from "./carrusel/carrusel.component";
-import {HomePageAboutUsComponent} from "./home-page-about-us/home-page-about-us.component";
 import {HomePageComponent} from "./home-page/home-page.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
