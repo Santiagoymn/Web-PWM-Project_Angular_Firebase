@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Usuario} from "../objetos";
-import {GetterJsonService} from "../getter-json.service";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
 import {UsersService} from "../users/users.service";
@@ -87,7 +86,7 @@ export class RegisterFormComponent implements OnInit {
             id: this.id + 1,
           };
           this.usersService.setUsuario(usuarioRegistrado).subscribe( data => {
-            this.usersService.setToken(data.token);
+            console.log(data);
           });
           this.router.navigate(['/registeredSuccesful']).then(() => {
             this.RegisterForm.reset();
