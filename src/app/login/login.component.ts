@@ -12,8 +12,10 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   checkoutForm: FormGroup;
+
   user: string = "";
   password: string = "";
+
   acceso: number = 0;
 
   usuarios!: Usuario[];
@@ -47,10 +49,7 @@ export class LoginComponent implements OnInit {
       });
       if (this.acceso == 1){
         this.router.navigate(['']).then(() => {
-          const user = { email: this.user, password: this.password };
-          this.usersService.login(user).subscribe(data => {
-            this.usersService.setToken(data.token);
-          });
+          sessionStorage.setItem("logged", "true");
           this.checkoutForm.reset();
         });
       }
