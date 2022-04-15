@@ -23,12 +23,16 @@ export class CategoryPageActividadesComponent implements OnInit {
       .subscribe();
   }
 
-  comparacion(){
+  categoriaClicada(){
     return localStorage.getItem("category");
   }
 
-  sustituirEspacios(nombre: any){
+  quitarEspacios(nombre: any){
     return nombre.replaceAll(" ", "")
   }
 
+  puestaVariableActivity(identificador:any){
+    var id = $(this).children("div").attr("id");
+    localStorage.setItem('activityName', identificador);
+  }
 }
