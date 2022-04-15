@@ -489,7 +489,7 @@
   ],
   "sobreNosotros": [
     {
-      "foto": "assets/images/Logo.png",
+      "logo": "assets/images/Logo.png",
       "alt": "Logo",
       "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
