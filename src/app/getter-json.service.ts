@@ -49,8 +49,4 @@ export class GetterJsonService {
   getAboutUs() {
     return this.http.get<SobreNosotrosGeneral[]>(this.apiURLSobreNosotros);
   }
-
-  getUsuarios() {
-    return this.http.get<Usuario[]>(this.apiURLUsuarios);
-  }
 }
