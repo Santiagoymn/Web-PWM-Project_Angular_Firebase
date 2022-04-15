@@ -198,7 +198,7 @@ a{
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
     display: flex;
-    top: -2.3rem;
+    top: 0rem;
     width: 13rem;
   }
   #menu ul{ /* Quita los puntos de la lista del dropdown */
@@ -275,7 +275,6 @@ a{
     position: relative;
     width: 100%;
     height: 4.3rem;
-    margin-top: -2.7rem;
     display: inline-block;
     background: #CEE0FC;
     z-index: -1;
@@ -581,9 +580,10 @@ a{
     float: right;
     width: 1rem;
     height: 1rem;
-    margin-top: 1rem;
+    margin-top: -3rem;
     margin-right: 1rem;
     vertical-align: middle;
+    z-index: 3;
   }
 
   .simboloMenos{
@@ -592,9 +592,10 @@ a{
     float: right;
     width: 1rem;
     height: 1rem;
-    margin-top: 1rem;
+    margin-top: -3rem;
     margin-right: 1rem;
     vertical-align: middle;
+    z-index: 3;
   }
 
   .lineaHeaderOculto{
@@ -681,8 +682,10 @@ a{
     position: relative;
     display: flex;
     margin-left: 0;
-    left: -7rem;
+    left: -5rem;
     margin-bottom: -2rem;
+    gap: 3.25rem;
+    top: 4rem;
   }
 
   .submenuCategorias {
@@ -705,7 +708,7 @@ a{
   }
 
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-    position: absolute;
+    position: relative;
     display: inline;
     width: 100%;
     height: 2rem;
