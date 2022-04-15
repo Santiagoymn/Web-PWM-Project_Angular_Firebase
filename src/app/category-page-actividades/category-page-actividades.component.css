@@ -44,11 +44,6 @@
     top: 50%;
     transform: translate(0, 50%);
   }
-
-  /*////////// FOOTER //////////*/
-  .footer {
-    margin-top: 15rem;
-  }
 }
 
 
@@ -76,11 +71,6 @@
     top:50%;
     transform: translate(0, 50%);
   }
-
-  /*////////// FOOTER //////////*/
-  .footer {
-    margin-top: 10rem;
-  }
 }
 
 @media (max-width: 640px) {
@@ -104,9 +94,6 @@
     top:50%;
     transform: translate(0, 50%);
   }
-  /*////////// FOOTER //////////*/
-  .footer {
-    margin-top: 10rem;
-  }
+
 
 }
