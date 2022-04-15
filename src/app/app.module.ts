@@ -1,18 +1,16 @@
-import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { MatCarouselModule } from '@ngmodule/material-carousel';
-//import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AboutUsPageInformationComponent } from './about-us-page-information/about-us-page-information.component';
-import { AboutUsPageQuienesSomosComponent } from './about-us-page-quienes-somos/about-us-page-quienes-somos.component';
+import { AboutUsPageInformationComponent } from './about-us/about-us-page-information/about-us-page-information.component';
+import { AboutUsPageQuienesSomosComponent } from './about-us/about-us-page-quienes-somos/about-us-page-quienes-somos.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { DiscoverGCComponent } from './discover-gc/discover-gc.component';
@@ -26,7 +24,10 @@ import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity
 import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
-// import { CategoryPageActividadesComponent } from './category-page-actividades/category-page-actividades.component';
+import {HeaderComponent} from "./header/header.component";
+import { RegisterFormComponent } from './register-form/register-form.component';
+import { RegisterMessageComponent } from './register-message/register-message.component';
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
@@ -49,6 +50,10 @@ import {ReactiveFormsModule, FormsModule} from "@angular/forms";
     ActivityPageEmpresasComponent,
     AgendaMessageComponent,
     LoginComponent,
+    HeaderComponent,
+    RegisterFormComponent,
+    RegisterMessageComponent
+    // CategoryPageActividadesComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,7 @@ import {ReactiveFormsModule, FormsModule} from "@angular/forms";
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
 })

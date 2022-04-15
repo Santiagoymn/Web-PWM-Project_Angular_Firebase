@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Usuario} from "../objetos";
-import {GetterJsonService} from "../getter-json.service";
+import {UsersService} from "../users/users.service";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
 
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   usuarios!: Usuario[];
   @Input() usuario!: Usuario;
 
-  constructor(public fb: FormBuilder, private getterJsonService: GetterJsonService, private router:Router) {
+  constructor(public fb: FormBuilder, private usersService: UsersService, private router:Router) {
     this.checkoutForm = this.fb.group({
       user: ['', [Validators.required]],
       password: ['', [Validators.required]]
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getterJsonService.getUsuarios()
+    this.usersService.getUsuarios()
       .pipe(
         tap((usuarios: Usuario[]) => this.usuarios = usuarios)
       )
@@ -49,6 +49,10 @@ export class LoginComponent implements OnInit {
       });
       if (this.acceso == 1){
         this.router.navigate(['']).then(() => {
+          const user = { email: this.user, password: this.password };
+          this.usersService.login(user).subscribe(data => {
+            this.usersService.setToken(data.token);
+          });
           this.checkoutForm.reset();
         });
       }

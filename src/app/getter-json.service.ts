@@ -1,5 +1,5 @@
 import {Injectable, Input} from '@angular/core';
-import {Carrusel, Categoria, DiscoverGC, Galeria, Persona, SobreNosotrosGeneral, Usuario} from "./objetos";
+import {Carrusel, Categoria, DiscoverGC, Evento, Galeria, Persona, SobreNosotrosGeneral, Usuario} from "./objetos";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
@@ -21,6 +21,8 @@ export class GetterJsonService {
   private apiURLMunicipios = "http://localhost:3000/municipios";
   private apiURLCarrusel = "http://localhost:3000/sobreimagenesCarrusel";
   private apiURLUsuarios = "http://localhost:3000/usuarios";
+  private apiURLEventos = "http://localhost:3000/eventos";
+
 
 
   constructor(private http: HttpClient) {
@@ -50,7 +52,7 @@ export class GetterJsonService {
     return this.http.get<SobreNosotrosGeneral[]>(this.apiURLSobreNosotros);
   }
 
-  getUsuarios() {
-    return this.http.get<Usuario[]>(this.apiURLUsuarios);
+  getEventos() {
+    return this.http.get<Evento[]>(this.apiURLEventos);
   }
 }

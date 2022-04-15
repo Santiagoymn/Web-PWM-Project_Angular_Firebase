@@ -3,14 +3,14 @@
   <section class="imagenesCategorias">
     <div class="conjuntoImagenDescripcion" *ngFor="let categoria of categorias">
       <img class="categoryImage" src="{{ categoria.url }}" alt="{{ categoria.alt }}"/>
-      <!--<a href="CategoryPage.html">-->
-        <div class="descripcion">
+      <a routerLink="/categoria">
+        <div class="descripcion" (click)="puestaVariableLocal(categoria.titulo)">
           <div class="textoDescripcion">
             <div class="tituloCategoria"> {{categoria.titulo}} </div>
             <div class="infoDescripcion">{{categoria.descripcion}}</div>
           </div>
         </div>
-      <!--</a -->
+      </a>
     </div>
   </section>
 </article>

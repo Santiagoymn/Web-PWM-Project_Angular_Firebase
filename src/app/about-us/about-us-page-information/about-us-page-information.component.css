@@ -1,0 +1,73 @@
+/*////////// APARTADO INFORMACIÓN //////////*/
+.apartadoInformacion{
+  display: flex;
+}
+.imgNosotros{
+  float:left;
+  vertical-align: center;
+  align-self: center;
+}
+.textoPresentacion{
+  text-align: justify;
+  width: 100%;
+}
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px) {
+  /*////////// APARTADO INFORMACIÓN //////////*/
+  .apartadoInformacion{
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+  }
+  .imgNosotros{
+    margin-right: 2rem;
+    height: 14.06rem;
+  }
+
+  .textoPresentacion{
+    top:-1.75rem;
+  }
+
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+
+  /*////////// APARTADO INFORMACIÓN //////////*/
+  .apartadoInformacion{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .imgNosotros{
+    height: 14.06rem;
+    margin-right: 1.5rem;
+  }
+
+  .textoPresentacion{
+    top:-1.75rem;
+  }
+
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+  .apartadoInformacion{
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+  }
+  .imgNosotros{
+    margin-right: 1rem;
+    height: 10.81rem;
+  }
+
+}

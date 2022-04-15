@@ -1,0 +1,73 @@
+<div class="container-fluid register" id="cuadroRegistro">
+  <div class="row">
+    <div class="col-1 col-sm-2 col-lg-3">
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <div class="contenedorFormRegistro">
+        <h2 class="tituloRegistro">Registro</h2>
+
+        <form id="form" [formGroup]="RegisterForm" (ngSubmit)="onSubmitRegister()" novalidate>
+
+          <label for="user">Usuario</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/icono-usuario.png" class="iconoR" alt="Usuario">
+            <input type="text" id="user" name="user" formControlName="user" required>
+          </div>
+
+          <label for="email">Email</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/arroba.png" class="iconoR" alt="Email">
+            <input type="email" id="email" name="email" formControlName="email" required>
+          </div>
+
+          <label for="nombre">Nombre</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/icono-usuario.png" class="iconoR" alt="Nombre">
+            <input type="text" id="nombre" name="nombre" formControlName="name" required>
+          </div>
+
+          <label for="apellidos">Apellidos</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/icono-usuario.png" class="iconoR" alt="Apellidos">
+            <input type="text" id="apellidos" name="apellidos" formControlName="surname" required>
+          </div>
+
+          <label for="passwd">Contraseña</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/icono-contraseña.png" class="iconoR" alt="Contraseña">
+            <input type="password" id="passwd" name="passwd" formControlName="password" required>
+          </div>
+
+          <label for="repeatPasswd">Repite contraseña</label>
+          <div class="conjuntoInputRegistro">
+            <img src="./assets/images/icono-contraseña.png" class="iconoR" alt="Repetición contraseña">
+            <input type="password" id="repeatPasswd" name="repeatPasswd" formControlName="passwordRepeated" required>
+          </div>
+
+          <div *ngIf="this.RegisterForm.get('user')?.errors?.['required'] || this.RegisterForm.get('email')?.errors?.['required'] ||
+            this.RegisterForm.get('name')?.errors?.['required'] || this.RegisterForm.get('surname')?.errors?.['required'] ||
+            this.RegisterForm.get('password')?.errors?.['required'] || this.RegisterForm.get('passwordRepeated')?.errors?.['required']">
+            Todos los campos deben rellenarse
+          </div>
+
+          <div *ngIf="this.RegisterForm.get('email')?.errors?.['email']">
+            El formato del correo introducido no es correcto
+          </div>
+
+          <div class="botonFormRegistro">
+            <button type="submit" value="Registrarse" id="registro">
+              Registrarse
+            </button>
+          </div>
+
+        </form>
+
+        <p class="accesoRegistro">
+          ¿Ya tienes cuenta? <a routerLink='/login'>Inicia sesión</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-1 col-sm-2 col-lg-3">
+    </div>
+  </div>
+</div>

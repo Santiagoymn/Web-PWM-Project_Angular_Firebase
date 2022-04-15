@@ -1,13 +1,17 @@
 <div class="categoryWrapper">
   <div *ngFor="let categoria of categorias">
-    <h2>{{categoria.titulo}}</h2>
-    <a routerLink="">
-      <div class='actividad' id="actividad{{i}}" *ngFor="let actividad of categoria.actividades; let i = index">
-        <div class='centrado'>
-          <div class='nombreActividadImagen'>{{actividad.name}}</div>
-        </div>
-        <img class='imagenActividad' src="{{actividad.url}}" alt ="{{actividad.name}}" >
+    <div *ngIf="quitarEspacios(categoria.titulo) === categoriaClicada()">
+      <h2>{{categoria.titulo}}</h2>
+      <div>
+        <a routerLink="/actividad">
+          <div class='actividad' *ngFor="let actividad of categoria.actividades;" (click)="puestaVariableActivity(quitarEspacios(actividad.name))" >
+            <div class='centrado'>
+              <div class='nombreActividadImagen'>{{actividad.name}}</div>
+            </div>
+            <img class='imagenActividad' src="{{actividad.url}}" alt ="{{actividad.name}}" >
+          </div>
+        </a>
       </div>
-    </a>
+    </div>
   </div>
 </div>

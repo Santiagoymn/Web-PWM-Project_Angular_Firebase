@@ -1,11 +1,10 @@
-
 <h2>Conoce Gran Canaria</h2>
 
 <section class="municipios">
   <div class="listaMunicipios">
     <article class="conjuntoMunicipio" id="municipio {{i}}" *ngFor="let municipio of municipios; let i = index">
       <div class="municipio">
-        <img src="{{municipio.urlImagen}}}" alt="Imagen de {{municipio.municipio}}" class="imagenMunicipio">
+        <img src="{{municipio.urlImagen}}" alt="Imagen de {{municipio.municipio}}" class="imagenMunicipio">
         <div class="nombreMunicipio" id="em{{i}}"><span class="colorFondo">{{municipio.municipio}}</span>
           {{cambiarEstadoDropDown(i)}}
           <button (click)="cambiarEstadoDropDown(i)" type="button" class="btn"  id="municipioBtn" data-toggle="dropdown">

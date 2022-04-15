@@ -1,7 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import {Categoria, Actividad, Empresa, DiscoverGC} from "../objetos";
-import { CategoriaService } from '../categoria.service';
+import {Categoria} from "../objetos";
 import {GetterJsonService} from "../getter-json.service";
 import {tap} from "rxjs";
 
@@ -23,6 +21,16 @@ export class ActivityPageInformationComponent implements OnInit {
         tap((categories: Categoria[]) => this.categorias = categories)
       )
       .subscribe();
+  }
+
+  quitarEspacios(nombre: any){
+    return nombre.replaceAll(" ", "");
+  }
+
+  actividadClicada(){
+    // @ts-ignore
+    var s = localStorage.getItem("activityName").replace(" ", "");
+    return s;
   }
 
   // product: Product | undefined;

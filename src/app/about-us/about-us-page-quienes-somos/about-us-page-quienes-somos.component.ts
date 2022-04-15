@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {QuienesSomosService} from "../quienes-somos.service";
+import {GetterJsonService} from "../../getter-json.service";
 
 @Component({
   selector: 'app-about-us-page-quienes-somos',
@@ -8,8 +8,8 @@ import {QuienesSomosService} from "../quienes-somos.service";
 })
 export class AboutUsPageQuienesSomosComponent implements OnInit {
 
-  quienesSomos = this.quienesSomosService.getQuienesSomos();
-  constructor( private quienesSomosService: QuienesSomosService) { }
+  quienesSomos = this.getterJsonService.getQuienesSomos();
+  constructor( private getterJsonService: GetterJsonService) { }
 
   ngOnInit(): void {
   }

@@ -23,4 +23,16 @@ export class CategoryPageActividadesComponent implements OnInit {
       .subscribe();
   }
 
+  categoriaClicada(){
+    return localStorage.getItem("category");
+  }
+
+  quitarEspacios(nombre: any){
+    return nombre.replaceAll(" ", "")
+  }
+
+  puestaVariableActivity(identificador:any){
+    var id = $(this).children("div").attr("id");
+    localStorage.setItem('activityName', identificador);
+  }
 }

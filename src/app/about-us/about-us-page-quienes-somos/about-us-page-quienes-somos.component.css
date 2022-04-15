@@ -1,0 +1,123 @@
+/*////////// APARTADO QUIÉNES SOMOS //////////*/
+.apartadoQuienesSomos{
+  width: 100%;
+  background-color: #C4C4C4;
+  height: auto;
+}
+.imagenesPersonas{
+  display: flex;
+  justify-content: center;
+}
+
+.conjuntoImagen img{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.conjuntoImagen p{
+  text-align: center;
+}
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px) {
+  /*////////// APARTADO QUIÉNES SOMOS //////////*/
+  .apartadoQuienesSomos{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenesPersonas{
+    top: 10.38rem;
+    gap: 3.25rem;
+    margin-bottom:2rem;
+  }
+
+  .conjuntoImagen{
+    width: 16.81rem;
+  }
+
+  .conjuntoImagen img{
+    width: 15.81rem;
+    height: 15.5rem;
+  }
+
+  .conjuntoImagen p{
+    text-align: center;
+  }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+  /*////////// APARTADO QUIÉNES SOMOS //////////*/
+  .apartadoQuienesSomos{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagenesPersonas{
+    top: 10.38rem;
+    gap: 3rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+
+  .conjuntoImagen{
+    width: 16.81rem;
+  }
+
+  .conjuntoImagen img{
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .conjuntoImagen p{
+    text-align: center;
+  }
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+  /*////////// APARTADO QUIÉNES SOMOS //////////*/
+  .tituloQuienesSomos{
+    margin-top: 2rem;
+  }
+  .apartadoQuienesSomos{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .imagenesPersonas{
+    margin-top:1rem;
+    gap: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:4rem;
+  }
+
+  .conjuntoImagen{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .conjuntoImagen img{
+    width: 13.44rem;
+    height: 13.2rem;
+    align-self: center;
+  }
+
+  .conjuntoImagen p{
+    text-align: center;
+  }
+}
