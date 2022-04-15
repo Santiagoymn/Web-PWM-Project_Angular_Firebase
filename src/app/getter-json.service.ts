@@ -19,8 +19,7 @@ export class GetterJsonService {
   private apiURLQuienesSomos = "http://localhost:3000/sobreNosotrosPersonas";
   private apiURLGaleria = "http://localhost:3000/imagenesGaleria";
   private apiURLMunicipios = "http://localhost:3000/municipios";
-  private apiURLCarrusel = "http://localhost:3000/sobreimagenesCarrusel";
-  private apiURLUsuarios = "http://localhost:3000/usuarios";
+  private apiURLCarrusel = "http://localhost:3000/imagenesCarrusel";
   private apiURLEventos = "http://localhost:3000/eventos";
 
 
