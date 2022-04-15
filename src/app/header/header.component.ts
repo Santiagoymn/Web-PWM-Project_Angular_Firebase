@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
 
   categorias!: Categoria[];
 
-  showLineHeaderOculto: boolean = true;
   subMenu: boolean = false;
 
   mas: boolean = true;
@@ -28,7 +27,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleLineHeaderOculto(): void{
-    this.showLineHeaderOculto = !this.showLineHeaderOculto;
+    $("#lineHeader").toggle()
   }
 
   showSubMenu(): void{

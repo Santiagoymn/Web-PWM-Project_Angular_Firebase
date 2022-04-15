@@ -9,23 +9,27 @@ a{
   color: black;
 }
 
-
 @media (min-width: 960px) {
+  .tituloApartados{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+  }
   /*////////// HEADER //////////*/
   .tituloPagina{
     position: relative;
-    width: 50.75rem;
+    width: auto;
     height: 4.625rem;
-    top: 2rem;
     text-align: left;
     margin-left: 2rem;
     display: inline;
+    align-self: center;
   }
   .logo{
     position: relative;
     width: 13.3125rem;
     height: 13.2rem;
-    top: -0.4rem;
     float: left;
     margin-left: 2rem;
   }
@@ -34,10 +38,9 @@ a{
     position: relative;
     width: 100%;
     height: 7.3rem;
-    top: -1.46rem;
     display: inline-block;
     background: #CEE0FC;
-    z-index: 1;
+    z-index: -1;
   }
 
   .tresRayas{
@@ -68,20 +71,17 @@ a{
 
     text-transform:uppercase;
     font-family: "Helvetica", serif;
-    margin: auto;
     margin-left: 5rem;
 
     margin-top: -0.1rem;
   }
 
   .loginRegister{
-    position: relative;
-    float: right;
-    right: 2rem;
-    top: -4.2rem;
     font-size: 1.25rem;
-    margin: 0;
-    margin-right: 2rem;
+    float:right;
+    align-self: center;
+    text-align: right;
+    margin-right:2rem;
   }
 
   .iconoLogueado{
@@ -96,12 +96,15 @@ a{
 
   .lineaHeaderOculto{
     position: relative;
-    display: inline-flex;
+    display: flex;
     height: 5rem;
     vertical-align: middle;
     justify-content: center;
     margin-top: 2.5rem;
     margin-left: 1rem;
+    width: auto;
+
+
   }
 
   /* //////// BANDERAS //////// */
@@ -119,9 +122,10 @@ a{
   .dropdown-menu {
     position: absolute;
     top: 70%;
-    left: 94.6rem;
+    left: 113.5rem;
     height: auto;
     z-index: 1000;
+    display: none;
     min-width: 0;
     min-height: 1rem;
     margin-top: -0.8rem;
@@ -141,7 +145,6 @@ a{
     height: 1.55rem;
     margin-left: 5rem;
   }
-
   .categoriasDropdown{
     width: auto;
     position: relative;
@@ -157,7 +160,7 @@ a{
 
   /*////Dropdown categorías////*/
   .submenuCategorias {
-    position: absolute;
+    position: relative;
     float:none;
     width:auto;
     display: flex;
@@ -173,7 +176,7 @@ a{
 
   .fuenteCategorias{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
     line-height: normal;
   }
 
@@ -224,10 +227,9 @@ a{
   #menu ul ul { /* Items del menu desplegable */
     display:none;
     position:absolute;
-    top: 4.8rem;
     text-align: center;
     background: white;
-    z-index: 10;
+
   }
   #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
     line-height: 0;
@@ -239,10 +241,6 @@ a{
 
   .iconoLogueadoMovil{
     display: none;
-  }
-
-  .botonBanderasDropDown{
-    margin-top: -0.8rem;
   }
 }
 
@@ -277,6 +275,7 @@ a{
     position: relative;
     width: 100%;
     height: 4.3rem;
+    margin-top: -2.7rem;
     display: inline-block;
     background: #CEE0FC;
     z-index: -1;
@@ -338,7 +337,7 @@ a{
   .loginRegister{
     position: relative;
     float: right;
-    top: -9rem;
+    top: -6rem;
     height: 3rem;
     margin-right: 2rem;
     font-size: 0.9rem;
@@ -349,7 +348,7 @@ a{
     float: right;
     top: -7rem;
     font-size: 1.25rem;
-    width:2rem;
+    width: 3rem;
     margin: 0;
     margin-right: 2rem;
   }
@@ -373,10 +372,11 @@ a{
   .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: -13rem;
+    left: -15rem;
     z-index: 1000;
+    display: none;
     padding: 0.75rem 0;
-    margin: -2.75rem 0 0;
+    margin: -3.75rem 0 0;
     list-style: none;
     background-color: white;
 
@@ -386,12 +386,10 @@ a{
     position:relative;
     height: 1.25rem;
   }
-
-  .btn {
-    position: relative;
-    border: none;
-    float: right;
-    background: transparent;
+  .btn{
+    background-color: transparent;
+    outline: none;
+    width: 1rem;
   }
 
   .banderaPrincipal{
@@ -558,7 +556,7 @@ a{
     position: relative;
     width: 1.5rem;
     float: right;
-    top: -2.9rem;
+    top: 0rem;
     margin-right: 2rem;
   }
 
@@ -632,7 +630,9 @@ a{
     display: none;
   }
 
-
+  .dropdown-menu {
+    display: none;
+  }
 
   .banderaPrincipal{
     width: 1.8rem;
