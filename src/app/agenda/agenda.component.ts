@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Evento} from "../objetos";
-import {AgendaService} from "../agenda.service";
 import {tap} from "rxjs";
+import {GetterJsonService} from "../getter-json.service";
 
 @Component({
   selector: 'app-agenda',
@@ -14,11 +14,11 @@ export class AgendaComponent implements OnInit {
   eventos!: Evento[];
   @Input() evento!: Evento;
 
-  constructor(private agendaService: AgendaService) {
+  constructor(private getterJsonService: GetterJsonService) {
   }
 
   ngOnInit(): void {
-    this.agendaService.getEventos()
+    this.getterJsonService.getEventos()
       .pipe(
         tap((evento: Evento[]) => this.eventos = evento)
       )
