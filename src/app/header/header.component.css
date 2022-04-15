@@ -23,6 +23,7 @@ a{
     height: 4.625rem;
     text-align: left;
     margin-left: 2rem;
+    top: 2.6rem;
     display: inline;
     align-self: center;
   }
@@ -68,20 +69,19 @@ a{
     font-weight:normal;
     font-size:1.875rem;
     text-align: center;
-
+    width: auto;
     text-transform:uppercase;
     font-family: "Helvetica", serif;
-    margin-left: 5rem;
-
-    margin-top: -0.1rem;
+    margin-left: 1rem;
   }
 
   .loginRegister{
     font-size: 1.25rem;
     float:right;
-    align-self: center;
+    align-self: auto;
     text-align: right;
-    margin-right:2rem;
+    margin-right:5rem;
+    margin-top: -3rem;
   }
 
   .iconoLogueado{
@@ -651,11 +651,10 @@ a{
     height: auto;
     font-weight:normal;
     font-size:0.875rem;
-    text-align: center;
-
-    text-transform:uppercase;
-    font-family: "Helvetica", serif;
-    margin-left: 2rem;
+    text-align: left;
+    margin-left: 0.5rem;
+    width: 100%;
+    text-transform: uppercase;
   }
 
   .categoriasDropdown{
