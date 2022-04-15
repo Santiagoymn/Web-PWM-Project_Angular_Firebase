@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
 import {Categoria} from "../objetos";
-import {CategoriaService} from "../categoria.service";
 import {tap} from "rxjs";
+import {GetterJsonService} from "../getter-json.service";
 
 @Component({
   selector: 'app-header',
@@ -21,10 +17,10 @@ export class HeaderComponent implements OnInit {
 
   mas: boolean = true;
   menos: boolean = false;
-  constructor(private categoriaService: CategoriaService) { }
+  constructor(private getterJsonService: GetterJsonService) { }
 
   ngOnInit(): void {
-    this.categoriaService.getCategorias()
+    this.getterJsonService.getCategorias()
       .pipe(
         tap((categories: Categoria[]) => this.categorias = categories)
       )
