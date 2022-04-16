@@ -96,14 +96,11 @@ a{
 
   .lineaHeaderOculto{
     position: relative;
-    display: flex;
-    height: 5rem;
+    display: inline-flex;
+    height: auto;
+    margin-top: 0.7rem;
     vertical-align: middle;
     justify-content: center;
-    margin-top: 2.5rem;
-    margin-left: 1rem;
-    width: auto;
-
 
   }
 
@@ -119,6 +116,9 @@ a{
     margin-top: 0.2rem;
   }
 
+  .btn-tablet{
+    display: none;
+  }
   .dropdown-menu {
     position: absolute;
     top: 70%;
@@ -141,6 +141,7 @@ a{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
   .banderaPrincipalActual{
     height: 1.55rem;
     margin-left: 5rem;
@@ -199,7 +200,7 @@ a{
     position: relative;
     display: flex;
     top: 0rem;
-    width: 13rem;
+    width: auto;
   }
   #menu ul{ /* Quita los puntos de la lista del dropdown */
     list-style: none;
@@ -348,15 +349,14 @@ a{
     top: -7rem;
     font-size: 1.25rem;
     width: 3rem;
-    margin: 0;
-    margin-right: 2rem;
+    margin: 0 2rem 0 0;
   }
 
   .lineaHeaderOculto{
     position: relative;
     display: inline-flex;
     height: auto;
-    margin-top: 0.7rem;
+    margin-top: 2.3rem;
     vertical-align: middle;
     justify-content: center;
   }
@@ -380,6 +380,7 @@ a{
     background-color: white;
 
   }
+
 
   .imagenFlechaAbajo{
     position:relative;
@@ -496,7 +497,7 @@ a{
     position: relative;
     float: right;
     margin-right: 2rem;
-    margin-top: -2rem;
+    margin-top: 0rem;
   }
 
   .iconoLogueadoMovil{
@@ -699,6 +700,7 @@ a{
   .botonBanderasDropLeft{
     display: none;
   }
+
 
   .tresRayas2{
     width: 1.5rem;
