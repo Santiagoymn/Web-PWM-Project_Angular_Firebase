@@ -23,4 +23,14 @@ export class ActivityPageEmpresasComponent implements OnInit {
       .subscribe();
   }
 
+  actividadClicada(){
+    // @ts-ignore
+    var s = localStorage.getItem("activityName"); //.replace(" ", "");
+    return s;
+  }
+
+  actividadActual(v:any){
+    return v.replaceAll(" ", "");
+  }
+
 }

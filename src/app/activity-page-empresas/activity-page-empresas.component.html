@@ -1,23 +1,25 @@
 <div *ngFor="let categoria of categorias">
   <div *ngFor="let actividad of categoria.actividades">
-    <article class="empresa" *ngFor="let empresa of actividad.empresas">
-      <div class="nombreEmpresaOrganizadora">{{empresa.name}}</div>
-      <div class="informacionEspecifica">
-        <div class="iconoDato">
-          <img src="../../assets/images/pin.png" alt="Localización empresa" class="imagenPin">
-          {{empresa.place}}
-        </div>
-        <div class="iconoDato">
-          <img src="../../assets/images/euro.png" alt="Precio de la empresa" class="imagenEuro">
-          {{empresa.price}}
-        </div>
-        <div class="iconoDato">
-          <img src="../../assets/images/telefonoBlanco.png" alt="Telefono de la empresa" class="imagenTelefono">
-          {{empresa.number}}
-        </div>
-        <div class="iconoDato">
-          <img src="../../assets/images/web.png" alt="Web de la empresa" class="imagenWeb">
-          {{empresa.web}}
+    <article class="empresa" *ngIf="actividadClicada() == actividadActual(actividad.name)">
+      <div *ngFor="let empresa of actividad.empresas">
+        <div class="nombreEmpresaOrganizadora">{{empresa.name}}</div>
+        <div class="informacionEspecifica">
+          <div class="iconoDato">
+            <img src="../../assets/images/pin.png" alt="Localización empresa" class="imagenPin">
+            {{empresa.place}}
+          </div>
+          <div class="iconoDato">
+            <img src="../../assets/images/euro.png" alt="Precio de la empresa" class="imagenEuro">
+            {{empresa.price}}
+          </div>
+          <div class="iconoDato">
+            <img src="../../assets/images/telefonoBlanco.png" alt="Telefono de la empresa" class="imagenTelefono">
+            {{empresa.number}}
+          </div>
+          <div class="iconoDato">
+            <img src="../../assets/images/web.png" alt="Web de la empresa" class="imagenWeb">
+            {{empresa.web}}
+          </div>
         </div>
       </div>
     </article>
