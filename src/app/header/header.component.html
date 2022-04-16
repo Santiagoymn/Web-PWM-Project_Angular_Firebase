@@ -10,11 +10,11 @@
 
     <img src="assets/images/tresRayas.png" class="tresRayas" alt="Tres rayas" (click)="toggleLineHeaderOculto()">
 
-    <a href="Login.html" *ngIf="getLogged()">
+    <a routerLink="login" *ngIf="getLogged()">
       <img src="assets/images/icono-usuario.png" class="iconoLogueado" alt='Icono logueado'>
     </a>
 
-    <a href="Login.html" class='loginRegister' *ngIf="!getLogged()">
+    <a routerLink="login" class='loginRegister' *ngIf="!getLogged()">
       Login/Register
     </a>
 
@@ -45,11 +45,11 @@
       <div class="rectanguloSeparacionDropdown"></div>
 
 
-      <a href="Login.html" *ngIf="getLogged()">
+      <a routerLink="login" *ngIf="getLogged()">
         <img src="/assets/images/icono-usuario.png" class="iconoLogueadoMovil" alt='Icono logueado'>
       </a>
 
-      <a href="Login.html" class='loginRegisterMovil' *ngIf="!getLogged()">
+      <a routerLink="login" class='loginRegisterMovil' *ngIf="!getLogged()">
         Login/Register
       </a>
 
