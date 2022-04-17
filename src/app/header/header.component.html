@@ -10,11 +10,11 @@
 
     <img src="assets/images/tresRayas.png" class="tresRayas" alt="Tres rayas" (click)="toggleLineHeaderOculto()">
 
-    <a href="Login.html" *ngIf="getLogged()">
+    <a routerLink="login" *ngIf="getLogged()">
       <img src="assets/images/icono-usuario.png" class="iconoLogueado" alt='Icono logueado'>
     </a>
 
-    <a href="Login.html" class='loginRegister' *ngIf="!getLogged()">
+    <a routerLink="login" class='loginRegister' *ngIf="!getLogged()">
       Login/Register
     </a>
 
@@ -42,16 +42,15 @@
         <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACTCAMAAADSiocKAAAACVBMVEUAAADdAAD/zgDGIigcAAAAiElEQVR4nO3PAQEAIAzAoGv/0ObYhQbMAAAAAAAAAAAAAPCvs5hclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXNXcxeSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5Krkqh6p735V06ByEQAAAABJRU5ErkJggg==" class="banderaPrincipal" alt="Deutsch"></p>
       </div>
 
-      <div class="rectanguloSeparacionDropdown"></div>
-
-
-      <a href="Login.html" *ngIf="getLogged()">
+      <a routerLink="login" *ngIf="getLogged()">
         <img src="/assets/images/icono-usuario.png" class="iconoLogueadoMovil" alt='Icono logueado'>
       </a>
 
-      <a href="Login.html" class='loginRegisterMovil' *ngIf="!getLogged()">
+      <a routerLink="login" class='loginRegisterMovil' *ngIf="!getLogged()">
         Login/Register
       </a>
+
+      <div class="rectanguloSeparacionDropdown"></div>
 
       <div id="menu">
         <ul>
