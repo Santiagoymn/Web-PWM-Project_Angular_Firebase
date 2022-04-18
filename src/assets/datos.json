@@ -268,7 +268,23 @@
       "titulo": "Carnaval",
       "descripcion": "Disfruta de los carnavales de Gran Canaria, uno de los mejores del país.",
       "url": "https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg",
-      "alt": "Carnaval"
+      "alt": "Carnaval",
+      "actividades": [
+        {
+          "name": "Carnaval Maspalomas",
+          "url": "https://www.lovevalencia.com/wp-content/uploads/2015/02/carnaval-en-valencia-.jpg",
+          "description": "El Carnaval de Maspalomas se lleva a cabo en una maravillosa ciudad en las Islas Canarias de España. No hay mejor lugar para disfrutar del carnaval que con fiestas, buen clima y hermosas playas.",
+          "empresas": [
+            {
+              "name": "Carnaval ES",
+              "place": "Playa del Inglés",
+              "price": "0€",
+              "number": "928765201",
+              "web": "www.maspalomas.com"
+            }
+          ]
+        }
+      ]
     }
   ],
   "eventos": [
