@@ -89,8 +89,7 @@ a{
     top: -4.2rem;
     font-size: 1.25rem;
     width: 4rem;
-    margin: 0;
-    margin-right: 2rem;
+    margin: 0 2rem 0 0;
   }
 
   .lineaHeaderOculto{
@@ -342,10 +341,10 @@ a{
   .iconoLogueado{
     position: relative;
     float: right;
-    top: -7rem;
+    margin-top: -1.5rem;
+    margin-right: 10rem;
     font-size: 1.25rem;
     width: 3rem;
-    margin: 0 2rem 0 0;
   }
 
   .lineaHeaderOculto{
