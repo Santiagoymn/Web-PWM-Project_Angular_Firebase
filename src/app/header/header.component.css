@@ -334,10 +334,10 @@ a{
   .loginRegister{
     position: relative;
     float: right;
-    top: -6rem;
-    height: 3rem;
-    margin-right: 2rem;
+    margin-top: -1.5rem;
+    margin-right: 10rem;
     font-size: 0.9rem;
+    background-color: blue;
   }
 
   .iconoLogueado{
@@ -363,6 +363,13 @@ a{
 
   .botonBanderas{
     display: none;
+  }
+
+  .btn-tablet{
+    background-color: transparent;
+    border:none;
+    margin-top: 0.2rem;
+    width: 100%;
   }
 
   .dropdown-menu {
@@ -456,8 +463,8 @@ a{
   /*////Dropdown definición////*/
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
-    display: flex;
-    margin-top: -1rem;
+    display: inline-flex;
+    margin-top: 0rem;
     height: 3rem;
     text-align: center;
     width: auto;
@@ -506,8 +513,9 @@ a{
   .botonBanderasDropLeft{
     position: relative;
     float: right;
-    margin-right: 2rem;
+    margin-right: 10rem;
     margin-top: 0rem;
+    background-color: yellow;
   }
 
   .iconoLogueadoMovil{
@@ -707,6 +715,9 @@ a{
   }
 
   .botonBanderasDropLeft{
+    display: none;
+  }
+  .btn-tablet{
     display: none;
   }
 
