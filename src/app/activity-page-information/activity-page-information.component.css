@@ -76,8 +76,6 @@
   .descripcionActividad { /* Márgenes del texto de la descripción de la actividad */
     margin-left: 1.75rem;
     margin-right: 1.75rem;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
   }
 
 }

@@ -41,7 +41,6 @@ span{
   position: relative;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: auto;
 }
 /*////////// MEDIA QUERY //////////*/
 /*
@@ -133,15 +132,14 @@ span{
     line-height: 5.25rem;
   }
   h2{ /*h2 es el titulo de cada página*/
-    font-size: 2.5em;
-    line-height: 2.25em;
+    font-size: 2em;
     top: 0;
     width:50rem;
     margin-left: 2rem;
   }
   h3{ /*h3 subtitulos dentro de cada página*/
-    font-size: 3.2em;
-    line-height: 4.69rem;
+    font-size: 2em;
+    line-height: 2rem;
   }
   h4{ /*h4 subtitulos más pequeño dentro de cada página*/
     width: 19.875rem;
@@ -155,7 +153,8 @@ span{
     margin-left: 1.75rem;
   }
   .nombreActividadImagen{ /*título de nombre de actividad en Category Page y Activity Page*/
-    font-size: 3.5em;
+    font-size: 1.75em;
+    text-align:center;
   }
 }
 
