@@ -6,7 +6,7 @@ import {tap} from "rxjs";
 @Component({
   selector: 'app-activity-page-information',
   templateUrl: './activity-page-information.component.html',
-  styleUrls: ['./activity-page-information.component.css']
+  styleUrls: ['./activity-page-information.component.css', '../app.component.css']
 })
 export class ActivityPageInformationComponent implements OnInit {
 

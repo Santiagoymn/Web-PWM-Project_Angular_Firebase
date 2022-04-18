@@ -6,7 +6,7 @@ import {GetterJsonService} from "../getter-json.service";
 @Component({
   selector: 'app-agenda',
   templateUrl: './agenda.component.html',
-  styleUrls: ['./agenda.component.css']
+  styleUrls: ['./agenda.component.css', '../app.component.css']
 })
 export class AgendaComponent implements OnInit {
 

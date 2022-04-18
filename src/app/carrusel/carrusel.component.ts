@@ -8,7 +8,7 @@ import {GetterJsonService} from "../getter-json.service";
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
-  styleUrls: ['./carrusel.component.css']
+  styleUrls: ['./carrusel.component.css', '../app.component.css']
 })
 
 

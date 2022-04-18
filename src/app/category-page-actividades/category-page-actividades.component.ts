@@ -6,7 +6,7 @@ import {GetterJsonService} from "../getter-json.service";
 @Component({
   selector: 'app-category-page-actividades',
   templateUrl: './category-page-actividades.component.html',
-  styleUrls: ['./category-page-actividades.component.css']
+  styleUrls: ['./category-page-actividades.component.css', '../app.component.css']
 })
 export class CategoryPageActividadesComponent implements OnInit {
 

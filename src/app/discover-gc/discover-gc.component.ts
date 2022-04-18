@@ -7,7 +7,7 @@ import {GetterJsonService} from "../getter-json.service";
 @Component({
   selector: 'app-discover-gc',
   templateUrl: './discover-gc.component.html',
-  styleUrls: ['./discover-gc.component.css']
+  styleUrls: ['./discover-gc.component.css', '../app.component.css']
 })
 export class DiscoverGCComponent implements OnInit {
 
