@@ -562,16 +562,18 @@ a{
     position: relative;
     width: 1.5rem;
     float: right;
-    top: 0rem;
+    top: -3rem;
     margin-right: 2rem;
   }
 
   .logo2 {
-    position: relative;
+    position: absolute;
     width: 3rem;
     height: 3rem;
-    margin-left: 50%;
-    top: 5rem;
+    left: 50%;
+    top: 3rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 
   .rectanguloSeparacionDropdown {
@@ -616,15 +618,14 @@ a{
   .loginRegisterMovil{
     position: relative;
     float: right;
-    top: 3rem;
-    margin-right: 1rem;
     font-size: 0.9rem;
+    margin: 0 1.2rem 0 0;
+    top: 0.3rem;
   }
 
   .iconoLogueadoMovil{
     position: relative;
     float: right;
-    top: 2rem;
     font-size: 1.25rem;
     width: 2rem;
     margin: 0 1.2rem 0 0;
@@ -686,11 +687,10 @@ a{
   .banderasMovil{
     position: relative;
     display: flex;
-    margin-left: 0;
-    left: -5rem;
-    margin-bottom: -2rem;
-    gap: 3.25rem;
-    top: 4rem;
+    margin-left: -5rem;
+    margin-bottom: 3rem;
+    top: 6rem;
+    left: -7rem;
   }
 
   .submenuCategorias {
