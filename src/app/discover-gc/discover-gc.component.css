@@ -108,11 +108,6 @@
   .colorFondo{
     height: 3.5rem;
   }
-
-  /*////////// FOOTER //////////*/
-  .footer { /* Posicionamiento del footer en la página*/
-    margin-top: 16rem;
-  }
 }
 
 
@@ -166,12 +161,6 @@
   .colorFondo{
     height: 3.5rem;
   }
-
-  /*////////// FOOTER //////////*/
-  .footer { /* Posicionamiento del footer en la página*/
-    margin-top: 16rem;
-  }
-
 }
 
 
@@ -223,10 +212,4 @@
   .colorFondo{
     height: 4rem;
   }
-
-  /*////////// FOOTER //////////*/
-  .footer { /* Posicionamiento del footer en la página*/
-    margin-top: 10rem;
-  }
-
 }
