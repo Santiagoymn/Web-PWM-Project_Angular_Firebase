@@ -3,7 +3,6 @@ footer{
   background-color: black;
   position: relative;
   justify-content: center;
-  margin-top: 17rem;
 }
 .divFooter{
   text-align: center;
@@ -63,7 +62,6 @@ footer{
 
   .divFooter{
     top: 3rem;
-    gap: 10rem;
   }
   .datoContacto{
     line-height: 6.25rem;
@@ -129,7 +127,6 @@ footer{
 
   .divFooter{
     top: 3rem;
-    gap: 8rem;
   }
   .datoContacto{
     line-height: 4.9rem;
@@ -195,7 +192,6 @@ footer{
 
   .divFooter{
     top: 2rem;
-    gap: 7rem;
   }
 
   .datoContacto{
