@@ -189,10 +189,6 @@ a{
     display: none;
   }
 
-  .botonBanderasDropLeft{
-    display: none;
-  }
-
   /*////Dropdown definición////*/
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
@@ -440,10 +436,6 @@ a{
   }
 
   .banderasMovil{
-    display: none;
-  }
-
-  .botonBanderasDropDown{
     display: none;
   }
 

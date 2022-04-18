@@ -12,8 +12,13 @@ export class HeaderComponent implements OnInit {
 
   categorias!: Categoria[];
 
+  width!: number;
   subMenu: boolean = false;
   constructor(private getterJsonService: GetterJsonService) { }
+
+  ngAfterViewInit() { //Recién en este punto tendrás acceso al valor
+    this.width = (document.documentElement.scrollWidth);
+  }
 
   ngOnInit(): void {
     this.getterJsonService.getCategorias()
