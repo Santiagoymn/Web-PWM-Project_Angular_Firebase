@@ -11,13 +11,13 @@
 
 @media (min-width: 640px) and (max-width: 959px) {
   .wrapper img {
-    height: 16.5rem;
+    height: 30rem;
   }
 }
 
 @media (max-width: 640px) {
   .wrapper img {
-    height: 10em;
+    height: 15em;
   }
 }
 
