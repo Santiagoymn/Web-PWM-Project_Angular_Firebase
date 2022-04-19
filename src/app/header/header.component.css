@@ -23,7 +23,6 @@ a{
     height: 4.625rem;
     text-align: left;
     margin-left: 2rem;
-    top: 2.6rem;
     display: inline;
     align-self: center;
   }
@@ -86,10 +85,10 @@ a{
   .iconoLogueado{
     position: relative;
     float: right;
-    top: -4.2rem;
+    margin-top: -5rem;
+    margin-right: 4rem;
     font-size: 1.25rem;
     width: 4rem;
-    margin: 0 2rem 0 0;
   }
 
   .lineaHeaderOculto{
@@ -193,7 +192,6 @@ a{
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
     display: flex;
-    top: 0;
     width: 100%;
   }
   #menu ul{ /* Quita los puntos de la lista del dropdown */
@@ -250,7 +248,7 @@ a{
     font-size: 3rem;
     width: 50.75rem;
     height: 4.625rem;
-    top: 1rem;
+    margin-top: 0.3rem;
     text-align: left;
     margin-left: 1rem;
     display: inline;
@@ -259,7 +257,7 @@ a{
     position: relative;
     width: 8.3125rem;
     height: 8.2rem;
-    top: -0.4rem;
+    margin-top: -0.4rem;
     float: left;
     margin-left: 1rem;
   }
@@ -277,7 +275,6 @@ a{
   .fuenteCategorias{
     font-size: 0.925rem;
     text-align: center;
-    margin-top: 0rem;
     margin-bottom:1rem;
     line-height: normal;
   }
@@ -296,7 +293,6 @@ a{
   .dropdownCategorias {
     position: relative;
     width:8rem;
-    top: -4rem;
     display: none;
     align-items: center;
     text-align: center;
@@ -329,8 +325,8 @@ a{
   .loginRegister{
     position: relative;
     float: right;
-    margin-top: -1.5rem;
-    margin-right: 10rem;
+    margin-top: -2.9rem;
+    margin-right: 4rem;
     font-size: 0.9rem;
   }
 
@@ -422,9 +418,6 @@ a{
     text-transform:uppercase;
     font-family: "Helvetica", serif;
     margin: auto;
-
-    margin-top: -0.5rem;
-    margin-left: 1.3rem;
   }
 
   .lineaHeader{
@@ -454,7 +447,7 @@ a{
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
     display: inline-flex;
-    margin-top: 0rem;
+    margin-top: -2rem;
     height: 3rem;
     text-align: center;
     width: auto;
@@ -473,7 +466,7 @@ a{
     display:block;
     color: black;
     font-weight:normal;
-    font-size:1.3rem;
+    font-size:1.1rem;
     padding:0rem;
     text-transform:uppercase;
     font-family: "Helvetica", serif;
@@ -486,10 +479,8 @@ a{
   #menu ul ul { /* Items del menu desplegable */
     display:none;
     position:absolute;
-    top: 1.9rem;
     text-align: center;
     background: white;
-    left: -0.5rem;
   }
   #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
     line-height: 1.2rem;
@@ -502,8 +493,8 @@ a{
   .botonBanderasDropLeft{
     position: relative;
     float: right;
-    margin-right: 10rem;
-    margin-top: 0rem;
+    margin-right: 3rem;
+    margin-top: -2.5rem;
   }
 
   .iconoLogueadoMovil{
@@ -521,7 +512,7 @@ a{
     position: relative;
     width: 50.75rem;
     height: 4.625rem;
-    top: 0.5rem;
+    margin-top: 0.5rem;
     text-align: left;
     margin-left: 1rem;
     display: inline;
@@ -534,7 +525,7 @@ a{
     position: relative;
     width: 6rem;
     height: 6rem;
-    top: -0.4rem;
+    margin-top: -0.4rem;
     float: left;
     margin-left: 0.5rem;
   }
@@ -562,16 +553,17 @@ a{
     position: relative;
     width: 1.5rem;
     float: right;
-    top: 0rem;
+    margin-top: -3rem;
     margin-right: 2rem;
   }
 
   .logo2 {
-    position: relative;
+    position: absolute;
     width: 3rem;
     height: 3rem;
-    margin-left: 50%;
-    top: 5rem;
+    left: 50%;
+    margin-top: 3rem;
+    transform: translate(-50%, -50%);
   }
 
   .rectanguloSeparacionDropdown {
@@ -616,15 +608,13 @@ a{
   .loginRegisterMovil{
     position: relative;
     float: right;
-    top: 3rem;
-    margin-right: 1rem;
     font-size: 0.9rem;
+    margin: 0.3rem 1.2rem 0 0;
   }
 
   .iconoLogueadoMovil{
     position: relative;
     float: right;
-    top: 2rem;
     font-size: 1.25rem;
     width: 2rem;
     margin: 0 1.2rem 0 0;
@@ -686,11 +676,10 @@ a{
   .banderasMovil{
     position: relative;
     display: flex;
-    margin-left: 0;
-    left: -5rem;
-    margin-bottom: -2rem;
-    gap: 3.25rem;
-    top: 4rem;
+    margin-left: -5rem;
+    margin-bottom: 3rem;
+    top: 6rem;
+    left: -7rem;
   }
 
   .submenuCategorias {
