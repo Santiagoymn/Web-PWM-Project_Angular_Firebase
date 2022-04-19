@@ -6,7 +6,7 @@ import {tap} from "rxjs";
 @Component({
   selector: 'app-activity-page-empresas',
   templateUrl: './activity-page-empresas.component.html',
-  styleUrls: ['./activity-page-empresas.component.css']
+  styleUrls: ['./activity-page-empresas.component.css', '../app.component.css']
 })
 export class ActivityPageEmpresasComponent implements OnInit {
 
@@ -21,6 +21,16 @@ export class ActivityPageEmpresasComponent implements OnInit {
         tap((categories: Categoria[]) => this.categorias = categories)
       )
       .subscribe();
+  }
+
+  actividadClicada(){
+    // @ts-ignore
+    var s = localStorage.getItem("activityName"); //.replace(" ", "");
+    return s;
+  }
+
+  actividadActual(v:any){
+    return v.replaceAll(" ", "");
   }
 
 }

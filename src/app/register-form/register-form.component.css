@@ -102,6 +102,10 @@ input:focus {
     font-size: 2.2rem;
   }
 
+  .avisoRestriccion{
+    font-size: 1.5rem;
+  }
+
   .botonFormRegistro button{
     height: 3rem;
     margin-bottom: 2rem;
@@ -144,6 +148,10 @@ input:focus {
 
   form label{
     font-size: 1.8rem;
+  }
+
+  .avisoRestriccion{
+    font-size: 1.2rem;
   }
 
   .botonFormRegistro button{
@@ -192,6 +200,9 @@ input:focus {
     font-size: 1.2rem;
   }
 
+  .avisoRestriccion{
+    font-size: 1rem;
+  }
   .tituloRegistro{
     font-size: 1.75rem;
   }

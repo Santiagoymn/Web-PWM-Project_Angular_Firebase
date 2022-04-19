@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +29,6 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import { RegisterMessageComponent } from './register-message/register-message.component';
 import { CookieService } from 'ngx-cookie-service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,8 +51,7 @@ import { CookieService } from 'ngx-cookie-service';
     LoginComponent,
     HeaderComponent,
     RegisterFormComponent,
-    RegisterMessageComponent
-    // CategoryPageActividadesComponent
+    RegisterMessageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,12 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import {Categoria, Actividad, Empresa, DiscoverGC} from "../objetos";
-import { CategoriaService } from '../categoria.service';
+import {Categoria} from "../objetos";
 import {GetterJsonService} from "../getter-json.service";
 import {tap} from "rxjs";
 
 @Component({
   selector: 'app-activity-page-information',
   templateUrl: './activity-page-information.component.html',
-  styleUrls: ['./activity-page-information.component.css']
+  styleUrls: ['./activity-page-information.component.css', '../app.component.css']
 })
 export class ActivityPageInformationComponent implements OnInit {
 

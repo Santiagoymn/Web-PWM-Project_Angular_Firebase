@@ -1,30 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
 import {Categoria} from "../objetos";
-import {CategoriaService} from "../categoria.service";
 import {tap} from "rxjs";
+import {GetterJsonService} from "../getter-json.service";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css', '../app.component.css']
 })
 export class HeaderComponent implements OnInit {
 
   categorias!: Categoria[];
 
-  showLineHeaderOculto: boolean = true;
+  width!: number;
   subMenu: boolean = false;
+  constructor(private getterJsonService: GetterJsonService) { }
 
-  mas: boolean = true;
-  menos: boolean = false;
-  constructor(private categoriaService: CategoriaService) { }
+  ngAfterViewInit() { //Recién en este punto tendrás acceso al valor
+    this.width = (document.documentElement.scrollWidth);
+  }
 
   ngOnInit(): void {
-    this.categoriaService.getCategorias()
+    this.getterJsonService.getCategorias()
       .pipe(
         tap((categories: Categoria[]) => this.categorias = categories)
       )
@@ -32,19 +29,22 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleLineHeaderOculto(): void{
-    this.showLineHeaderOculto = !this.showLineHeaderOculto;
+    $("#lineHeader").toggle()
   }
 
   showSubMenu(): void{
-    this.subMenu = true;
-    this.mas = !this.mas;
-    this.menos = !this.menos;
+    $("#subMenu").show();
+    this.toggleMasMenos();
   }
 
   hideSubMenu(): void{
-    this.subMenu = false;
-    this.mas = !this.mas;
-    this.menos = !this.menos;
+    $("#subMenu").hide();
+    this.toggleMasMenos();
+  }
+
+  toggleMasMenos(): void{
+    $("#mas").toggle();
+    $("#menos").toggle();
   }
 
   setCategory(id: string): void{
@@ -54,5 +54,12 @@ export class HeaderComponent implements OnInit {
   puestaVariableLocal(identificador: any){
     // var id = $(this).attr("id");
     localStorage.setItem("category", identificador);
+  }
+
+  getLogged(): boolean{
+    if (sessionStorage.getItem('logged') === 'true')
+      return true;
+    else
+      return false;
   }
 }

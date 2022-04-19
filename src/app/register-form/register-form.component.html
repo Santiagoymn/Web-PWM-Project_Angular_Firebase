@@ -44,13 +44,13 @@
             <input type="password" id="repeatPasswd" name="repeatPasswd" formControlName="passwordRepeated" required>
           </div>
 
-          <div *ngIf="this.RegisterForm.get('user')?.errors?.['required'] || this.RegisterForm.get('email')?.errors?.['required'] ||
+          <div class="avisoRestriccion" *ngIf="this.RegisterForm.get('user')?.errors?.['required'] || this.RegisterForm.get('email')?.errors?.['required'] ||
             this.RegisterForm.get('name')?.errors?.['required'] || this.RegisterForm.get('surname')?.errors?.['required'] ||
             this.RegisterForm.get('password')?.errors?.['required'] || this.RegisterForm.get('passwordRepeated')?.errors?.['required']">
             Todos los campos deben rellenarse
           </div>
 
-          <div *ngIf="this.RegisterForm.get('email')?.errors?.['email']">
+          <div class="avisoRestriccion" *ngIf="this.RegisterForm.get('email')?.errors?.['email']">
             El formato del correo introducido no es correcto
           </div>
 

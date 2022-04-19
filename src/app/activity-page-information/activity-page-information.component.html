@@ -5,7 +5,7 @@
       <div class="posicionamientoImagenFondo">
         <img src="{{actividad.url}}" alt="{{actividad.name}}" class="imagenFondo">
         <div class="centrado">
-          <p class="nombreActividadImagen">{{actividad.name}}</p>
+          <span class="colorFondo"><div class="nombreActividadImagen">{{actividad.name}}</div></span>
         </div>
       </div>
       <div class="separacionBloque">
@@ -16,28 +16,7 @@
           <h3 class="tituloEmpresas">Empresas</h3>
         </div>
         <section class="localizacionInformacion">
-          <!--        <app-activity-page-empresas></app-activity-page-empresas>-->
-          <article class="empresa" *ngFor="let empresa of actividad.empresas">
-            <div class="nombreEmpresaOrganizadora">{{empresa.name}}</div>
-            <div class="informacionEspecifica">
-              <div class="iconoDato">
-                <img src="../../assets/images/pin.png" alt="Localización empresa" class="imagenPin">
-                {{empresa.place}}
-              </div>
-              <div class="iconoDato">
-                <img src="../../assets/images/euro.png" alt="Precio de la empresa" class="imagenEuro">
-                {{empresa.price}}
-              </div>
-              <div class="iconoDato">
-                <img src="../../assets/images/telefonoBlanco.png" alt="Telefono de la empresa" class="imagenTelefono">
-                {{empresa.number}}
-              </div>
-              <div class="iconoDato">
-                <img src="../../assets/images/web.png" alt="Web de la empresa" class="imagenWeb">
-                {{empresa.web}}
-              </div>
-            </div>
-          </article>
+          <app-activity-page-empresas></app-activity-page-empresas>
         </section>
       </div>
     </div>

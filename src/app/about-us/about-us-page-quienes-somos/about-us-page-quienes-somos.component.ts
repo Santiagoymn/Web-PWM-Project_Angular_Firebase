@@ -4,7 +4,7 @@ import {GetterJsonService} from "../../getter-json.service";
 @Component({
   selector: 'app-about-us-page-quienes-somos',
   templateUrl: './about-us-page-quienes-somos.component.html',
-  styleUrls: ['./about-us-page-quienes-somos.component.css']
+  styleUrls: ['./about-us-page-quienes-somos.component.css', '../../app.component.css']
 })
 export class AboutUsPageQuienesSomosComponent implements OnInit {
 
