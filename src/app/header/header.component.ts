@@ -29,7 +29,13 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleLineHeaderOculto(): void{
-    $("#lineHeader").toggle()
+    $("#lineHeader").toggle();
+  }
+
+  closeTresRayas(): void{
+    $("#lineHeader").hide();
+    $("#subMenu").hide();
+    this.toggleMasMenos();
   }
 
   showSubMenu(): void{
