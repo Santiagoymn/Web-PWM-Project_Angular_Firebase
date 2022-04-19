@@ -702,8 +702,9 @@ a{
   .tresRayas2{
     width: 1.5rem;
     float: right;
-    margin-right: -2rem;
-    margin-top: 1rem;
+    position: relative;
+    margin-top: 2.4rem;
+    margin-right: 2.2rem;
   }
 
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
