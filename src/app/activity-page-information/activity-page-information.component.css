@@ -37,6 +37,13 @@
     margin-left: 6.25rem;
     margin-right: 6.25rem;
   }
+  .localizacionInformacion{
+    margin-bottom: 10rem;
+  }
+  .tituloEmpresas{
+    text-align: left;
+    margin-left: 6.25rem;
+  }
 }
 
 /*
@@ -57,6 +64,13 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .localizacionInformacion{
+    margin-bottom: 10rem;
+  }
+  .tituloEmpresas{
+    text-align: left;
+    margin-left: 2rem;
+  }
 }
 
 /*
@@ -76,6 +90,13 @@
   .descripcionActividad { /* Márgenes del texto de la descripción de la actividad */
     margin-left: 1.75rem;
     margin-right: 1.75rem;
+  }
+  .localizacionInformacion{
+    margin-bottom: 6em;
+  }
+  .tituloEmpresas{
+    text-align: left;
+    margin-left: 1.75rem;
   }
 
 }

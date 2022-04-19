@@ -59,8 +59,8 @@ span{
     font-size: 4.5em;
     line-height: 5.25rem;
     top: 0;
-    width:50rem;
     margin-left: 6.25rem;
+    margin-bottom: 1em;
   }
   h3{ /*h3 subtitulos dentro de cada página*/
     font-size: 4rem;
@@ -89,15 +89,15 @@ span{
   ##Screen = 640px to 960px
 */
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (min-width: 640px) and (max-width: 960px) {
   /*////////// TIPOGRAFÍA //////////*/
   h1{ /*h1 es el titulo del header*/
     font-size: 4.5em;
     line-height: 5.25rem;
   }
   h2{ /*h2 es el titulo de cada página*/
-    font-size: 2.5rem;
-    line-height: 5.25rem;
+    font-size: 2.5em;
+    line-height: 4rem;
     top: 0;
     width:50rem;
     margin-left: 2rem;
@@ -112,8 +112,8 @@ span{
     font-size: 1rem;
   }
   p{ /*texto común*/
-    font-size: 1.575rem;
-    line-height: 2rem;
+    font-size: 1.5em;
+    line-height: 1.2em;
   }
   .nombreActividadImagen{ /*título de nombre de actividad en Category Page y Activity Page*/
     font-size: 3rem;
@@ -134,7 +134,6 @@ span{
   h2{ /*h2 es el titulo de cada página*/
     font-size: 2em;
     top: 0;
-    width:50rem;
     margin-left: 2rem;
   }
   h3{ /*h3 subtitulos dentro de cada página*/
