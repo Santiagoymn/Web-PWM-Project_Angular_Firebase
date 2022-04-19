@@ -56,7 +56,7 @@ span{
     line-height: 5.25rem;
   }
   h2{ /*h2 es el titulo de cada página*/
-    font-size: 4.5em;
+    font-size: 3.8em;
     line-height: 5.25rem;
     top: 0;
     margin-left: 6.25rem;
@@ -112,7 +112,7 @@ span{
     font-size: 1rem;
   }
   p{ /*texto común*/
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.2em;
   }
   .nombreActividadImagen{ /*título de nombre de actividad en Category Page y Activity Page*/
@@ -132,12 +132,12 @@ span{
     line-height: 5.25rem;
   }
   h2{ /*h2 es el titulo de cada página*/
-    font-size: 2em;
+    font-size: 1.6em;
     top: 0;
     margin-left: 2rem;
   }
   h3{ /*h3 subtitulos dentro de cada página*/
-    font-size: 2em;
+    font-size: 1.4em;
     line-height: 2rem;
   }
   h4{ /*h4 subtitulos más pequeño dentro de cada página*/
@@ -146,8 +146,8 @@ span{
     font-size: 3em;
   }
   p{ /*texto común*/
-    font-size: 1.575rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     margin-right: 1.75rem;
     margin-left: 1.75rem;
   }
