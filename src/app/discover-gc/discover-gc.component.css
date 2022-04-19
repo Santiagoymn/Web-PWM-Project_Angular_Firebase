@@ -182,17 +182,17 @@
   .nombreMunicipio {
     line-height: 4rem;
     top: 55%;
-    font-size: 2.5rem;
+    left: 10%;
+    font-size: 1.5rem;
   }
   .descripcionMunicipio {
-    display: none;
     margin-top: 1.5rem;
   }
   /*////////// Botón //////////*/
   .flechaAbajoMunicipio {
     width: 3rem;
     height: 3rem;
-    right: 1rem;
+    right: 3rem;
   }
   .btn {
     padding: 1rem;
@@ -207,7 +207,12 @@
   .imagenDropdownMunicipio {
     margin-left: 2rem;
     margin-right: 1.75rem;
-    height: 24rem;
+    height: 10rem;
+  }
+
+  .textoMunicipio{
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
   .colorFondo{
     height: 4rem;
