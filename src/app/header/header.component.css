@@ -365,14 +365,11 @@ a{
   .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: -15rem;
     z-index: 1000;
     display: none;
-    padding: 0.75rem 0;
-    margin: -3.75rem 0 0;
+
     list-style: none;
     background-color: white;
-
   }
 
 

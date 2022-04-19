@@ -14,9 +14,9 @@
       <img src="assets/images/icono-usuario.png" class="iconoLogueado" alt='Icono logueado'>
     </a>
 
-    <a routerLink="login" class='loginRegister' *ngIf="!getLogged()">
-      Login/Register
-    </a>
+    <div class='loginRegister' *ngIf="!getLogged()">
+      <a routerLink="login">Login</a>/<a routerLink="register">Register</a>
+    </div>
 
     <div class="lineaHeaderOculto" id="lineHeader">
       <a href="index.html"><img src="assets/images/Logo.png" class="logo2" alt="Página inicial"></a>
@@ -34,9 +34,9 @@
         <img src="/assets/images/icono-usuario.png" class="iconoLogueadoMovil" alt='Icono logueado'>
       </a>
 
-      <a routerLink="login" class='loginRegisterMovil' *ngIf="!getLogged()">
-        Login/Register
-      </a>
+      <div class='loginRegisterMovil' *ngIf="!getLogged()">
+        <a routerLink="login">Login</a>/<a routerLink="register">Register</a>
+      </div>
 
       <div class="rectanguloSeparacionDropdown"></div>
 
