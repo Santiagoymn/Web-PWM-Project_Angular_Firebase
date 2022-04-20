@@ -62,7 +62,7 @@ form input{
 */
 @media (min-width: 960px){
   .login{
-    padding: 20rem;
+    padding: 10rem;
   }
   .icono{
     margin-top: 3rem;
@@ -119,8 +119,8 @@ form input{
   }
   .icono{
     margin-top: 1.5rem;
-    height: 2rem;
-    width: 2.3rem;
+    height: 2.5rem;
+    width: 2.8rem;
     bottom: 1.3rem;
     margin-right: 1.3rem;
   }
@@ -171,8 +171,8 @@ form input{
   }
   .icono{
     margin-top: 0.9rem;
-    height: 1.2rem;
-    width: 1.4rem;
+    height: 1.4rem;
+    width: 1.6rem;
     bottom: 0.4rem;
     margin-right: 0.89rem;
   }
