@@ -77,7 +77,7 @@ footer{
     bottom: -4rem;
     margin-right: 1rem;
 
-    font-size: 1.475rem;
+    font-size: 1.8rem;
     line-height: 2.1875rem;
   }
 
@@ -134,7 +134,7 @@ footer{
 
   /*////Texto////*/
   .datoContacto span{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     line-height: 2rem;
   }
   .copyright{
@@ -142,33 +142,33 @@ footer{
     bottom: -5rem;
     margin-right: 0.9rem;
 
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 2rem;
   }
 
   /*////Imágenes////*/
   .datoContacto img{
-    width: 2.3rem;
-    height: 2rem;
-    margin-right: 0.6rem;
+    width: 3.5rem;
+    height: 3.2rem;
+    margin-right: 1rem;
     top: 0.56rem;
   }
   .redesSociales{
     bottom: -3rem;
   }
   .imagenInstagram{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .imagenFacebook{
-    width: 2.3rem;
-    height: 2.3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
   }
   .imagenYouTube{
-    width: 3.1rem;
-    height: 1.8rem;
+    width: 3.6rem;
+    height: 2.3rem;
   }
 
   .localizacionImagenCorreo{
@@ -177,6 +177,11 @@ footer{
 
   .localizacionImagenTelefono{
     margin-top: -0.8rem;
+  }
+
+  #imagenTelefono{
+    width: 3.9rem;
+    height: 3.5rem;
   }
 }
 
@@ -194,51 +199,50 @@ footer{
     top: 2rem;
   }
 
-  .datoContacto{
-    line-height: 1.99rem;
-  }
-
   /*////Texto////*/
   .datoContacto span{
-    font-size: 0.95rem;
-    line-height: 1.75rem;
+    font-size: 1.15rem;
   }
   .copyright{
     height: 0.78rem;
     bottom: -4rem;
     margin-right: 1rem;
-
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.15rem;
+    line-height: 1rem;
   }
 
   /*////Imágenes////*/
   .datoContacto img{
-    width: 2rem;
-    height: 2rem;
-    margin-right: 0.4rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 0.7rem;
     top: 0.9rem;
   }
   .redesSociales{
     bottom: -2rem;
   }
   .imagenInstagram{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
   .imagenFacebook{
-    width: 1.65rem;
-    height: 1.65rem;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
+    width: 1.95rem;
+    height: 1.95rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
   }
   .imagenYouTube{
-    width: 2rem;
+    width: 2.2rem;
     height: 1.2em;
   }
 
-  .localizacionImagenCorreo{
-    margin-top: -2rem;
+  #imagenTelefono{
+    width: 2.5rem;
+    height: 2.8rem;
+  }
+
+  #separacion{
+    margin-bottom: 2rem;
   }
 
   .localizacionImagenTelefono{
