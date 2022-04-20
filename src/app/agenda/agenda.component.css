@@ -155,6 +155,7 @@ ul, ol {
   /*////////// EVENTOS //////////*/
   .listaEventos{
     margin-top:2rem;
+    margin-bottom: 10rem;
   }
   .evento { /* Contenedor de evento */
     margin-bottom: 3rem;
@@ -169,16 +170,16 @@ ul, ol {
     margin-top:1rem;
   }
   .textoMes{
-    font-size: 1.75em;
+    font-size: 1.55em;
     line-height: 2rem;
     top: 2.5rem;
     left: -2rem;
   }
   .textoDia{
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 5rem;
-    top: -2rem;
-    left: -2.2rem;
+    top: -1.7rem;
+    left: -1.9rem;
   }
   .calendarioInfo{
     margin-left: 6rem;
@@ -244,30 +245,35 @@ ul, ol {
   ##Screen = 640px to 960px
 */
 @media (min-width: 640px) and (max-width: 960px) {
+
+  .listaEventos{
+    margin-bottom: 10rem;
+  }
+
   /*////////// EVENTOS //////////*/
   .evento { /* Contenedor de evento */
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
   .eventoInfo {
-    height: 12rem;
+    height: 15rem;
   }
   /*////////// Imagen Calendario //////////*/
   .imagenCalendario{
     width: 9.94rem;
     height: 10.63rem;
-    margin-top:1rem;
+    margin-top:2rem;
   }
   .textoMes{
-    font-size: 2.5em;
+    font-size: 1.7em;
     line-height: 2rem;
     top: 2.5rem;
-    left: -2rem;
+    left: -2.2rem;
   }
   .textoDia{
-    font-size: 4em;
+    font-size: 2.2em;
     line-height: 5rem;
-    top: -2rem;
-    left: -2.2rem;
+    top: -1.7rem;
+    left: -1.6rem;
   }
   .calendarioInfo{
     margin-left: 2rem;
@@ -275,14 +281,14 @@ ul, ol {
   /*////////// Texto del evento //////////*/
   .infoEvento{
     margin-left:1rem;
-    margin-top:1.5rem;
+    margin-top:2.6rem;
   }
   .nombreEvento{
     font-size: 2rem;
   }
   .textoEvento {
     line-height: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   /*////////// Botón //////////*/
   .btn {
@@ -336,6 +342,11 @@ ul, ol {
   ##Screen = 640px to minimal resolution
 */
 @media (max-width: 640px) {
+
+  .listaEventos{
+    margin-bottom: 7rem;
+  }
+
   /*////////// EVENTOS //////////*/
   .evento { /* Contenedor de evento */
     margin-bottom: 3rem;
@@ -345,21 +356,22 @@ ul, ol {
   }
   /*////////// Imagen Calendario //////////*/
   .imagenCalendario{
-    width: 8.94rem;
-    height: 9.63rem;
-    margin-top:1rem;
+    width: 7.94rem;
+    height: 8.63rem;
+    margin-top:1.5rem;
+    margin-left: -0.8rem;
   }
   .textoMes{
-    font-size: 2.2em;
+    font-size: 1.4em;
     line-height: 2rem;
-    top: 2.25rem;
-    left: -1.75rem;
+    top: 1.9rem;
+    left: -2.1rem;
   }
   .textoDia{
-    font-size: 4em;
+    font-size: 2em;
     line-height: 5rem;
     top: -2rem;
-    left: -2.2rem;
+    left: -1.9rem;
   }
   .calendarioInfo{
     margin-left: 2rem;
@@ -367,14 +379,15 @@ ul, ol {
   /*////////// Texto del evento //////////*/
   .infoEvento{
     margin-top:1.5rem;
+    margin-left: -0.8rem;
   }
   .nombreEvento{
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
   }
   .textoEvento {
     line-height: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   /*////////// Botón //////////*/
   .btn {
@@ -384,9 +397,9 @@ ul, ol {
 
   }
   .flechaAbajoMunicipio {
-    width: 3.93rem;
-    height: 4.32rem;
-    right: 1rem;
+    width: 3.53rem;
+    height: 4rem;
+    right: -0.5rem;
   }
 
   /*////////// Desplegable //////////*/
@@ -397,8 +410,8 @@ ul, ol {
     top: -0.5rem;
   }
   .textoDescripcionEvento {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
   }
 
   /*////////// No logged //////////*/
