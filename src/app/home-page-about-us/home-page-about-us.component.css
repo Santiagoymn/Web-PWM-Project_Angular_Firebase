@@ -69,10 +69,7 @@
     margin-right: 6.25rem;
     margin-left: 6.25rem;
   }
-  .textoapartadoSobreNosotros{
-    font-size: 1.875rem;
-    line-height: 2.63rem;
-  }
+
   .btnSaberMás{
     width: 13.88rem;
     height: 4.69rem;
@@ -123,10 +120,7 @@
     margin-right: 3.25rem;
     margin-left: 3.25rem;
   }
-  .textoapartadoSobreNosotros{
-    font-size: 1.5rem;
-    line-height: 2.63rem;
-  }
+
   .btnSaberMás{
     width: 12.88rem;
     height: 4.5rem;
@@ -163,7 +157,6 @@
   }
   .tituloApartadoSobreNosotros{
     width: 25rem;
-    font-size: 2.5em;
   }
 
   .fotoTexto{
@@ -176,14 +169,8 @@
     flex-direction: column;
     align-content:center;
     justify-content: center;
-    margin-right: 1.75rem;
-    margin-left: 1.75rem;
   }
 
-  .textoapartadoSobreNosotros{
-    font-size: 1.5em;
-    line-height: 2rem;
-  }
 
   .btnSaberMás{
     width: 10.88rem;
