@@ -113,6 +113,11 @@ a{
     margin-top: 0.2rem;
   }
 
+  .botonBanderasDropDown{
+    margin-top: 0.8rem;
+    margin-left: -5rem;
+  }
+
   .btn-tablet{
     display: none;
   }
@@ -135,12 +140,14 @@ a{
   }
   .banderaPrincipal{
     height: 1.55rem;
+    width: 2.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
 
   .banderaPrincipalActual{
     height: 1.55rem;
+    width: 2.5rem;
     margin-left: 5rem;
   }
   .categoriasDropdown{
@@ -358,21 +365,18 @@ a{
   .btn-tablet{
     background-color: transparent;
     border:none;
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: -2rem;
     width: 100%;
   }
 
   .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: -15rem;
     z-index: 1000;
     display: none;
-    padding: 0.75rem 0;
-    margin: -3.75rem 0 0;
     list-style: none;
     background-color: white;
-
   }
 
 
@@ -388,11 +392,13 @@ a{
 
   .banderaPrincipal{
     height: 1rem;
+    width: 1.6rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
   .banderaPrincipalActual{
     height: 1rem;
+    width: 1.6rem;
   }
 
   .categoriasDropdown{
