@@ -53,7 +53,6 @@ span{
   /*////////// TIPOGRAFÍA //////////*/
   h1{ /*h1 es el titulo del header*/
     font-size: 4.5em;
-    line-height: 5.25rem;
   }
   h2{ /*h2 es el titulo de cada página*/
     font-size: 3.8em;

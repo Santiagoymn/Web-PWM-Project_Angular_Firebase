@@ -20,7 +20,6 @@ a{
   .tituloPagina{
     position: relative;
     width: auto;
-    height: 4.625rem;
     text-align: left;
     margin-left: 2rem;
     display: inline;
@@ -74,18 +73,18 @@ a{
   }
 
   .loginRegister{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     float:right;
     align-self: auto;
     text-align: right;
     margin-right:5rem;
-    margin-top: -3rem;
+    margin-top: -7rem;
   }
 
   .iconoLogueado{
     position: relative;
     float: right;
-    margin-top: -5rem;
+    margin-top: -7rem;
     margin-right: 4rem;
     font-size: 1.25rem;
     width: 4rem;
@@ -167,7 +166,7 @@ a{
   .submenuCategorias {
     position: relative;
     float:none;
-    width:auto;
+    width:100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -181,8 +180,9 @@ a{
 
   .fuenteCategorias{
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     line-height: normal;
+    margin-bottom: 2rem;
   }
 
   .loginRegisterMovil{
@@ -200,6 +200,8 @@ a{
     position: relative;
     display: flex;
     width: 100%;
+    margin-top:-1.5rem;
+    margin-left:1rem;
   }
   #menu ul{ /* Quita los puntos de la lista del dropdown */
     list-style: none;
@@ -227,14 +229,16 @@ a{
     position:absolute;
     text-align: center;
     background: white;
-
+    justify-content: center;
   }
   #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
     line-height: 0;
     padding:0.125rem;
   }
   #menu ul li:hover > ul {
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .iconoLogueadoMovil{
@@ -280,7 +284,7 @@ a{
 
   /*////Tipografía////*/
   .fuenteCategorias{
-    font-size: 0.925rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom:1rem;
     line-height: normal;
@@ -332,16 +336,16 @@ a{
   .loginRegister{
     position: relative;
     float: right;
-    margin-top: -2.9rem;
-    margin-right: 4rem;
-    font-size: 0.9rem;
+    margin-top: -3.5rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
   }
 
   .iconoLogueado{
     position: relative;
     float: right;
-    margin-top: -1.5rem;
-    margin-right: 10rem;
+    margin-top: -4rem;
+    margin-right: 3rem;
     font-size: 1.25rem;
     width: 3rem;
   }
@@ -365,7 +369,7 @@ a{
   .btn-tablet{
     background-color: transparent;
     border:none;
-    margin-top: 0.5rem;
+    margin-top: -0.5rem;
     margin-left: -2rem;
     width: 100%;
   }
@@ -442,7 +446,7 @@ a{
   #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
     display: inline-flex;
-    margin-top: -2rem;
+    margin-top: -3rem;
     height: 3rem;
     text-align: center;
     width: auto;
@@ -461,7 +465,7 @@ a{
     display:block;
     color: black;
     font-weight:normal;
-    font-size:1.2rem;
+    font-size:1.4rem;
     padding:0rem;
     text-transform:uppercase;
     font-family: "Helvetica", serif;
@@ -482,7 +486,9 @@ a{
     padding:0.125rem;
   }
   #menu ul li:hover > ul {
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .botonBanderasDropLeft{
@@ -554,8 +560,8 @@ a{
 
   .logo2 {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     left: 50%;
     margin-top: 3rem;
     transform: translate(-50%, -50%);
@@ -746,3 +752,4 @@ a{
     display: none;
   }
 }
+
