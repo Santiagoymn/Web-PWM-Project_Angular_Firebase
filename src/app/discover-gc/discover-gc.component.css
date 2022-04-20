@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   text-align: center;
+  margin-bottom: 10rem;
 }
 .listaMunicipios{
   display: block;
@@ -183,16 +184,17 @@
     line-height: 4rem;
     top: 55%;
     left: 10%;
-    font-size: 1.5rem;
+    DiscoverGCBranch
+    font-size: 1.75rem;
   }
   .descripcionMunicipio {
     margin-top: 1.5rem;
   }
   /*////////// Botón //////////*/
   .flechaAbajoMunicipio {
-    width: 3rem;
-    height: 3rem;
-    right: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    right: 85%;
   }
   .btn {
     padding: 1rem;
