@@ -2,15 +2,16 @@
   background-image: url("https://viajes.nationalgeographic.com.es/medio/2017/07/18/ad1dk4_6d19ddbd.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-fit: fill;
   height: auto;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 .contenedorForm{
   background-color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 25%;
 }
 
 .conjuntoInput{
