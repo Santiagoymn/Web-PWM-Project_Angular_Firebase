@@ -265,8 +265,8 @@
       ]
     },
     {
-      "titulo": "Carnaval",
-      "descripcion": "Disfruta de los carnavales de Gran Canaria, uno de los mejores del país.",
+      "titulo": "Fiestas",
+      "descripcion": "Disfruta de las fantásticas celebraciones que se organizan en la isla.",
       "url": "https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg",
       "alt": "Carnaval",
       "actividades": [
@@ -281,6 +281,34 @@
               "price": "0€",
               "number": "928765201",
               "web": "www.maspalomas.com"
+            }
+          ]
+        },
+        {
+          "name": "La Rama de Agaete",
+          "url": "https://i.ytimg.com/vi/fjIthbTD86g/maxresdefault.jpg",
+          "description": "Se celebra a principios de agosto. La tradición consiste en el baile de miles de danzantes que recorren las calles al ritmo de la música agitando ramas en el aire hasta llegar al santuario de la Virgen para entregarlas como ofrenda.",
+          "empresas": [
+            {
+              "name": "La Rama de Agaete",
+              "place": "Agaete",
+              "price": "0€",
+              "number": "928765201",
+              "web": "www.grancanaria.com"
+            }
+          ]
+        },
+        {
+          "name": "Traída del Barro ",
+          "url": "https://sobrecanarias.com/wp-content/uploads/traida-del-barro.jpg",
+          "description": "Una antigua tradición que conmemora el momento en el que las mujeres del pueblo subían hasta la Concepción para buscar la materia prima de los alfareros de Santa Brígida. Eso se ha convertido en esta fiesta de la Traída del Barro, en la que las peleas amistosas y las guerras de bolas de barro ponen a todo el mundo literalmente hasta arriba…",
+          "empresas": [
+            {
+              "name": "Traída del Barro",
+              "place": "Santa Brígida",
+              "price": "0€",
+              "number": "928765201",
+              "web": "www.santabrigida.es"
             }
           ]
         }

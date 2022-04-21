@@ -35,7 +35,8 @@ export class HeaderComponent implements OnInit {
   closeTresRayas(): void{
     $("#lineHeader").hide();
     $("#subMenu").hide();
-    this.toggleMasMenos();
+    $("#menos").hide();
+    $("#mas").show();
   }
 
   showSubMenu(): void{
