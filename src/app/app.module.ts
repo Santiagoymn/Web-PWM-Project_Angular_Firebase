@@ -28,6 +28,11 @@ import {HeaderComponent} from "./header/header.component";
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { RegisterMessageComponent } from './register-message/register-message.component';
 import { CookieService } from 'ngx-cookie-service';
+import { UploadFormComponent } from './components/upload-form/upload-form.component';
+import { UploadListComponent } from './components/upload-list/upload-list.component';
+import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -52,6 +57,9 @@ import { CookieService } from 'ngx-cookie-service';
     HeaderComponent,
     RegisterFormComponent,
     RegisterMessageComponent,
+    UploadFormComponent,
+    UploadListComponent,
+    UploadDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +68,9 @@ import { CookieService } from 'ngx-cookie-service';
     HttpClientModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],
