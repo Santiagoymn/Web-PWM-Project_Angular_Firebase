@@ -1,6 +1,6 @@
 /*////////// CUADRO REGISTRO //////////*/
 .register{
-  background-image: url("src/assets/images/guigui.jpeg");
+  /*background-image: url("src/assets/images/guigui.jpeg");*/
   background-repeat: no-repeat;
   object-fit: cover;
   height: auto;

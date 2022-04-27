@@ -1,7 +1,9 @@
 import {Injectable, Input} from '@angular/core';
 import {Carrusel, Categoria, DiscoverGC, Evento, Galeria, Persona, SobreNosotrosGeneral, Usuario} from "./objetos";
-import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {AngularFirestore} from "@angular/fire/compat/firestore";
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -14,44 +16,36 @@ export class GetterJsonService {
   @Input() sobreNosotros!: SobreNosotrosGeneral;
   @Input() carrusel!: Carrusel;
   @Input() usuario!: Usuario;
-  private apiURLCategorias = "http://localhost:3000/categorias";
-  private apiURLSobreNosotros = "http://localhost:3000/sobreNosotros";
-  private apiURLQuienesSomos = "http://localhost:3000/sobreNosotrosPersonas";
-  private apiURLGaleria = "http://localhost:3000/imagenesGaleria";
-  private apiURLMunicipios = "http://localhost:3000/municipios";
-  private apiURLCarrusel = "http://localhost:3000/imagenesCarrusel";
-  private apiURLEventos = "http://localhost:3000/eventos";
 
 
-
-  constructor(private http: HttpClient) {
+  constructor(private firestore: AngularFirestore) {
   }
 
   getCategorias(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>(this.apiURLCategorias);
+    return this.firestore.collection<Categoria>('categorias').valueChanges();
+  }
+
+  getEventos(){
+    return this.firestore.collection<Evento>('eventos').valueChanges();
   }
 
   getQuienesSomos() {
-    return this.http.get<Persona[]>(this.apiURLQuienesSomos);
+    return this.firestore.collection<Persona>('sobreNosotrosPersonas').valueChanges();
   }
 
   getImagesGaleria() {
-    return this.http.get<Galeria[]>(this.apiURLGaleria);
+    return this.firestore.collection<Galeria>('imagenesGaleria').valueChanges();
   }
 
   getMunicipios() {
-    return this.http.get<DiscoverGC[]>(this.apiURLMunicipios);
+    return this.firestore.collection<DiscoverGC>('municipios').valueChanges();
   }
 
   getImagesCarrusel() {
-    return this.http.get<Carrusel[]>(this.apiURLCarrusel);
+    return this.firestore.collection<Carrusel>('imagenesCarrusel').valueChanges();
   }
 
   getAboutUs() {
-    return this.http.get<SobreNosotrosGeneral[]>(this.apiURLSobreNosotros);
-  }
-
-  getEventos() {
-    return this.http.get<Evento[]>(this.apiURLEventos);
+    return this.firestore.collection<SobreNosotrosGeneral>('sobreNosotros').valueChanges();
   }
 }
