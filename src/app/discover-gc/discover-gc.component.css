@@ -55,6 +55,7 @@
 /*////////// DROPDOWN MUNICIPIO //////////*/
 .descripcionMunicipio {
   height: auto;
+  display: none;
 }
 .imagenDropdownMunicipio {
   float:right;
@@ -186,6 +187,7 @@
   }
   .descripcionMunicipio {
     margin-top: 1.5rem;
+    display: none;
   }
   /*////////// Botón //////////*/
   .flechaAbajoMunicipio {

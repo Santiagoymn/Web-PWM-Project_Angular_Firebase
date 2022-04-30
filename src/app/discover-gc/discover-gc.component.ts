@@ -18,8 +18,8 @@ export class DiscoverGCComponent implements OnInit {
   constructor(config: NgbCarouselConfig, private getterJsonService: GetterJsonService) {
   }
 
-  ngOnInit(): void {
-    this.getterJsonService.getMunicipios()
+  async ngOnInit() {
+    await this.getterJsonService.getMunicipios()
       .pipe(
         tap((municipio: DiscoverGC[]) => this.municipios = municipio)
       )
@@ -27,7 +27,7 @@ export class DiscoverGCComponent implements OnInit {
   }
 
   cambiarEstadoDropDown(index:any){
-    var finalId = "#municipioem" + index;
+    const finalId = "#municipioem" + index;
     $(finalId).toggle();
   }
 }
