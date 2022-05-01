@@ -38,6 +38,8 @@ import {environment} from "../environments/environment";
 import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {AlertModule} from "ngx-bootstrap/alert";
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+
 
 @NgModule({
   declarations: [
@@ -79,7 +81,8 @@ import {AlertModule} from "ngx-bootstrap/alert";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
-    AlertModule
+    AlertModule,
+    AngularFireAuthModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent],
