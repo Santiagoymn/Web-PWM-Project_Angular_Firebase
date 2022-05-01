@@ -1,9 +1,14 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Injectable} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {Usuario} from "../objetos";
+import {UsuarioFire} from "../objetos";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
 import {UsersService} from "../users/users.service";
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import {updateProfile} from "@angular/fire/auth";
+import { setDoc, doc } from 'firebase/firestore';
+
+
 
 @Component({
   selector: 'app-register-form',
@@ -21,10 +26,11 @@ export class RegisterFormComponent implements OnInit {
   registrado: number = 0;
   id: number = -1;
 
-  usuarios!: Usuario[];
-  @Input() usuario!: Usuario;
+  usuarios!: UsuarioFire[];
+  @Input() usuario!: UsuarioFire;
 
-  constructor(public fb: FormBuilder, private router:Router, private usersService: UsersService) {
+  constructor(public fb: FormBuilder, private router:Router, private usersService: UsersService,
+              private firebaseAuth: AngularFireAuth) {
     this.RegisterForm = this.fb.group({
       user: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -38,7 +44,7 @@ export class RegisterFormComponent implements OnInit {
   ngOnInit(): void {
     this.usersService.getUsuarios()
       .pipe(
-        tap((usuarios: Usuario[]) => this.usuarios = usuarios)
+        tap((usuarios: UsuarioFire[]) => this.usuarios = usuarios)
       )
       .subscribe();
   }
@@ -52,45 +58,44 @@ export class RegisterFormComponent implements OnInit {
     this.passwordRepeated = this.RegisterForm.get('passwordRepeated')?.value;
 
     if (!this.RegisterForm.valid){
-      window.alert("Es necesario rellenar todos los campos");
+      window.alert("Es necesario rellenar todos los campos o el formato de algún campo es incorrecto");
     }
     else{
-      if (this.passwordRepeated != this.password){
+      if(this.passwordRepeated != this.password)
+      {
         window.alert("Las contraseñas deben coincidir. Por favor vuelva a intentarlo.");
       }
-      else{
+      else
+      {
         this.usuarios.forEach((usuario) => {
-          if (usuario.usuario == this.user && usuario.email != this.email){
-            window.alert("Debe de escoger otro usuario, ya existe este usuario");
+          if (usuario.usuario == this.user){
+            window.alert("Debe de escoger otro usuario, ya se encuentra registrado");
             this.registrado = 1;
-          }
-          if (usuario.usuario != this.user && usuario.email == this.email){
-            window.alert("El email ya está registrado");
-            this.registrado = 1;
-          }
-          if (usuario.usuario == this.user && usuario.email == this.email){
-            window.alert("El email ya está registrado y el usuario ya existe");
-            this.registrado = 1;
-          }
-          if (this.id < usuario.id){
-            this.id = usuario.id;
           }
         });
-        if (this.registrado != 1){
-          const usuarioRegistrado: Usuario = {
-            usuario: this.user,
-            email: this.email,
-            nombre: this.name,
-            apellidos: this.surname,
-            password: this.password,
-            id: this.id + 1,
-          };
-          this.usersService.setUsuario(usuarioRegistrado).subscribe( data => {
-            console.log(data);
+        if (this.registrado != 1) {
+          this.firebaseAuth.createUserWithEmailAndPassword(this.email, this.password).
+          then((userCredential) => {
+            // @ts-ignore
+            this.usersService.addNewUser(userCredential.user.uid, this.name, this.surname, this.user)
+            this.router.navigate(['/registeredSuccesful']).then(() => {
+              this.RegisterForm.reset();
+            });
+          }).catch((error) => {
+            if (error.code == "auth/email-already-in-use") {
+              alert("El email se encuentra registrado, por favor introduzca otro");
+            } else if (error.code == "auth/invalid-email") {
+              alert("El email introducido no es válido");
+            } else if (error.code == "auth/operation-not-allowed") {
+              alert("Operación no permitida");
+            } else if (error.code == "auth/weak-password") {
+              alert("La contraseña es muy débil, debe tener mínimo 6 caracteres");
+            }
+            else{
+              alert(error.message);
+            }
           });
-          this.router.navigate(['/registeredSuccesful']).then(() => {
-            this.RegisterForm.reset();
-          });
+
         }
       }
     }
