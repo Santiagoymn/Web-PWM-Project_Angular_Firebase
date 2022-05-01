@@ -40,16 +40,6 @@ export class UsersService {
 
   }
 
-  /*addUser(user: string, name: string, surname: string){
-    let usuariosCollection = this.firestore.collection<Usuario>('usuarios');
-    usuariosCollection.add({ nombre: name, apellidos: surname, usuario: user });
-    await setDoc(doc(db, "usuarios", "LA"), {
-      name: "Los Angeles",
-      state: "CA",
-      country: "USA"
-    });
-  }*/
-
   getUsuarios() {
     return this.firestore.collection<UsuarioFire>('usuarios').valueChanges();
   }

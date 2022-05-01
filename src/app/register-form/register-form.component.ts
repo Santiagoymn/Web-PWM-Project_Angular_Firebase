@@ -5,8 +5,6 @@ import {tap} from "rxjs";
 import {Router} from '@angular/router';
 import {UsersService} from "../users/users.service";
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import {updateProfile} from "@angular/fire/auth";
-import { setDoc, doc } from 'firebase/firestore';
 
 
 
