@@ -1,9 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {Usuario} from "../objetos";
+import {UsuarioFire} from "../objetos";
 import {UsersService} from "../users/users.service";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+
 
 @Component({
   selector: 'app-login',
@@ -13,17 +15,18 @@ import {Router} from '@angular/router';
 export class LoginComponent implements OnInit {
   checkoutForm: FormGroup;
 
-  user: string = "";
+  email: string = "";
   password: string = "";
 
   acceso: number = 0;
 
-  usuarios!: Usuario[];
-  @Input() usuario!: Usuario;
+  usuarios!: UsuarioFire[];
+  @Input() usuario!: UsuarioFire;
 
-  constructor(public fb: FormBuilder, private usersService: UsersService, private router:Router) {
+  constructor(public fb: FormBuilder, private usersService: UsersService, private router: Router,
+              private firebaseAuth: AngularFireAuth) {
     this.checkoutForm = this.fb.group({
-      user: ['', [Validators.required]],
+      email: ['', [Validators.required]],
       password: ['', [Validators.required]]
     });
   }
@@ -31,30 +34,35 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.usersService.getUsuarios()
       .pipe(
-        tap((usuarios: Usuario[]) => this.usuarios = usuarios)
+        tap((usuarios: UsuarioFire[]) => this.usuarios = usuarios)
       )
       .subscribe();
   }
 
   onSubmit(): void {
-    this.user = this.checkoutForm.get('user')?.value;
+    this.email = this.checkoutForm.get('email')?.value;
     this.password = this.checkoutForm.get('password')?.value;
-    if (!this.checkoutForm.valid){
+    if (!this.checkoutForm.valid) {
       window.alert("Es necesario rellenar todos los campos");
-    }
-    else{
-      this.usuarios.forEach((usuario) => {
-        if (usuario.usuario == this.user && usuario.password == this.password)
-          this.acceso = 1;
-      });
-      if (this.acceso == 1){
-        this.router.navigate(['']).then(() => {
-          sessionStorage.setItem("logged", "true");
-          this.checkoutForm.reset();
+    } else {
+      this.firebaseAuth
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then((result) => {
+          alert("Ha iniciado sesión correctamente")
+          this.router.navigate(['']).then(() => {
+            sessionStorage.setItem("logged", "true");
+            this.checkoutForm.reset();
+          });
+        }).catch((error) => {
+          if (error.code == "auth/wrong-password") {
+            alert("El email o contraseña introducido es incorrecto");
+          } else if (error.code == "auth/invalid-email") {
+            alert("El email introducido no es válido");
+          }
+          else{
+            alert(error.message);
+          }
         });
-      }
-      else
-        window.alert("El usuario o contraseña introducidos es incorrecto");
     }
   }
 }
