@@ -1,6 +1,5 @@
 
-<div *ngFor="let categoria of categorias">
-  <div *ngFor="let actividad of categoria.actividades">
+  <div *ngFor="let actividad of actividades">
     <div *ngIf="quitarEspacios(actividad.name) === actividadClicada()">
       <div class="posicionamientoImagenFondo">
         <img src="{{actividad.url}}" alt="{{actividad.name}}" class="imagenFondo">
@@ -21,7 +20,6 @@
       </div>
     </div>
   </div>
-</div>
 
 
 

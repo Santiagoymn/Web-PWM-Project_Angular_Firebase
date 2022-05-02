@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Categoria} from "../objetos";
+import {Actividad, Empresa} from "../objetos";
 import {GetterJsonService} from "../getter-json.service";
 import {tap} from "rxjs";
 
@@ -10,17 +10,17 @@ import {tap} from "rxjs";
 })
 export class ActivityPageInformationComponent implements OnInit {
 
-  categorias!: Categoria[];
-  @Input() categoria!: Categoria;
+  empresas!: Empresa[];
+  actividades!: Actividad[];
+  @Input() actividad!: Actividad;
+  @Input() empresa!: Empresa;
   constructor(private getterJsonService: GetterJsonService) {
   }
 
-  ngOnInit(): void {
-    this.getterJsonService.getCategorias()
-      .pipe(
-        tap((categories: Categoria[]) => this.categorias = categories)
-      )
-      .subscribe();
+  async ngOnInit() {
+    alert(localStorage.getItem("category"))
+    // @ts-ignore
+    this.actividades = await this.getterJsonService.getCategoriaActividades(localStorage.getItem("category"))
   }
 
   quitarEspacios(nombre: any){

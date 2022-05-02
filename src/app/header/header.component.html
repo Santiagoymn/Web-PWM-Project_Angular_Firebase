@@ -46,8 +46,8 @@
             <a class="textoDropDown">Categorias</a>
             <ul class="submenuCategorias" id="subMenu">
               <div *ngFor="let categoria of categorias">
-                <li id="{{categoria.titulo.replace(' ', '')}}" (click)="puestaVariableLocal(categoria.titulo.replace(' ', ''))">
-                  <a routerLink="categoria">
+                <li  (click)="puestaVariableLocal(categoria.titulo)">
+                  <a routerLink="/categoria">
                     <p class="fuenteCategorias">{{categoria.titulo}}</p>
                   </a>
                 </li>

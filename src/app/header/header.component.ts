@@ -54,13 +54,11 @@ export class HeaderComponent implements OnInit {
     $("#menos").toggle();
   }
 
-  setCategory(id: string): void{
-    localStorage.setItem("category", id);
-  }
 
   puestaVariableLocal(identificador: any){
-    // var id = $(this).attr("id");
     localStorage.setItem("category", identificador);
+    window.location.reload();
+
   }
 
   getLogged(): boolean{

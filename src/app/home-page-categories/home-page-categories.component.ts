@@ -24,6 +24,6 @@ export class HomePageCategoriesComponent implements OnInit {
   }
 
   puestaVariableLocal(identificador:any){
-    localStorage.setItem("category", identificador.replace(' ', ''));
+    localStorage.setItem("category", identificador);
   }
 }

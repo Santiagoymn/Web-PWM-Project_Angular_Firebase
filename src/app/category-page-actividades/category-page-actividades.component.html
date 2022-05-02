@@ -1,11 +1,11 @@
 <div class="categoryWrapper">
   <div *ngFor="let categoria of categorias">
-    <div *ngIf="quitarEspacios(categoria.titulo) === categoriaClicada()">
+    <div *ngIf="(categoria.titulo) === categoriaClicada()">
       <h2>{{categoria.titulo}}</h2>
       <p class='descripcionCategorias'>{{categoria.descripcion}}</p>
       <div>
         <a routerLink="/actividad">
-          <div class='actividad' *ngFor="let actividad of categoria.actividades;" (click)="puestaVariableActivity(quitarEspacios(actividad.name))" >
+          <div class='actividad' *ngFor="let actividad of actividades;" (click)="puestaVariableActivity(actividad.name)" >
             <div class='centrado'>
               <span class="colorFondo"><div class='nombreActividadImagen'>{{actividad.name}}</div></span>
             </div>

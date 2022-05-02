@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Categoria} from "../objetos";
+import {Empresa} from "../objetos";
 import {GetterJsonService} from "../getter-json.service";
 import {tap} from "rxjs";
 
@@ -10,27 +10,16 @@ import {tap} from "rxjs";
 })
 export class ActivityPageEmpresasComponent implements OnInit {
 
-  categorias!: Categoria[];
-  @Input() categoria!: Categoria;
+  empresas!: Empresa[];
+  @Input() empresa!: Empresa;
   constructor(private getterJsonService: GetterJsonService) {
   }
 
-  ngOnInit(): void {
-    this.getterJsonService.getCategorias()
-      .pipe(
-        tap((categories: Categoria[]) => this.categorias = categories)
-      )
-      .subscribe();
-  }
-
-  actividadClicada(){
+  async ngOnInit(){
+    alert(localStorage.getItem("activity"))
     // @ts-ignore
-    var s = localStorage.getItem("activityName"); //.replace(" ", "");
-    return s;
-  }
+    this.empresas = await this.getterJsonService.getActividadesEmpresas(localStorage.getItem("activity"))
 
-  actividadActual(v:any){
-    return v.replaceAll(" ", "");
   }
 
 }

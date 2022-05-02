@@ -76,7 +76,7 @@ import {AlertModule} from "ngx-bootstrap/alert";
     FormsModule,
     AngularFireDatabaseModule,
     AngularFireStorageModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
     AlertModule

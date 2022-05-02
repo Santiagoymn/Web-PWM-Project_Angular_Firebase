@@ -1,27 +1,23 @@
-<div *ngFor="let categoria of categorias">
-  <div *ngFor="let actividad of categoria.actividades">
-    <article class="empresa" *ngIf="actividadClicada() == actividadActual(actividad.name)">
-      <div *ngFor="let empresa of actividad.empresas">
+    <article class="empresa">
+      <div *ngFor="let empresa of empresas">
         <div class="nombreEmpresaOrganizadora">{{empresa.name}}</div>
         <div class="informacionEspecifica">
           <div class="iconoDato">
-            <img src="../../assets/images/pin.png" alt="Localización empresa" class="imagenPin">
+            <img src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2Fpin.png?alt=media&token=d88cccc6-33f5-4de2-9ac4-32b26eda6e4d" alt="Localización empresa" class="imagenPin">
             {{empresa.place}}
           </div>
           <div class="iconoDato">
-            <img src="../../assets/images/euro.png" alt="Precio de la empresa" class="imagenEuro">
+            <img src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2Feuro.png?alt=media&token=5d9a58b9-606e-4ad3-9157-5d6732e14acc" alt="Precio de la empresa" class="imagenEuro">
             {{empresa.price}}
           </div>
           <div class="iconoDato">
-            <img src="../../assets/images/telefonoBlanco.png" alt="Telefono de la empresa" class="imagenTelefono">
+            <img src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2FtelefonoBlanco.png?alt=media&token=98af4b23-5c1d-482f-a4ed-98216c6df3e8" alt="Telefono de la empresa" class="imagenTelefono">
             {{empresa.number}}
           </div>
           <div class="iconoDato">
-            <img src="../../assets/images/web.png" alt="Web de la empresa" class="imagenWeb">
+            <img src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2Fweb.png?alt=media&token=8de7ba02-e285-4fc3-84c4-a622ea53e55b" alt="Web de la empresa" class="imagenWeb">
             {{empresa.web}}
           </div>
         </div>
       </div>
     </article>
-  </div>
-</div>
