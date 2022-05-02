@@ -2,10 +2,6 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Actividad, Categoria} from "../objetos";
 import {tap} from "rxjs";
 import {GetterJsonService} from "../getter-json.service";
-import {collection, doc, getDoc, getDocs, getFirestore, query, where} from "@angular/fire/firestore";
-import {environment} from "../../environments/environment";
-import {initializeApp} from "firebase/app";
-import {data} from "jquery";
 
 
 @Component({
@@ -25,26 +21,20 @@ export class CategoryPageActividadesComponent implements OnInit {
 
   async ngOnInit() {
     // @ts-ignore
-    this.actividades = await this.getterJsonService.getCategoriaActividades(localStorage.getItem("category"))
+    this.actividades = await this.getterJsonService.getCategoriaActividades(localStorage.getItem("category"));
 
     this.getterJsonService.getCategorias()
       .pipe(
         tap((categories: Categoria[]) => this.categorias = categories)
       )
       .subscribe();
-
   }
 
   categoriaClicada(){
     return localStorage.getItem("category");
   }
 
-  quitarEspacios(nombre: any){
-    return nombre.replaceAll(" ", "")
-  }
-
   puestaVariableActivity(identificador:any){
     localStorage.setItem('activity', identificador);
   }
-
 }

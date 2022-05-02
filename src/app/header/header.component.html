@@ -46,7 +46,7 @@
             <a class="textoDropDown">Categorias</a>
             <ul class="submenuCategorias" id="subMenu">
               <div *ngFor="let categoria of categorias">
-                <li  (click)="puestaVariableLocal(categoria.titulo)">
+                <li (click)="puestaVariableLocal(categoria.titulo)">
                   <a routerLink="/categoria">
                     <p class="fuenteCategorias">{{categoria.titulo}}</p>
                   </a>

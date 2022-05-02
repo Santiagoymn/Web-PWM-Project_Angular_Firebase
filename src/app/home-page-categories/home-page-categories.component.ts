@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core'; //Habría que añadir Input
+import { Component, OnInit, Input } from '@angular/core';
 import { Categoria } from '../objetos';
 import {tap} from "rxjs";
 import {GetterJsonService} from "../getter-json.service";

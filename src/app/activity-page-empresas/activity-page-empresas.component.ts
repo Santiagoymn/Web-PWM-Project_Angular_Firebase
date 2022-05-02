@@ -1,7 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Empresa} from "../objetos";
 import {GetterJsonService} from "../getter-json.service";
-import {tap} from "rxjs";
 
 @Component({
   selector: 'app-activity-page-empresas',
@@ -16,10 +15,7 @@ export class ActivityPageEmpresasComponent implements OnInit {
   }
 
   async ngOnInit(){
-    alert(localStorage.getItem("activity"))
     // @ts-ignore
-    this.empresas = await this.getterJsonService.getActividadesEmpresas(localStorage.getItem("activity"))
-
+    this.empresas = await this.getterJsonService.getActividadesEmpresas(localStorage.getItem("activity"));
   }
-
 }

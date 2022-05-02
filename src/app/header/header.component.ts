@@ -54,7 +54,6 @@ export class HeaderComponent implements OnInit {
     $("#menos").toggle();
   }
 
-
   puestaVariableLocal(identificador: any){
     localStorage.setItem("category", identificador);
     window.location.reload();

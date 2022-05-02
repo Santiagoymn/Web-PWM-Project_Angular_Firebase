@@ -104,7 +104,6 @@ export class GetterJsonService {
   }
 
   async getActividadesEmpresas(nombreActividad: string) {
-    alert(nombreActividad)
     const app = initializeApp(environment);
     const db = getFirestore(app);
 
