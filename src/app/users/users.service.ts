@@ -1,26 +1,52 @@
 import {Injectable, Input} from '@angular/core';
-import {Usuario} from "../objetos";
-import {HttpClient} from "@angular/common/http";
-import { Observable } from "rxjs";
+import {UsuarioFire} from "../objetos";
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import {AngularFirestore} from "@angular/fire/compat/firestore";
+import { doc, setDoc } from "firebase/firestore";
+import {updateProfile} from "@angular/fire/auth";
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  @Input() usuario!: Usuario;
-  private apiURLUsuarios = "http://localhost:3000/usuarios";
+  @Input() usuario!: UsuarioFire;
 
-  constructor(private http: HttpClient) { }
+  constructor(private firebaseAuth: AngularFireAuth,private firestore: AngularFirestore) { }
 
-  setUsuario(user: Usuario): Observable<any> {
-    return this.http.post(this.apiURLUsuarios, user);
+  // Sign up with email/password
+  signUp(email: string, password: string) {
+    return this.firebaseAuth
+      .createUserWithEmailAndPassword(email, password)
+      .then((result) => {
+        window.alert('You have been successfully registered!');
+        console.log(result.user);
+      })
+      .catch((error) => {
+        window.alert(error.message);
+      });
+  }
+  // Sign in with email/password
+  login(email: string, password: string) {
+    return this.firebaseAuth
+      .signInWithEmailAndPassword(email, password)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        window.alert(error.message);
+      });
+
+
   }
 
-  login(user: any): Observable<any> {
-    return this.http.post("http://localhost:3000/login", user);
-  }
   getUsuarios() {
-    return this.http.get<Usuario[]>(this.apiURLUsuarios);
+    return this.firestore.collection<UsuarioFire>('usuarios').valueChanges();
+  }
+
+  addNewUser(newId:any, name:string, surname:string, user:string){
+    this.firestore.collection("usuarios").doc(newId)
+      .set({nombre: name, apellidos: surname, usuario: user}).then (r =>{});
   }
 
 }

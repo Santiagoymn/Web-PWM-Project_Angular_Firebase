@@ -61,4 +61,10 @@ export interface Usuario{
   id: number;
 }
 
+export interface UsuarioFire{
+  usuario: string;
+  nombre: string;
+  apellidos: string;
+}
+
 
