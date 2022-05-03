@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 10rem;
 }
 .listaMunicipios{
   display: block;
@@ -69,6 +68,7 @@
   /*////////// MUNICIPIOS //////////*/
   .municipios {
     margin-top: 6rem;
+    margin-bottom: 20rem;
   }
 
   /*////////// MUNICIPIO //////////*/
@@ -121,6 +121,7 @@
   /*////////// MUNICIPIOS //////////*/
   .municipios {
     margin-top: 6rem;
+    margin-bottom: 8rem;
   }
 
   /*////////// MUNICIPIO //////////*/
@@ -170,6 +171,7 @@
   /*////////// MUNICIPIOS //////////*/
   .municipios {
     margin-top: 3rem;
+    margin-bottom: 8rem;
   }
 
   /*////////// MUNICIPIO //////////*/
