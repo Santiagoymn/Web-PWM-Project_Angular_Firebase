@@ -1,0 +1,22 @@
+.file-upload-container {
+  margin-top: 6rem;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  border: 0.2rem dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin-bottom: 2rem;
+  padding: 20vh 30vw;
+}
+
+.custom-file-upload {
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.tituloImagen{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
