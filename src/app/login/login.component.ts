@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {UsuarioFire} from "../objetos";
-import {UsersService} from "../users/users.service";
+import {UsersService} from "../serviceUsers/users.service";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
