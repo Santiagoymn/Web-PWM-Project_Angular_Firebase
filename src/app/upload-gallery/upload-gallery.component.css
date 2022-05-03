@@ -1,22 +1,149 @@
 .file-upload-container {
-  margin-top: 6rem;
-  margin-left: 6.25rem;
-  margin-right: 6.25rem;
   border: 0.2rem dashed #ccc;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-bottom: 2rem;
-  padding: 20vh 30vw;
 }
 
 .custom-file-upload {
-  font-size: 2em;
   border: none;
   cursor: pointer;
+  text-align: center;
+}
+.inputFile{
+  align-self: center;
+}
+
+.buttonUpload{
+  background-color: #CEE0FC;
+  border-radius: 10%;
+  border: none;
+  align-self: center;
 }
 
 .tituloImagen{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  align-self: center;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.download-image{
+  align-self: center;
+}
+
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px){
+  .file-upload-container {
+    margin-top: 6rem;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+    margin-bottom: 2rem;
+    padding: 20vh 20vw;
+  }
+
+  .custom-file-upload {
+    font-size: 2em;
+  }
+
+  .buttonUpload{
+    width: 8rem;
+    margin-top: 2rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .tituloImagen{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50rem;
+  }
+
+  .download-image{
+    width: 4em;
+    height: 4em;
+  }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+  .file-upload-container {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 10vh 10vw;
+  }
+
+  .custom-file-upload {
+    font-size: 2em;
+  }
+
+  .buttonUpload{
+    width: 8rem;
+    margin-top: 6rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .tituloImagen{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50rem;
+  }
+
+  .download-image{
+    width: 4em;
+    height: 4em;
+  }
+
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+  .file-upload-container {
+    margin-top: 6rem;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+    margin-bottom: 2rem;
+    padding: 15vh 15vw;
+  }
+
+  .custom-file-upload {
+    font-size: 1.5em;
+  }
+
+  .buttonUpload{
+    width: 6rem;
+    margin-top: 2rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .tituloImagen{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 30rem;
+  }
+
+  .download-image{
+    width: 4em;
+    height: 4em;
+  }
+
+}
+
