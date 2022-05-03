@@ -38,6 +38,7 @@ export class UploadGalleryComponent implements OnInit {
       this.selectedFiles = undefined;
       if (file) {
         this.currentFileUpload = new FileUpload(file);
+        this.currentFileUpload.description =  (<HTMLInputElement>document.getElementById("description")).value;
         this.galleryService.pushFileToStorage(this.currentFileUpload)
           .subscribe(
             percentage => {
@@ -51,7 +52,7 @@ export class UploadGalleryComponent implements OnInit {
     }
   }
 
-  uploadImage(alt:string, image: File){
+  /*uploadImage(alt:string, image: File){
     var ref= firebase.database().ref("fotos_galeria");
     var storage = firebase.storage();
     var pathReference = storage.ref(alt + ".png");
@@ -61,5 +62,5 @@ export class UploadGalleryComponent implements OnInit {
       });
     })
 
-  }
+  }*/
 }

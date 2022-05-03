@@ -4,7 +4,7 @@
     <img class="download-image" src={imagen1} alt="Download image"/>
   </label>
   <form>
-    <input id="alt" class="tituloImagen" type="text" value="Título de la imagen">
+    <input id="description" class="tituloImagen" type="text" value="Título de la imagen">
     <input id="file-upload" type="file" (change)="selectFile($event)"/>
     <button type="submit" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
   </form>
