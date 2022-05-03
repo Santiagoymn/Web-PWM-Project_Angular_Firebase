@@ -18,7 +18,7 @@ import {FileUpload} from "../models/file-upload";
 })
 
 export class GalleryImagesService {
-  private basePath = '/imagenes_galeria';
+  private basePath = '/fotos_galeria';
 
   constructor(private firestore: AngularFirestore, private storage: AngularFireStorage) {
   }
@@ -38,11 +38,10 @@ export class GalleryImagesService {
   }
 
   private saveFileData(fileUpload: FileUpload): void {
-    addNewImage(newId:any, alt:string, url:string){
-      this.firestore.collection("imagenesGaleria").doc(newId)
-        .set({alt: alt, url: url}).then (r =>{});
-    }
+      this.firestore.collection("imagenesGaleria").doc()
+        .set({url: fileUpload.url , description: fileUpload.description}).then (r =>{});
   }
+
   getImagesGaleria() {
     return this.firestore.collection<Galeria>('imagenesGaleria').valueChanges();
   }

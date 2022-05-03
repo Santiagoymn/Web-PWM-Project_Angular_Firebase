@@ -36,6 +36,7 @@ export class UploadGalleryComponent implements OnInit {
       this.selectedFiles = undefined;
       if (file) {
         this.currentFileUpload = new FileUpload(file);
+        this.currentFileUpload.description = (<HTMLInputElement>document.getElementById("description")).value;
         this.galleryService.pushFileToStorage(this.currentFileUpload)
           .subscribe(
             percentage => {
