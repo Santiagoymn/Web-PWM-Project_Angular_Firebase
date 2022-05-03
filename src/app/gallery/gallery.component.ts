@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from "@ng-bootstrap/ng-bootstrap";
 import { Galeria } from "../objetos";
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import { GalleryImagesService} from "../serviceImagesGallery/gallery-images.service";
 
 @Component({
   selector: 'app-gallery',
@@ -15,11 +15,11 @@ export class GalleryComponent implements OnInit {
   imagenes!: Galeria[];
   @Input() galeria!: Galeria;
 
-  constructor(config: NgbCarouselConfig, private getterJsonService: GetterJsonService) {
+  constructor(config: NgbCarouselConfig, private galleryImagesService: GalleryImagesService) {
   }
 
   ngOnInit(): void {
-    this.getterJsonService.getImagesGaleria()
+    this.galleryImagesService.getImagesGaleria()
       .pipe(
         tap((image: Galeria[]) => this.imagenes = image)
       )

@@ -25,7 +25,6 @@ import {collection, getDoc, getDocs, getFirestore, query, where} from "@angular/
 export class GetterJsonService {
   @Input() categoria!: Categoria;
   @Input() quienesSomos!: Persona;
-  @Input() galeria!: Galeria;
   @Input() discoverGC!: DiscoverGC;
   @Input() sobreNosotros!: SobreNosotrosGeneral;
   @Input() carrusel!: Carrusel;
@@ -50,10 +49,6 @@ export class GetterJsonService {
 
   getQuienesSomos() {
     return this.firestore.collection<Persona>('sobreNosotrosPersonas').valueChanges();
-  }
-
-  getImagesGaleria() {
-    return this.firestore.collection<Galeria>('imagenesGaleria').valueChanges();
   }
 
   getMunicipios() {

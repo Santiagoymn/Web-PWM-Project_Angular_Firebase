@@ -3,7 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {UsuarioFire} from "../objetos";
 import {tap} from "rxjs";
 import {Router} from '@angular/router';
-import {UsersService} from "../users/users.service";
+import {UsersService} from "../serviceUsers/users.service";
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 
