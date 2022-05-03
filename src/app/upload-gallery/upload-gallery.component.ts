@@ -48,6 +48,7 @@ export class UploadGalleryComponent implements OnInit {
           );
       }
     }
+  }
 
   uploadImage(alt:string, image: File){
     var ref= firebase.database().ref("fotos_galeria");
