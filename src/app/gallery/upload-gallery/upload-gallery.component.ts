@@ -1,15 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import firebase from "firebase/compat";
-import {initializeApp} from "@angular/fire/app";
-import {environment} from "../../environments/environment";
-import {getStorage} from "firebase/storage";
-import {ref} from "@angular/fire/storage";
-import {FormGroup} from "@angular/forms";
-import {GalleryImagesService} from "../serviceImagesGallery/gallery-images.service";
-import {AngularFireDatabase} from "@angular/fire/compat/database";
-import {AngularFireStorage} from "@angular/fire/compat/storage";
-import {finalize, Observable} from "rxjs";
-import {FileUpload} from "../models/file-upload";
+import {GalleryImagesService} from "../../serviceImagesGallery/gallery-images.service";
+import {FileUpload} from "../../models/file-upload";
 
 @Component({
   selector: 'app-upload-gallery',

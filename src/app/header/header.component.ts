@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Categoria} from "../objetos";
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-header',
@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   width!: number;
   subMenu: boolean = false;
-  constructor(private getterJsonService: GetterJsonService) { }
+  constructor(private getterJsonService: GetterFirebaseService) { }
 
   ngAfterViewInit() { //Recién en este punto tendrás acceso al valor
     this.width = (document.documentElement.scrollWidth);

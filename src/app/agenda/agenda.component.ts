@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Evento} from "../objetos";
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-agenda',
@@ -14,7 +14,7 @@ export class AgendaComponent implements OnInit {
   eventos!: Evento[];
   @Input() evento!: Evento;
 
-  constructor(private getterJsonService: GetterJsonService) {
+  constructor(private getterJsonService: GetterFirebaseService) {
   }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../../serviceGeneral/getter-firebase.service";
 
 //import {Breakpoints} from '@angular/cdk/layout';
 
@@ -7,7 +7,7 @@ import {GetterJsonService} from "../getter-json.service";
 @Component({
   selector: 'app-home-page-about-us',
   templateUrl: './home-page-about-us.component.html',
-  styleUrls: ['./home-page-about-us.component.css', '../app.component.css']
+  styleUrls: ['./home-page-about-us.component.css', '../../app.component.css']
 })
 export class HomePageAboutUsComponent implements OnInit {
 
@@ -15,7 +15,7 @@ export class HomePageAboutUsComponent implements OnInit {
   //isDesktop = false;
   //isTablet = false;
   aboutUs = this.getterJsonService.getAboutUs();
-  constructor( private getterJsonService: GetterJsonService) { } //private responsive: BreakpointObserver,
+  constructor( private getterJsonService: GetterFirebaseService) { } //private responsive: BreakpointObserver,
 
   ngOnInit(): void {
     /*this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result: { matches: any; }) => {

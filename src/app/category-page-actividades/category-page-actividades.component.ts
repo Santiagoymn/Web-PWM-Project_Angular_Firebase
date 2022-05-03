@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Actividad, Categoria} from "../objetos";
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../serviceGeneral/getter-firebase.service";
 
 
 @Component({
@@ -15,7 +15,7 @@ export class CategoryPageActividadesComponent implements OnInit {
   actividades!: Actividad[]
   @Input() categoria!: Categoria;
   @Input() actividad!: Actividad;
-  constructor(private getterJsonService: GetterJsonService) {
+  constructor(private getterJsonService: GetterFirebaseService) {
   }
 
 

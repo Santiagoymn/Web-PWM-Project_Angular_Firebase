@@ -1,18 +1,18 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Categoria } from '../objetos';
+import { Categoria } from '../../objetos';
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-home-page-categories',
   templateUrl: './home-page-categories.component.html',
-  styleUrls: ['./home-page-categories.component.css', '../app.component.css']
+  styleUrls: ['./home-page-categories.component.css', '../../app.component.css']
 })
 export class HomePageCategoriesComponent implements OnInit {
 
   categorias!: Categoria[];
   @Input() categoria!: Categoria;
-  constructor(private getterJsonService: GetterJsonService) {
+  constructor(private getterJsonService: GetterFirebaseService) {
   }
 
   ngOnInit(): void {

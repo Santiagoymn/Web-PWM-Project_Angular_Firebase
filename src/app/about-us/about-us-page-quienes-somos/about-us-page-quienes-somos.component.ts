@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {GetterJsonService} from "../../getter-json.service";
+import {GetterFirebaseService} from "../../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-about-us-page-quienes-somos',
@@ -9,7 +9,7 @@ import {GetterJsonService} from "../../getter-json.service";
 export class AboutUsPageQuienesSomosComponent implements OnInit {
 
   quienesSomos = this.getterJsonService.getQuienesSomos();
-  constructor( private getterJsonService: GetterJsonService) { }
+  constructor( private getterJsonService: GetterFirebaseService) { }
 
   ngOnInit(): void {
   }

@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {DiscoverGC} from "../objetos";
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-discover-gc',
@@ -15,7 +15,7 @@ export class DiscoverGCComponent implements OnInit {
   municipios!: DiscoverGC[];
   @Input() discoverGC!: DiscoverGC;
 
-  constructor(config: NgbCarouselConfig, private getterJsonService: GetterJsonService) {
+  constructor(config: NgbCarouselConfig, private getterJsonService: GetterFirebaseService) {
   }
 
   async ngOnInit() {

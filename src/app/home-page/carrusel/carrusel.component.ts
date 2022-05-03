@@ -1,14 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
-import { Carrusel } from '../objetos';
+import { Carrusel } from '../../objetos';
 import {tap} from "rxjs";
-import {GetterJsonService} from "../getter-json.service";
+import {GetterFirebaseService} from "../../serviceGeneral/getter-firebase.service";
 
 
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
-  styleUrls: ['./carrusel.component.css', '../app.component.css']
+  styleUrls: ['./carrusel.component.css', '../../app.component.css']
 })
 
 
@@ -18,7 +18,7 @@ export class CarruselComponent implements OnInit {
   imagenes!: Carrusel[];
   @Input() carrusel!: Carrusel;
 
-  constructor(config: NgbCarouselConfig, private getterJsonService: GetterJsonService) {
+  constructor(config: NgbCarouselConfig, private getterJsonService: GetterFirebaseService) {
     config.interval = 2000;
     config.keyboard = true;
     config.pauseOnHover = true;

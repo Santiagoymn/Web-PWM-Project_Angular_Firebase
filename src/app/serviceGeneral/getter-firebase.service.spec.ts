@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FileUploadService } from './file-upload.service';
+import { GetterFirebaseService } from './getter-firebase.service';
 
-describe('FileUploadService', () => {
-  let service: FileUploadService;
+describe('GetterJsonService', () => {
+  let service: GetterFirebaseService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FileUploadService);
+    service = TestBed.inject(GetterFirebaseService);
   });
 
   it('should be created', () => {

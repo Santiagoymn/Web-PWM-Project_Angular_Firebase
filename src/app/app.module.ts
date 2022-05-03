@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarruselComponent } from './carrusel/carrusel.component';
+import { CarruselComponent } from './home-page/carrusel/carrusel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
+import { HomePageCategoriesComponent } from './home-page/home-page-categories/home-page-categories.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HomePageAboutUsComponent } from './home-page-about-us/home-page-about-us.component';
+import { HomePageAboutUsComponent } from './home-page/home-page-about-us/home-page-about-us.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsPageInformationComponent } from './about-us/about-us-page-information/about-us-page-information.component';
 import { AboutUsPageQuienesSomosComponent } from './about-us/about-us-page-quienes-somos/about-us-page-quienes-somos.component';
@@ -19,18 +19,15 @@ import {HomePageComponent} from "./home-page/home-page.component";
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AgendaComponent } from './agenda/agenda.component';
-import {ActivityPageInformationComponent} from "./activity-page-information/activity-page-information.component";
-import { ActivityPageEmpresasComponent } from './activity-page-empresas/activity-page-empresas.component';
-import { AgendaMessageComponent } from './agenda-message/agenda-message.component';
+import {ActivityPageInformationComponent} from "./activity-page/activity-page-information/activity-page-information.component";
+import { ActivityPageEmpresasComponent } from './activity-page/activity-page-empresas/activity-page-empresas.component';
+import { AgendaMessageComponent } from './agenda/agenda-message/agenda-message.component';
 import { LoginComponent } from './login/login.component';
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {HeaderComponent} from "./header/header.component";
 import { RegisterFormComponent } from './register-form/register-form.component';
-import { RegisterMessageComponent } from './register-message/register-message.component';
+import { RegisterMessageComponent } from './register-form/register-message/register-message.component';
 import { CookieService } from 'ngx-cookie-service';
-import { UploadFormComponent } from './components/upload-form/upload-form.component';
-import { UploadListComponent } from './components/upload-list/upload-list.component';
-import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import {AngularFireModule} from "@angular/fire/compat";
@@ -39,8 +36,8 @@ import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {AlertModule} from "ngx-bootstrap/alert";
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { UploadGalleryMessageComponent } from './upload-gallery-message/upload-gallery-message.component';
-import { UploadGalleryComponent } from './upload-gallery/upload-gallery.component';
+import { UploadGalleryMessageComponent } from './gallery/upload-gallery-message/upload-gallery-message.component';
+import { UploadGalleryComponent } from './gallery/upload-gallery/upload-gallery.component';
 
 
 
@@ -67,9 +64,6 @@ import { UploadGalleryComponent } from './upload-gallery/upload-gallery.componen
     HeaderComponent,
     RegisterFormComponent,
     RegisterMessageComponent,
-    UploadFormComponent,
-    UploadListComponent,
-    UploadDetailsComponent,
     UploadGalleryMessageComponent,
     UploadGalleryComponent,
   ],

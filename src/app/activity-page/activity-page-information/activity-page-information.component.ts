@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Actividad, Empresa} from "../objetos";
-import {GetterJsonService} from "../getter-json.service";
+import {Actividad, Empresa} from "../../objetos";
+import {GetterFirebaseService} from "../../serviceGeneral/getter-firebase.service";
 
 @Component({
   selector: 'app-activity-page-information',
   templateUrl: './activity-page-information.component.html',
-  styleUrls: ['./activity-page-information.component.css', '../app.component.css']
+  styleUrls: ['./activity-page-information.component.css', '../../app.component.css']
 })
 export class ActivityPageInformationComponent implements OnInit {
 
@@ -13,7 +13,7 @@ export class ActivityPageInformationComponent implements OnInit {
   actividades!: Actividad[];
   @Input() actividad!: Actividad;
   @Input() empresa!: Empresa;
-  constructor(private getterJsonService: GetterJsonService) {
+  constructor(private getterJsonService: GetterFirebaseService) {
   }
 
   async ngOnInit() {

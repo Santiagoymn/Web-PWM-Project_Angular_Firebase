@@ -5,24 +5,23 @@ import {
   Categoria,
   DiscoverGC,
   Evento,
-  Galeria,
   Persona,
   SobreNosotrosGeneral,
   Usuario,
   Empresa
-} from "./objetos";
+} from "../objetos";
 import {Observable} from "rxjs";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {initializeApp} from "firebase/app";
-import {environment} from "../environments/environment";
-import {collection, getDoc, getDocs, getFirestore, query, where} from "@angular/fire/firestore";
+import {environment} from "../../environments/environment";
+import {collection, getDocs, getFirestore, query, where} from "@angular/fire/firestore";
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class GetterJsonService {
+export class GetterFirebaseService {
   @Input() categoria!: Categoria;
   @Input() quienesSomos!: Persona;
   @Input() discoverGC!: DiscoverGC;
