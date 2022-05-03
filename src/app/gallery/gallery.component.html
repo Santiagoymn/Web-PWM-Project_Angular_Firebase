@@ -9,4 +9,10 @@
       </div>
     </div>
   </div>
+  <div *ngIf="getLogged() != true">
+    <app-upload-gallery-message></app-upload-gallery-message>
+  </div>
+  <div *ngIf="getLogged() == true">
+    <app-upload-gallery></app-upload-gallery>
+  </div>
 </div>

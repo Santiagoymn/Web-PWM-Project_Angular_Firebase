@@ -39,6 +39,9 @@ import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {AlertModule} from "ngx-bootstrap/alert";
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { UploadGalleryMessageComponent } from './upload-gallery-message/upload-gallery-message.component';
+import { UploadGalleryComponent } from './upload-gallery/upload-gallery.component';
+
 
 
 @NgModule({
@@ -67,6 +70,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     UploadFormComponent,
     UploadListComponent,
     UploadDetailsComponent,
+    UploadGalleryMessageComponent,
+    UploadGalleryComponent,
   ],
   imports: [
     BrowserModule,

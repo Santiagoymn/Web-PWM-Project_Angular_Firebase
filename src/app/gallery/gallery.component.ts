@@ -25,4 +25,17 @@ export class GalleryComponent implements OnInit {
       )
       .subscribe();
   }
+
+  getLogged(){
+    if (sessionStorage.getItem("logged") == null){
+      return false;
+    }
+    if (sessionStorage.getItem("logged") === "false"){
+      return false;
+    }
+    if (sessionStorage.getItem("logged") === "true"){
+      return true;
+    }
+    return true;
+  }
 }
