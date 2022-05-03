@@ -29,6 +29,8 @@ export class GetterFirebaseService {
   @Input() carrusel!: Carrusel;
   @Input() usuario!: Usuario;
   @Input() actividad!: Actividad;
+  app = initializeApp(environment);
+  db = getFirestore(this.app);
 
 
   constructor(private firestore: AngularFirestore) {
@@ -63,10 +65,7 @@ export class GetterFirebaseService {
   }
 
   async getCategoriaActividades(nombreCategoria: string) {
-    const app = initializeApp(environment);
-    const db = getFirestore(app);
-
-    const categorias = collection(db, "categorias");
+    const categorias = collection(this.db, "categorias");
     const q = query(categorias, where("titulo", "==", nombreCategoria));
     const querySnapshot = await getDocs(q);
 
@@ -80,7 +79,7 @@ export class GetterFirebaseService {
       }
     });
 
-    const todasActividades = collection(db, "actividades");
+    const todasActividades = collection(this.db, "actividades");
     const q2 = query(todasActividades);
     const querySnapshot2 = await getDocs(q2);
 
@@ -98,10 +97,8 @@ export class GetterFirebaseService {
   }
 
   async getActividadesEmpresas(nombreActividad: string) {
-    const app = initializeApp(environment);
-    const db = getFirestore(app);
 
-    const actividades = collection(db, "actividades");
+    const actividades = collection(this.db, "actividades");
     const q = query(actividades, where("name", "==", nombreActividad));
     const querySnapshot = await getDocs(q);
 
@@ -113,7 +110,7 @@ export class GetterFirebaseService {
         companies.push(empre);
       }
     });
-    const todasEmpresas = collection(db, "empresas");
+    const todasEmpresas = collection(this.db, "empresas");
     const q2 = query(todasEmpresas);
     const querySnapshot2 = await getDocs(q2);
 
