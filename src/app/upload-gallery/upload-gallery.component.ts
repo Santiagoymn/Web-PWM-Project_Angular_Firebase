@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import firebase from "firebase/compat";
 import {initializeApp} from "@angular/fire/app";
 import {environment} from "../../environments/environment";
 import {getStorage} from "firebase/storage";
@@ -9,9 +10,6 @@ import {AngularFireDatabase} from "@angular/fire/compat/database";
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {finalize, Observable} from "rxjs";
 import {FileUpload} from "../models/file-upload";
-import{FirebaseApp} from "@angular/fire/app";
-import {AngularFirestore} from "@angular/fire/compat/firestore";
-import firebase from "firebase/compat";
 
 @Component({
   selector: 'app-upload-gallery',
@@ -23,7 +21,7 @@ export class UploadGalleryComponent implements OnInit {
   currentFileUpload?: FileUpload;
   percentage: number | undefined;
 
-  constructor(private galleryService: GalleryImagesService, private firestore: AngularFirestore) { }
+  constructor(private galleryService: GalleryImagesService) { }
 
   ngOnInit(): void {
   }
@@ -38,7 +36,7 @@ export class UploadGalleryComponent implements OnInit {
       this.selectedFiles = undefined;
       if (file) {
         this.currentFileUpload = new FileUpload(file);
-        this.currentFileUpload.description =  (<HTMLInputElement>document.getElementById("description")).value;
+        this.currentFileUpload.description = (<HTMLInputElement>document.getElementById("description")).value;
         this.galleryService.pushFileToStorage(this.currentFileUpload)
           .subscribe(
             percentage => {
@@ -52,7 +50,7 @@ export class UploadGalleryComponent implements OnInit {
     }
   }
 
-  /*uploadImage(alt:string, image: File){
+  uploadImage(alt:string, image: File){
     var ref= firebase.database().ref("fotos_galeria");
     var storage = firebase.storage();
     var pathReference = storage.ref(alt + ".png");
@@ -62,5 +60,5 @@ export class UploadGalleryComponent implements OnInit {
       });
     })
 
-  }*/
+  }
 }
