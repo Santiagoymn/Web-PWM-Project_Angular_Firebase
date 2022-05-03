@@ -1,11 +1,12 @@
 <div class="file-upload-container text">
   <label for="file-upload" class="custom-file-upload">
     Subida de imágenes para la galería
-    <img class="download-image" src={imagen1} alt="Download image"/>
   </label>
+  <img class="download-image" src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2FNubeSubidaArchivo.png?alt=media&token=944d2dc7-410f-47f6-9b09-2773fc73b4ff" alt="Download image"/>
   <form>
-    <input id="description" class="tituloImagen" type="text" value="Título de la imagen">
-    <input id="file-upload" type="file" (change)="selectFile($event)"/>
-    <button type="submit" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
+    <input id="description" class="tituloImagen" type="text" placeholder="Título de la imagen">
+    <input id="file-upload" class="inputFile" type="file" (change)="selectFile($event)"/>
+    <button type="submit" class="buttonUpload" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
   </form>
+
 </div>

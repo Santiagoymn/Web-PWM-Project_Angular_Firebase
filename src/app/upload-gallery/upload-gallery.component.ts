@@ -50,14 +50,4 @@ export class UploadGalleryComponent implements OnInit {
     }
   }
 
-  /*uploadImage(alt:string, image: File){
-    var ref= firebase.database().ref("fotos_galeria");
-    var storage = firebase.storage();
-    var pathReference = storage.ref(alt + ".png");
-    pathReference.getDownloadURL().then(function(url) {
-      ref.push().set({
-        imgurl: url
-      });
-    })
-  }*/
 }
