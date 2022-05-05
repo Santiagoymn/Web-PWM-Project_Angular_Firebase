@@ -41,4 +41,14 @@ export class UploadGalleryComponent implements OnInit {
     }
   }
 
+  tittleFile(){
+    if (this.selectedFiles) {
+      // @ts-ignore
+      return this.selectedFiles.item(0).name;
+    }else{
+      return "";
+    }
+  }
+
+
 }

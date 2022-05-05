@@ -4,7 +4,7 @@
   </label>
   <img class="download-image" src="https://firebasestorage.googleapis.com/v0/b/pwm-project-aa26c.appspot.com/o/iconos%2FNubeSubidaArchivo.png?alt=media&token=944d2dc7-410f-47f6-9b09-2773fc73b4ff" alt="Download image"/>
   <form>
-    <input id="description" class="tituloImagen" type="text" placeholder="Título de la imagen">
+    <input id="description" class="tituloImagen" type="text" placeholder="Título de la imagen" value="{{tittleFile()}}">
     <input id="file-upload" class="inputFile" type="file" (change)="selectFile($event)"/>
     <button type="submit" class="buttonUpload" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
   </form>
