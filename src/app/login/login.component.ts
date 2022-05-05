@@ -55,9 +55,11 @@ export class LoginComponent implements OnInit {
           });
         }).catch((error) => {
           if (error.code == "auth/wrong-password") {
-            alert("El email o contraseña introducido es incorrecto");
+            alert("La contraseña introducida es incorrecta");
           } else if (error.code == "auth/invalid-email") {
-            alert("El email introducido no es válido");
+            alert("El email introducido no se encuentra registrado");
+          } else if (error.code == "auth/user-not-found") {
+            alert("El email introducido no se encuentra registrado");
           }
           else{
             alert(error.message);
